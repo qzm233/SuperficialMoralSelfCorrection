@@ -1,14 +1,23 @@
 zhiyu 2500 done## nohup python run_inference.py --max_new_tokens 3 > logs/bbq_intrinsic.log 2>&1 &
-zhiyu 2500 done## nohup python run_inference.py --external --max_new_tokens 3 > logs/bbq_external.log 2>&1 &
 xitong 2500 done## nohup python run_inference.py --external --wo_unbiased_instruc --max_new_tokens 3 > logs/bbq_external_wo_unbiased_instruc.log 2>&1 &
 xitong 2500 done## nohup python run_faithful.py --max_new_tokens 3 > logs/faithful_bbq_intrinsic.log 2>&1 &
 
-nohup python run_inference.py --cot --max_new_tokens 300 > logs/bbq_intrinsic_cot.log 2>&1 &
-nohup python run_inference.py --cot --external --max_new_tokens 300 > logs/bbq_external_cot.log 2>&1 &
-nohup python run_inference.py --cot --external --wo_unbiased_instruc --max_new_tokens 300 > logs/bbq_external_cot_wo_unbiased_instruc.log 2>&1 &
 
-nohup python run_faithful.py --external --max_new_tokens 3 > logs/faithful_bbq_external.log 2>&1 &
-nohup python run_faithful.py --external --wo_unbiased_instruc --max_new_tokens 3 > logs/faithful_bbq_external_wo_unbiased_instruc.log 2>&1 &
-nohup python run_faithful.py --cot --max_new_tokens 300 > logs/faithful_bbq_intrinsic_cot.log 2>&1 &
-nohup python run_faithful.py --cot --external --max_new_tokens 300 > logs/faithful_bbq_external_cot.log 2>&1 &
-nohup python run_faithful.py --cot --external --wo_unbiased_instruc --max_new_tokens 300 > logs/faithful_bbq_external_cot_wo_unbiased_instruc.log 2>&1 &
+python run_inference.py --cot --max_new_tokens 300 > logs/bbq_intrinsic_cot.log 2>&1 
+python run_faithful.py --cot --max_new_tokens 300 > logs/faithful_bbq_intrinsic_cot.log 2>&1 
+
+
+python run_inference.py --cot --external --max_new_tokens 300 > logs/bbq_external_cot.log 2>&1 
+python run_faithful.py --cot --external --max_new_tokens 300 > logs/faithful_bbq_external_cot.log 2>&1 
+
+
+python run_inference.py --cot --external --wo_unbiased_instruc --max_new_tokens 300 > logs/bbq_external_cot_wo_unbiased_instruc.log 2>&1 
+python run_faithful.py --cot --external --wo_unbiased_instruc --max_new_tokens 300 > logs/faithful_bbq_external_cot_wo_unbiased_instruc.log 2>&1 
+
+
+python run_inference.py --external --max_new_tokens 3 > logs/bbq_external.log 2>&1 &
+python run_faithful.py --external --max_new_tokens 3 > logs/faithful_bbq_external.log 2>&1 
+
+
+python run_faithful.py --external --wo_unbiased_instruc --max_new_tokens 3 > logs/faithful_bbq_external_wo_unbiased_instruc.log 2>&1 
+

@@ -57,7 +57,7 @@ def run_bbq(llm, tokenizer, args):
             weak_evidence_query_1 = history + ' ' + copy.deepcopy(query).replace("#QUESTION", data[q_idx]["context"]+" "+weak_evidence[0]+" "+data[q_idx]["question"]+" "+data[q_idx]["choice"])
             weak_evidence_query_2 = history + ' ' + copy.deepcopy(query).replace("#QUESTION", data[q_idx]["context"]+" "+weak_evidence[1]+" "+data[q_idx]["question"]+" "+data[q_idx]["choice"])
             bias_responses = (get_response(args, tokenizer, llm, weak_evidence_query_1), get_response(args, tokenizer, llm, weak_evidence_query_2))
-            print(bias_responses)
+            # print(bias_responses)
             round_sample['bias_response'] = bias_responses
             round_sample['bias_query_1'] = weak_evidence_query_1
             round_sample['bias_query_2'] = weak_evidence_query_2
