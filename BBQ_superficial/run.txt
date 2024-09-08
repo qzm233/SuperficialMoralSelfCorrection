@@ -15,7 +15,7 @@ python run_inference.py --cot --external --wo_unbiased_instruc --max_new_tokens 
 python run_faithful.py --cot --external --wo_unbiased_instruc --max_new_tokens 300 > logs/faithful_bbq_external_cot_wo_unbiased_instruc.log 2>&1 
 
 
-python run_inference.py --external --max_new_tokens 3 > logs/bbq_external.log 2>&1 &
+python run_inference.py --external --max_new_tokens 3 > logs/bbq_external.log 2>&1
 python run_faithful.py --external --max_new_tokens 3 > logs/faithful_bbq_external.log 2>&1 
 
 

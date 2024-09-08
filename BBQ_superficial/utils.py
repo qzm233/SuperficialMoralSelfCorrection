@@ -30,7 +30,7 @@ import huggingface_hub
 
 llama_7b_dir = "/scratch0/liuguan5/llama/llama-2-7b-chat-hf/"
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"Using device: {device}")
 # device = "cpu"
