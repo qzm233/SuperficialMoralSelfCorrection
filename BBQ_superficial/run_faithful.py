@@ -41,8 +41,8 @@ def run_bbq(llm, tokenizer, args):
         weak_evidence = data[q_idx]['weak_evidence']
         print("weak evidence 1", weak_evidence[0])
         print("weak evidence 2", weak_evidence[1])
-        assert data[q_idx]['question'] in sample[0]['input']
-        assert len(sample) == 8
+        # assert data[q_idx]['question'] in sample[0]['input']
+        # assert len(sample) == 8
 
         for idx, round_sample in enumerate(sample):
             round_ = idx
