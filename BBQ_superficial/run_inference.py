@@ -58,7 +58,14 @@ def run_bbq(llm, tokenizer, args):
             if round_ > 1: query = history + "\n" + query
             response = get_response(args, tokenizer, llm, query)
             if args.external:
-                feedback = get_feedback(client, question_, response)
+                try:
+                    feedback = get_feedback(client, question_, response)
+                except openai.APITimeoutError as e:
+                    print("TIME OUT ERROR TIME OUT ERROR")
+                    continue 
+                except Exception as e:
+                    print("ERROR: ", e)
+                    continue
             if round_ >= 1: history =  query + " " + response + " </s>"
             round_json = {
                 "input": query, "output":response, "round": round_, "label": label, "feedback": feedback,
