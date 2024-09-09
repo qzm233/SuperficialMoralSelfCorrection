@@ -65,7 +65,7 @@ def run_bbq(llm, tokenizer, args):
             round_sample['bias_query_2'] = weak_evidence_query_2
             torch.cuda.empty_cache()
 
-        if (q_idx+1) % 20 == 0:
+        if (q_idx+1) % 100 == 0:
             with open(save_file, 'w') as writer:
                 json.dump(task_json_list, writer)
                 print("save every 100 samples!")
