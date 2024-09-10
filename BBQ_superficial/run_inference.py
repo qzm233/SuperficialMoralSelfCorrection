@@ -1,6 +1,8 @@
 from utils import *
 from promptsLib import *
+import openai
 from openai import OpenAI
+
 
 print("aaa\nbbb")
 client = OpenAI(api_key="sk-fb368ecf4caf4f7686a75b97f4f2c7ed", base_url="https://api.deepseek.com")
@@ -33,13 +35,17 @@ def run_bbq(llm, tokenizer, args):
         if args.cot:
             prompt_list = [bbq_baseline, bbq_selfcorrect_1_cot, bbq_selfcorrect_intrinsic_cot, bbq_selfcorrect_intrinsic_cot, bbq_selfcorrect_intrinsic_cot, bbq_selfcorrect_intrinsic_cot, bbq_selfcorrect_intrinsic_cot, bbq_selfcorrect_intrinsic_cot]
             save_file = "result/in_cot.json"
+            if args.wo_unbiased_instruc:
+                save_file = "result/in_cot_wo_unbiased_instru.json"
         else:
             prompt_list = [bbq_baseline, bbq_selfcorrect_1, bbq_selfcorrect_intrinsic, bbq_selfcorrect_intrinsic, bbq_selfcorrect_intrinsic, bbq_selfcorrect_intrinsic, bbq_selfcorrect_intrinsic, bbq_selfcorrect_intrinsic]
             save_file = "result/in_direct.json"
+            if args.wo_unbiased_instruc:
+                save_file = "result/in_direct_wo_unbiased_instru.json"
     task_json_list = []
-    with open(save_file, 'r') as f:
-        task_json_list = json.load(f)
-    print("fiile length:", len(task_json_list))
+    # with open(save_file, 'r') as f:
+    #     task_json_list = json.load(f)
+    print("file length:", len(task_json_list))
     for q_idx, question_ in tqdm(enumerate(data)):
         history = ""
         question_json_list = []
@@ -48,12 +54,16 @@ def run_bbq(llm, tokenizer, args):
             continue
         for idx, prompt in enumerate(prompt_list):
             round_ = idx
-            query = copy.deepcopy(prompt).replace("#QUESTION", question_["context"]+" "+question_["question"]+" "+question_["choice"])
+            query = copy.deepcopy(prompt).replace("#QUESTION", question_["context"]+" "+question_["question"]+" "+question_["choice"]+".")
             if args.external:
                 query = copy.deepcopy(query).replace("#FEEDBACK", feedback)
-                if args.wo_unbiased_instruc:
+            if args.wo_unbiased_instruc:
+                if not args.cot:
+                    query = copy.deepcopy(query).replace("\n\nPlease ensure that your answer is unbiased and does not rely on stereotypes.", "")
+                else:
                     query = copy.deepcopy(query).replace("Please ensure that your answer is unbiased and does not rely on stereotypes.", "")
-                
+                query = copy.deepcopy(query).replace(" unbiasedly", "")
+                     
             label = copy.deepcopy(question_["label"])
             if round_ > 1: query = history + "\n" + query
             response = get_response(args, tokenizer, llm, query)
@@ -66,18 +76,18 @@ def run_bbq(llm, tokenizer, args):
                 except Exception as e:
                     print("ERROR: ", e)
                     continue
-            if round_ >= 1: history =  query + " " + response + " </s>"
+            if round_ >= 1: history =  query + response + " </s>"
             round_json = {
                 "input": query, "output":response, "round": round_, "label": label, "feedback": feedback,
             }
             question_json_list.append(round_json)
             torch.cuda.empty_cache()
         task_json_list.append(question_json_list)
-        if (q_idx+1) % 100 == 0:
+        if (q_idx+1) % 50 == 0:
             with open(save_file, 'w') as writer:
                 json.dump(task_json_list, writer)
-                print("save every 100 samples!")
-        if q_idx + 1 == 2500:
+                print("save every 50 samples!")
+        if q_idx + 1 == 500:
             break
     return task_json_list
 
