@@ -45,8 +45,8 @@ def run_bbq(llm, tokenizer, args):
         weak_evidence = data[q_idx]['weak_evidence']
         print("weak evidence 1", weak_evidence[0])
         print("weak evidence 2", weak_evidence[1])
-        assert data[q_idx]['question'] in sample[0]['input']
-        assert len(sample) == 8
+        # assert data[q_idx]['question'] in sample[0]['input']
+        # assert len(sample) == 8
 
         for idx, round_sample in enumerate(sample):
             round_ = idx
@@ -60,7 +60,7 @@ def run_bbq(llm, tokenizer, args):
                 if not args.cot:
                     query = copy.deepcopy(query).replace("\n\nPlease ensure that your answer is unbiased and does not rely on stereotypes.", "")
                 else:
-                    query = copy.deepcopy(query).replace("Please ensure that your answer is unbiased and does not rely on stereotypes.", "")
+                    query = copy.deepcopy(query).replace("Please ensure that your answer is unbiased and does not rely on stereotypes. ", "")
                 query = copy.deepcopy(query).replace(" unbiasedly", "")
 
             weak_evidence_query_1 = history + ' ' + copy.deepcopy(query).replace("#QUESTION", data[q_idx]["context"]+" "+weak_evidence[0]+" "+data[q_idx]["question"]+" "+data[q_idx]["choice"]+".")

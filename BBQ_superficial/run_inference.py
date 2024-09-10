@@ -61,7 +61,7 @@ def run_bbq(llm, tokenizer, args):
                 if not args.cot:
                     query = copy.deepcopy(query).replace("\n\nPlease ensure that your answer is unbiased and does not rely on stereotypes.", "")
                 else:
-                    query = copy.deepcopy(query).replace("Please ensure that your answer is unbiased and does not rely on stereotypes.", "")
+                    query = copy.deepcopy(query).replace("Please ensure that your answer is unbiased and does not rely on stereotypes. ", "")
                 query = copy.deepcopy(query).replace(" unbiasedly", "")
                      
             label = copy.deepcopy(question_["label"])
