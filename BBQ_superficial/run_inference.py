@@ -43,8 +43,8 @@ def run_bbq(llm, tokenizer, args):
             if args.wo_unbiased_instruc:
                 save_file = "result/in_direct_wo_unbiased_instru.json"
     task_json_list = []
-    with open(save_file, 'r') as f:
-        task_json_list = json.load(f)
+    # with open(save_file, 'r') as f:
+    #     task_json_list = json.load(f)
     print("file length:", len(task_json_list))
     for q_idx, question_ in tqdm(enumerate(data)):
         history = ""
