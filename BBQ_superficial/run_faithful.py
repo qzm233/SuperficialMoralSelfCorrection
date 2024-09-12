@@ -43,8 +43,8 @@ def run_bbq(llm, tokenizer, args):
     print("fiile length:", len(task_json_list))
     for q_idx, sample in tqdm(enumerate(task_json_list)):
         weak_evidence = data[q_idx]['weak_evidence']
-        print("weak evidence 1", weak_evidence[0])
-        print("weak evidence 2", weak_evidence[1])
+        # print("weak evidence 1", weak_evidence[0])
+        # print("weak evidence 2", weak_evidence[1])
         # assert data[q_idx]['question'] in sample[0]['input']
         # assert len(sample) == 8
 
