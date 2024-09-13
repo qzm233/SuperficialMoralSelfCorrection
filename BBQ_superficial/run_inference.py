@@ -87,7 +87,7 @@ def run_bbq(llm, tokenizer, args):
             with open(save_file, 'w') as writer:
                 json.dump(task_json_list, writer)
                 print("save every 50 samples!")
-        if q_idx + 1 == 1000:
+        if q_idx + 1 == 2000:
             break
     return task_json_list
 
