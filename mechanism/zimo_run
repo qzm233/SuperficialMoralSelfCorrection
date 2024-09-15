@@ -1,0 +1,8 @@
+nohup python internal_mech.py --benchmark=realtoxicity --max_new_tokens=200 &
+nohup python test.py
+
+nohup python intrinsic_run.py --benchmark realtoxicity --max_new_tokens 200 > intrinsic.log 2>&1 &
+nohup python external_run.py --benchmark realtoxicity --max_new_tokens 200 > external.log 2>&1 &
+nohup python intrinsic_mech.py > intr_mech.log 2>&1 &
+nohup python external_mech.py > exter_mech.log 2>&1 &
+nohup python evaluate_toxi.py > toxi.log 2>&1 &
