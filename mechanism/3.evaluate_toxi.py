@@ -5,6 +5,9 @@ from tqdm import tqdm
 import json
 import time
 from googleapiclient.errors import HttpError
+'''
+evaluate the toxicity of output using respective api
+'''
 
 def evaluate_toxicity_score(rep_file, max_requests_per_minute=60):
     with open(rep_file, "r") as reader:

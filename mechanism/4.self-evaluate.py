@@ -4,6 +4,10 @@ from promptsLib import *
 from tqdm import tqdm
 import random
 
+'''
+MCMC QA compare for the outputs
+'''
+
 def self_evaluate(args, llm, tokenizer, log_folder, save_folder):
     print("log_folder: ", log_folder)
     print("save_folder: ", save_folder)

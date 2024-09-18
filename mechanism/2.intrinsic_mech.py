@@ -7,13 +7,17 @@ import random
 from promptsLib import *
 from openai import OpenAI
 import pickle
+'''
+mechanism result of intrinsic self-correction
+previous result required 
+'''
 
 ATTEN_ATTRI_STR, MLP_ATTRI_STR, HIDDEN_STATE_ATTRI_STR, INPUT_HIDDEN_STATE = "self_attn.o_proj", "down_proj", "post_attention_layernorm","input_layernorm"
 
 attention_module_list = [i.strip() for i in open("module.name.txt") if ATTEN_ATTRI_STR in i]
 mlp_module_list = [i.strip() for i in open("module.name.txt") if MLP_ATTRI_STR in i]
 hidden_state_module_list = [i.strip() for i in open("module.name.txt") if HIDDEN_STATE_ATTRI_STR in i]
-
+"""
 client = OpenAI(api_key="sk-fb368ecf4caf4f7686a75b97f4f2c7ed", base_url="https://api.deepseek.com")
 def get_feedback(client, answer, sentence):
     response = client.chat.completions.create(
@@ -25,7 +29,7 @@ def get_feedback(client, answer, sentence):
         stream=False
     )
     return response.choices[0].message.content
-
+"""
 
 @torch.no_grad()
 def get_probing_result_toxicity(args, tokenizer, llm, log_folder, save_folder, target_module):
@@ -98,6 +102,12 @@ def get_probing_result_toxicity(args, tokenizer, llm, log_folder, save_folder, t
         hook.remove()
     return hs_probing_list
 
+
+def get_moral_direction(args,tokenizer,llm,target_module):
+    
+
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -113,7 +123,7 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
 
-    tokenizer, llm = init_model(args)
+    tokenizer, llm = init_model(args)#
     llm.eval()
     log_folder = "logs/intrinsic/"
     save_folder = "results/intrinsic/"

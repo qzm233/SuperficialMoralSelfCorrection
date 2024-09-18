@@ -7,6 +7,10 @@ import random
 from promptsLib import *
 from openai import OpenAI
 import pickle
+'''
+mechanism result of self-correction with external feedback
+previous result required 
+'''
 
 ATTEN_ATTRI_STR, MLP_ATTRI_STR, HIDDEN_STATE_ATTRI_STR, INPUT_HIDDEN_STATE = "self_attn.o_proj", "down_proj", "post_attention_layernorm","input_layernorm"
 
