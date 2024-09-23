@@ -11,7 +11,7 @@ import pickle
 realtoxicity intrinsic self-correction inference
 2000 sample
 '''
-
+"""
 client = OpenAI(api_key="sk-fb368ecf4caf4f7686a75b97f4f2c7ed", base_url="https://api.deepseek.com")
 def get_feedback(client, answer, sentence):
     response = client.chat.completions.create(
@@ -95,7 +95,7 @@ if __name__ == "__main__":
         print("not implemented yet")
         
                 
-    
+"""
     
     
     

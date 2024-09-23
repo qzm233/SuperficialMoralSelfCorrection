@@ -67,7 +67,7 @@ def init_model(args):
         #      save_dir
         # )
         tokenizer = AutoTokenizer.from_pretrained(
-            "mistralai/Mistral-7B-v0.1", cache_dir=cache_dir
+            "mistralai/Mistral-7B-Instruct-v0.2", cache_dir=cache_dir
         )
         tokenizer.padding_side = "left"
         tokenizer.truncation_side = "left"
@@ -79,7 +79,7 @@ def init_model(args):
         #      save_dir, torch_dtype=torch.bfloat16
         # )
         model = AutoModelForCausalLM.from_pretrained(
-            "alignment-handbook/zephyr-7b-sft-full", cache_dir=cache_dir
+            "mistralai/Mistral-7B-Instruct-v0.2", cache_dir=cache_dir
         )
         return tokenizer, model.to(device)
 
@@ -194,7 +194,7 @@ def load_winogender():
 
 def load_bbq(args):
     dataset = []
-    for file in glob.glob("../data/bbq.*.txt"):
+    for file in glob.glob("../data/BBQ/bbq.Sexual_orientation.txt"):
         bias_type = file.split("/")[-1].split(".")[1].lower()
         if not args.bias in bias_type: continue
 
