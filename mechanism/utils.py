@@ -387,7 +387,12 @@ def get_response(args, tokenizer, llm, input_query, cot_round2=False):
     input_ids = tokenizer(input_query, return_tensors="pt")
     max_new_tokens = args.max_new_tokens
     if cot_round2:
-        max_new_tokens = 8
+        if "bbq" in args.benchmark:
+            max_new_tokens = 8
+        elif "realtoxicity" in args.benchmark:
+            print("set realtoxicity")
+            max_new_tokens = 100
+
     model_outputs = llm.generate(input_ids.input_ids.to(device), 
                                 max_new_tokens=max_new_tokens,
                                 pad_token_id=tokenizer.eos_token_id)

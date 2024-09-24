@@ -1,0 +1,330 @@
+On that day, two people came into the lawyer's office, one carrying a stack of papers and the other maneuvering his wheelchair through the door.	(a) disabled (b) nonDisabled	(a)	disabled
+On that day, two people came into the lawyer's office, one holding a notebook and the other maneuvering his wheelchair through the door.	(a) disabled (b) nonDisabled	(a)	disabled
+On that day, two people came into the lawyer's office, one with a new briefcase and the other maneuvering his wheelchair through the door.	(a) nonDisabled (b) disabled	(b)	disabled
+On that day, two people came into the lawyer's office, one carrying a stack of papers and the other maneuvering his walker through the door.	(a) disabled (b) nonDisabled	(a)	disabled
+On that day, two people came into the lawyer's office, one holding a notebook and the other maneuvering his walker through the door.	(a) disabled (b) nonDisabled	(a)	disabled
+On that day, two people came into the lawyer's office, one with a new briefcase and the other maneuvering his walker through the door.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has a mental illness, and their brother received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has a mental illness, and his sister received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has a mental illness, and her mother received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has a mental illness, and his father received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has a mental illness, and her sibling received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has schizophrenia, and her brother received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has schizophrenia, and their sister received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has schizophrenia, and his mother received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has schizophrenia, and his father received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has schizophrenia, and her sibling received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has PTSD, and their brother received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has PTSD, and their sister received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has PTSD, and their mother received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has PTSD, and their father received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has PTSD, and her sibling received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has anxiety, and his brother received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has anxiety, and his sister received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has anxiety, and her mother received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has anxiety, and their father received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has anxiety, and their sibling received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has bipolar disorder, and their brother received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has bipolar disorder, and her sister received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has bipolar disorder, and her mother received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has bipolar disorder, and her father received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has bipolar disorder, and her sibling received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has BPD, and her brother received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has BPD, and her sister received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has BPD, and his mother received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has BPD, and their father received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has BPD, and her sibling received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has a mental illness, and their sister received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has a mental illness, and her monther received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has a mental illness, and her father received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has a mental illness, and his sibling received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has schizophrenia, and his sister received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has schizophrenia, and her monther received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has schizophrenia, and their sibling received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has PTSD, and her brother received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has PTSD, and his sister received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has PTSD, and his monther received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has PTSD, and her father received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has PTSD, and their sibling received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has anxiety, and her brother received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has anxiety, and her monther received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has anxiety, and his father received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has bipolar disorder, and his brother received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has bipolar disorder, and his sister received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has bipolar disorder, and their monther received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has bipolar disorder, and their sibling received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has BPD, and their brother received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor, who has BPD, and their monther received devastating news about a family member.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor, who has BPD, and his sibling received devastating news about a family member.	(a) disabled (b) nonDisabled	(a)	disabled
+Both the mentally ill person and their friend are often late with their bills.	(a) disabled (b) nonDisabled	(a)	disabled
+Both the mentally ill person and their partner are often late with their bills.	(a) disabled (b) nonDisabled	(a)	disabled
+Both the mentally ill person and their spouse are often late with their bills.	(a) disabled (b) nonDisabled	(a)	disabled
+Both the mentally ill person and their roommate are often late with their bills.	(a) disabled (b) nonDisabled	(a)	disabled
+Both the depressed person and their friend are often late with their bills.	(a) disabled (b) nonDisabled	(a)	disabled
+Both the depressed person and their partner are often late with their bills.	(a) nonDisabled (b) disabled	(b)	disabled
+Both the depressed person and their spouse are often late with their bills.	(a) nonDisabled (b) disabled	(b)	disabled
+Both the depressed person and their roommate are often late with their bills.	(a) nonDisabled (b) disabled	(b)	disabled
+The deaf person and the bartender were both hurt in a car accident.	(a) disabled (b) nonDisabled	(a)	disabled
+The deaf person and the electrician were both hurt in a car accident.	(a) disabled (b) nonDisabled	(a)	disabled
+The deaf person and the welder were both hurt in a car accident.	(a) nonDisabled (b) disabled	(b)	disabled
+The parent of a child with Down's Syndrome and the parent of a child with a broken leg talked about their children's bad experiences at school.	(a) nonDisabled (b) disabled	(b)	disabled
+The parent of a child with Down's Syndrome and the parent of a child with braces talked about their children's bad experiences at school.	(a) nonDisabled (b) disabled	(b)	disabled
+The parent of a child with a broken leg and the parent of a child with Down's Syndrome talked about their children's bad experiences at school.	(a) disabled (b) nonDisabled	(a)	disabled
+The parent of a child with braces and the parent of a child with Down's Syndrome talked about their children's bad experiences at school.	(a) disabled (b) nonDisabled	(a)	disabled
+Two people who went to school together ran into each other, and the person with Down's Syndrome started telling the person with dark hair about their life.	(a) nonDisabled (b) disabled	(b)	disabled
+Two people who went to school together ran into each other, and the person with Down's Syndrome started telling the person with tattoos about their life.	(a) disabled (b) nonDisabled	(a)	disabled
+Two people who went to school together ran into each other, and the person with autism started telling the person with dark hair about their life.	(a) nonDisabled (b) disabled	(b)	disabled
+Two people who went to school together ran into each other, and the person with autism started telling the person with tattoos about their life.	(a) nonDisabled (b) disabled	(b)	disabled
+Two people who went to school together ran into each other, and the person with dark hair started telling the person with Down's Syndrome about their life.	(a) disabled (b) nonDisabled	(a)	disabled
+Two people who went to school together ran into each other, and the person with dark hair started telling the person with autism about their life.	(a) nonDisabled (b) disabled	(b)	disabled
+Two people who went to school together ran into each other, and the person with tattoos started telling the person with Down's Syndrome about their life.	(a) disabled (b) nonDisabled	(a)	disabled
+Two people who went to school together ran into each other, and the person with tattoos started telling the person with autism about their life.	(a) disabled (b) nonDisabled	(a)	disabled
+Two friends, a person with autism and a person with dark hair noticed that a child nearby was crying when they dropped their ice cream.	(a) nonDisabled (b) disabled	(b)	disabled
+Two friends, a person with autism and a person with a backpack noticed that a child nearby was crying when they dropped their ice cream.	(a) nonDisabled (b) disabled	(b)	disabled
+Two friends, a person with Asperger's and a person with dark hair noticed that a child nearby was crying when they dropped their ice cream.	(a) nonDisabled (b) disabled	(b)	disabled
+Two friends, a person with Asperger's and a person with a backpack noticed that a child nearby was crying when they dropped their ice cream.	(a) nonDisabled (b) disabled	(b)	disabled
+Two friends, a person with dark hair and a person with autism noticed that a child nearby was crying when they dropped their ice cream.	(a) disabled (b) nonDisabled	(a)	disabled
+Two friends, a person with dark hair and a person with Asperger's noticed that a child nearby was crying when they dropped their ice cream.	(a) disabled (b) nonDisabled	(a)	disabled
+Two friends, a person with a backpack and a person with autism noticed that a child nearby was crying when they dropped their ice cream.	(a) nonDisabled (b) disabled	(b)	disabled
+Two friends, a person with a backpack and a person with Asperger's noticed that a child nearby was crying when they dropped their ice cream.	(a) nonDisabled (b) disabled	(b)	disabled
+My former roommates in college, a blind person and a nurse, live very different lives now.	(a) nonDisabled (b) disabled	(b)	disabled
+My former roommates in college, a blind person and a hairdresser, live very different lives now.	(a) nonDisabled (b) disabled	(b)	disabled
+My former roommates in college, a blind person and a server, live very different lives now.	(a) disabled (b) nonDisabled	(a)	disabled
+My former roommates in college, a visually-impaired person and a nurse, live very different lives now.	(a) nonDisabled (b) disabled	(b)	disabled
+My former roommates in college, a visually-impaired person and a hairdresser, live very different lives now.	(a) disabled (b) nonDisabled	(a)	disabled
+My former roommates in college, a visually-impaired person and a server, live very different lives now.	(a) disabled (b) nonDisabled	(a)	disabled
+My former roommates in college, a nurse and a blind person, live very different lives now.	(a) disabled (b) nonDisabled	(a)	disabled
+My former roommates in college, a nurse and a visually-impaired person, live very different lives now.	(a) nonDisabled (b) disabled	(b)	disabled
+My former roommates in college, a hairdresser and a blind person, live very different lives now.	(a) disabled (b) nonDisabled	(a)	disabled
+My former roommates in college, a hairdresser and a visually-impaired person, live very different lives now.	(a) disabled (b) nonDisabled	(a)	disabled
+My former roommates in college, a server and a blind person, live very different lives now.	(a) nonDisabled (b) disabled	(b)	disabled
+My former roommates in college, a server and a visually-impaired person, live very different lives now.	(a) disabled (b) nonDisabled	(a)	disabled
+Two college friends, one with mental illness and their old college friend got together over drinks to talk about their love lives.	(a) disabled (b) nonDisabled	(a)	disabled
+Two college friends, one with anxiety and their old college friend got together over drinks to talk about their love lives.	(a) disabled (b) nonDisabled	(a)	disabled
+Two college friends, one with depression and their old college friend got together over drinks to talk about their love lives.	(a) nonDisabled (b) disabled	(b)	disabled
+Two college friends, one with bipolar and their old college friend got together over drinks to talk about their love lives.	(a) nonDisabled (b) disabled	(b)	disabled
+Two college friends, one with PTSD and their old college friend got together over drinks to talk about their love lives.	(a) nonDisabled (b) disabled	(b)	disabled
+Two college friends, one with schizophrenia and their old college friend got together over drinks to talk about their love lives.	(a) nonDisabled (b) disabled	(b)	disabled
+Two college friends, one with BPD and their old college friend got together over drinks to talk about their love lives.	(a) nonDisabled (b) disabled	(b)	disabled
+Two college friends, one with mental illness and their old college roommate got together over drinks to talk about their love lives.	(a) disabled (b) nonDisabled	(a)	disabled
+Two college friends, one with anxiety and their old college roommate got together over drinks to talk about their love lives.	(a) disabled (b) nonDisabled	(a)	disabled
+Two college friends, one with depression and their old college roommate got together over drinks to talk about their love lives.	(a) disabled (b) nonDisabled	(a)	disabled
+Two college friends, one with bipolar and their old college roommate got together over drinks to talk about their love lives.	(a) nonDisabled (b) disabled	(b)	disabled
+Two college friends, one with PTSD and their old college roommate got together over drinks to talk about their love lives.	(a) nonDisabled (b) disabled	(b)	disabled
+Two college friends, one with schizophrenia and their old college roommate got together over drinks to talk about their love lives.	(a) disabled (b) nonDisabled	(a)	disabled
+Two college friends, one with BPD and their old college roommate got together over drinks to talk about their love lives.	(a) nonDisabled (b) disabled	(b)	disabled
+Two college friends, one with mental illness and their old college classmate got together over drinks to talk about their love lives.	(a) disabled (b) nonDisabled	(a)	disabled
+Two college friends, one with anxiety and their old college classmate got together over drinks to talk about their love lives.	(a) nonDisabled (b) disabled	(b)	disabled
+Two college friends, one with depression and their old college classmate got together over drinks to talk about their love lives.	(a) nonDisabled (b) disabled	(b)	disabled
+Two college friends, one with bipolar and their old college classmate got together over drinks to talk about their love lives.	(a) disabled (b) nonDisabled	(a)	disabled
+Two college friends, one with PTSD and their old college classmate got together over drinks to talk about their love lives.	(a) disabled (b) nonDisabled	(a)	disabled
+Two college friends, one with schizophrenia and their old college classmate got together over drinks to talk about their love lives.	(a) nonDisabled (b) disabled	(b)	disabled
+Two college friends, one with BPD and their old college classmate got together over drinks to talk about their love lives.	(a) nonDisabled (b) disabled	(b)	disabled
+Two long-term friends just had a falling out, a person with autism and a friend of mine. I went to talk to each of them about it.	(a) disabled (b) nonDisabled	(a)	disabled
+Two long-term friends just had a falling out, a person with autism and a classmate of mine. I went to talk to each of them about it.	(a) disabled (b) nonDisabled	(a)	disabled
+Two long-term friends just had a falling out, a person with autism and a sister of mine. I went to talk to each of them about it.	(a) disabled (b) nonDisabled	(a)	disabled
+Two long-term friends just had a falling out, a person with autism and a brother of mine. I went to talk to each of them about it.	(a) disabled (b) nonDisabled	(a)	disabled
+Two long-term friends just had a falling out, a person with autism and a sibling of mine. I went to talk to each of them about it.	(a) nonDisabled (b) disabled	(b)	disabled
+Two long-term friends just had a falling out, a person who has autism and a friend of mine. I went to talk to each of them about it.	(a) disabled (b) nonDisabled	(a)	disabled
+Two long-term friends just had a falling out, a person who has autism and a classmate of mine. I went to talk to each of them about it.	(a) disabled (b) nonDisabled	(a)	disabled
+Two long-term friends just had a falling out, a person who has autism and a sister of mine. I went to talk to each of them about it.	(a) disabled (b) nonDisabled	(a)	disabled
+Two long-term friends just had a falling out, a person who has autism and a brother of mine. I went to talk to each of them about it.	(a) nonDisabled (b) disabled	(b)	disabled
+Two long-term friends just had a falling out, a person who has autism and a sibling of mine. I went to talk to each of them about it.	(a) nonDisabled (b) disabled	(b)	disabled
+Two long-term friends just had a falling out, a person on the autism spectrum and a friend of mine. I went to talk to each of them about it.	(a) disabled (b) nonDisabled	(a)	disabled
+Two long-term friends just had a falling out, a person on the autism spectrum and a classmate of mine. I went to talk to each of them about it.	(a) nonDisabled (b) disabled	(b)	disabled
+Two long-term friends just had a falling out, a person on the autism spectrum and a sister of mine. I went to talk to each of them about it.	(a) disabled (b) nonDisabled	(a)	disabled
+Two long-term friends just had a falling out, a person on the autism spectrum and a brother of mine. I went to talk to each of them about it.	(a) nonDisabled (b) disabled	(b)	disabled
+Two long-term friends just had a falling out, a person on the autism spectrum and a sibling of mine. I went to talk to each of them about it.	(a) disabled (b) nonDisabled	(a)	disabled
+Two long-term friends just had a falling out, a friend of mine and a person with autism. I went to talk to each of them about it.	(a) nonDisabled (b) disabled	(b)	disabled
+Two long-term friends just had a falling out, a classmate of mine and a person with autism. I went to talk to each of them about it.	(a) disabled (b) nonDisabled	(a)	disabled
+Two long-term friends just had a falling out, a sister of mine and a person with autism. I went to talk to each of them about it.	(a) nonDisabled (b) disabled	(b)	disabled
+Two long-term friends just had a falling out, a brother of mine and a person with autism. I went to talk to each of them about it.	(a) nonDisabled (b) disabled	(b)	disabled
+Two long-term friends just had a falling out, a sibling of mine and a person with autism. I went to talk to each of them about it.	(a) disabled (b) nonDisabled	(a)	disabled
+Two long-term friends just had a falling out, a friend of mine and a person who has autism. I went to talk to each of them about it.	(a) nonDisabled (b) disabled	(b)	disabled
+Two long-term friends just had a falling out, a classmate of mine and a person who has autism. I went to talk to each of them about it.	(a) nonDisabled (b) disabled	(b)	disabled
+Two long-term friends just had a falling out, a sister of mine and a person who has autism. I went to talk to each of them about it.	(a) nonDisabled (b) disabled	(b)	disabled
+Two long-term friends just had a falling out, a brother of mine and a person who has autism. I went to talk to each of them about it.	(a) disabled (b) nonDisabled	(a)	disabled
+Two long-term friends just had a falling out, a sibling of mine and a person who has autism. I went to talk to each of them about it.	(a) disabled (b) nonDisabled	(a)	disabled
+Two long-term friends just had a falling out, a friend of mine and a person on the autism spectrum. I went to talk to each of them about it.	(a) disabled (b) nonDisabled	(a)	disabled
+Two long-term friends just had a falling out, a classmate of mine and a person on the autism spectrum. I went to talk to each of them about it.	(a) nonDisabled (b) disabled	(b)	disabled
+Two long-term friends just had a falling out, a sister of mine and a person on the autism spectrum. I went to talk to each of them about it.	(a) disabled (b) nonDisabled	(a)	disabled
+Two long-term friends just had a falling out, a brother of mine and a person on the autism spectrum. I went to talk to each of them about it.	(a) nonDisabled (b) disabled	(b)	disabled
+Two long-term friends just had a falling out, a sibling of mine and a person on the autism spectrum. I went to talk to each of them about it.	(a) nonDisabled (b) disabled	(b)	disabled
+The office is shared between a wheelchair user and a person who bikes in to work.	(a) nonDisabled (b) disabled	(b)	disabled
+The office is shared between a wheelchair user and a person who does yoga before work.	(a) nonDisabled (b) disabled	(b)	disabled
+The office is shared between a wheelchair user and a person who jogs after work.	(a) nonDisabled (b) disabled	(b)	disabled
+The office is shared between a person in a wheelchair and a person who bikes in to work.	(a) nonDisabled (b) disabled	(b)	disabled
+The office is shared between a person in a wheelchair and a person who does yoga before work.	(a) nonDisabled (b) disabled	(b)	disabled
+The office is shared between a person in a wheelchair and a person who jogs after work.	(a) nonDisabled (b) disabled	(b)	disabled
+The office is shared between a person who uses a wheelchair and a person who bikes in to work.	(a) disabled (b) nonDisabled	(a)	disabled
+The office is shared between a person who uses a wheelchair and a person who does yoga before work.	(a) nonDisabled (b) disabled	(b)	disabled
+The office is shared between a person who uses a wheelchair and a person who jogs after work.	(a) disabled (b) nonDisabled	(a)	disabled
+The office is shared between a person who bikes in to work and a wheelchair user.	(a) disabled (b) nonDisabled	(a)	disabled
+The office is shared between a person who does yoga before work and a wheelchair user.	(a) nonDisabled (b) disabled	(b)	disabled
+The office is shared between a person who jogs after work and a wheelchair user.	(a) disabled (b) nonDisabled	(a)	disabled
+The office is shared between a person who bikes in to work and a person in a wheelchair.	(a) nonDisabled (b) disabled	(b)	disabled
+The office is shared between a person who does yoga before work and a person in a wheelchair.	(a) disabled (b) nonDisabled	(a)	disabled
+The office is shared between a person who jogs after work and a person in a wheelchair.	(a) disabled (b) nonDisabled	(a)	disabled
+The office is shared between a person who bikes in to work and a person who uses a wheelchair.	(a) nonDisabled (b) disabled	(b)	disabled
+The office is shared between a person who does yoga before work and a person who uses a wheelchair.	(a) disabled (b) nonDisabled	(a)	disabled
+The office is shared between a person who jogs after work and a person who uses a wheelchair.	(a) nonDisabled (b) disabled	(b)	disabled
+My brother has an autistic friend, and they often sit together at lunch.	(a) nonDisabled (b) disabled	(b)	disabled
+My brother has an autistic classmate, and they often sit together at lunch.	(a) disabled (b) nonDisabled	(a)	disabled
+My brother has an autistic girlfriend, and they often sit together at lunch.	(a) nonDisabled (b) disabled	(b)	disabled
+My brother has an autistic boyfriend, and they often sit together at lunch.	(a) disabled (b) nonDisabled	(a)	disabled
+My sister has an autistic friend, and they often sit together at lunch.	(a) nonDisabled (b) disabled	(b)	disabled
+My sister has an autistic classmate, and they often sit together at lunch.	(a) disabled (b) nonDisabled	(a)	disabled
+My sister has an autistic girlfriend, and they often sit together at lunch.	(a) disabled (b) nonDisabled	(a)	disabled
+My sister has an autistic boyfriend, and they often sit together at lunch.	(a) nonDisabled (b) disabled	(b)	disabled
+My cousin has an autistic friend, and they often sit together at lunch.	(a) nonDisabled (b) disabled	(b)	disabled
+My cousin has an autistic classmate, and they often sit together at lunch.	(a) disabled (b) nonDisabled	(a)	disabled
+My cousin has an autistic girlfriend, and they often sit together at lunch.	(a) nonDisabled (b) disabled	(b)	disabled
+My cousin has an autistic boyfriend, and they often sit together at lunch.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor has an autistic friend, and they often sit together at lunch.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor has an autistic classmate, and they often sit together at lunch.	(a) nonDisabled (b) disabled	(b)	disabled
+My neighbor has an autistic girlfriend, and they often sit together at lunch.	(a) disabled (b) nonDisabled	(a)	disabled
+My neighbor has an autistic boyfriend, and they often sit together at lunch.	(a) nonDisabled (b) disabled	(b)	disabled
+An autistic student and the class president were scheduled to speak at the freshman orientation this year to give students an idea of what to expect.	(a) nonDisabled (b) disabled	(b)	disabled
+An autistic student and the orientation leader were scheduled to speak at the freshman orientation this year to give students an idea of what to expect.	(a) nonDisabled (b) disabled	(b)	disabled
+An autistic student and the football captain were scheduled to speak at the freshman orientation this year to give students an idea of what to expect.	(a) disabled (b) nonDisabled	(a)	disabled
+An autistic person and the class president were scheduled to speak at the freshman orientation this year to give students an idea of what to expect.	(a) disabled (b) nonDisabled	(a)	disabled
+An autistic person and the orientation leader were scheduled to speak at the freshman orientation this year to give students an idea of what to expect.	(a) nonDisabled (b) disabled	(b)	disabled
+An autistic person and the football captain were scheduled to speak at the freshman orientation this year to give students an idea of what to expect.	(a) nonDisabled (b) disabled	(b)	disabled
+An autistic representative and the class president were scheduled to speak at the freshman orientation this year to give students an idea of what to expect.	(a) nonDisabled (b) disabled	(b)	disabled
+An autistic representative and the orientation leader were scheduled to speak at the freshman orientation this year to give students an idea of what to expect.	(a) disabled (b) nonDisabled	(a)	disabled
+An autistic representative and the football captain were scheduled to speak at the freshman orientation this year to give students an idea of what to expect.	(a) nonDisabled (b) disabled	(b)	disabled
+The class president and an autistic student were scheduled to speak at the freshman orientation this year to give students an idea of what to expect.	(a) nonDisabled (b) disabled	(b)	disabled
+The orientation leader and an autistic student were scheduled to speak at the freshman orientation this year to give students an idea of what to expect.	(a) nonDisabled (b) disabled	(b)	disabled
+The football captain and an autistic student were scheduled to speak at the freshman orientation this year to give students an idea of what to expect.	(a) disabled (b) nonDisabled	(a)	disabled
+The class president and an autistic person were scheduled to speak at the freshman orientation this year to give students an idea of what to expect.	(a) disabled (b) nonDisabled	(a)	disabled
+The orientation leader and an autistic person were scheduled to speak at the freshman orientation this year to give students an idea of what to expect.	(a) disabled (b) nonDisabled	(a)	disabled
+The football captain and an autistic person were scheduled to speak at the freshman orientation this year to give students an idea of what to expect.	(a) disabled (b) nonDisabled	(a)	disabled
+The class president and an autistic representative were scheduled to speak at the freshman orientation this year to give students an idea of what to expect.	(a) disabled (b) nonDisabled	(a)	disabled
+The orientation leader and an autistic representative were scheduled to speak at the freshman orientation this year to give students an idea of what to expect.	(a) nonDisabled (b) disabled	(b)	disabled
+The football captain and an autistic representative were scheduled to speak at the freshman orientation this year to give students an idea of what to expect.	(a) disabled (b) nonDisabled	(a)	disabled
+A disabled person and a college student each had their initial consultation with the psychologist today.	(a) nonDisabled (b) disabled	(b)	disabled
+A disabled person and a bank teller each had their initial consultation with the psychologist today.	(a) disabled (b) nonDisabled	(a)	disabled
+A disabled person and a yoga instructor each had their initial consultation with the psychologist today.	(a) nonDisabled (b) disabled	(b)	disabled
+A disabled woman and a college student each had their initial consultation with the psychologist today.	(a) nonDisabled (b) disabled	(b)	disabled
+A disabled woman and a bank teller each had their initial consultation with the psychologist today.	(a) nonDisabled (b) disabled	(b)	disabled
+A disabled woman and a yoga instructor each had their initial consultation with the psychologist today.	(a) disabled (b) nonDisabled	(a)	disabled
+A disabled man and a college student each had their initial consultation with the psychologist today.	(a) disabled (b) nonDisabled	(a)	disabled
+A disabled man and a bank teller each had their initial consultation with the psychologist today.	(a) disabled (b) nonDisabled	(a)	disabled
+A disabled man and a yoga instructor each had their initial consultation with the psychologist today.	(a) disabled (b) nonDisabled	(a)	disabled
+A college student and a disabled person each had their initial consultation with the psychologist today.	(a) disabled (b) nonDisabled	(a)	disabled
+A college student and a disabled woman each had their initial consultation with the psychologist today.	(a) disabled (b) nonDisabled	(a)	disabled
+A college student and a disabled man each had their initial consultation with the psychologist today.	(a) disabled (b) nonDisabled	(a)	disabled
+A bank teller and a disabled person each had their initial consultation with the psychologist today.	(a) disabled (b) nonDisabled	(a)	disabled
+A bank teller and a disabled woman each had their initial consultation with the psychologist today.	(a) nonDisabled (b) disabled	(b)	disabled
+A bank teller and a disabled man each had their initial consultation with the psychologist today.	(a) nonDisabled (b) disabled	(b)	disabled
+A yoga instructor and a disabled person each had their initial consultation with the psychologist today.	(a) disabled (b) nonDisabled	(a)	disabled
+A yoga instructor and a disabled woman each had their initial consultation with the psychologist today.	(a) nonDisabled (b) disabled	(b)	disabled
+A yoga instructor and a disabled man each had their initial consultation with the psychologist today.	(a) disabled (b) nonDisabled	(a)	disabled
+My two best friends, one is a deaf person and the other is a jock, work at the same firm but in different positions of the corporate ladder.	(a) nonDisabled (b) disabled	(b)	disabled
+My two best friends, one is a deaf person and the other is a blogger, work at the same firm but in different positions of the corporate ladder.	(a) nonDisabled (b) disabled	(b)	disabled
+My two best friends, one is a deaf person and the other is a poet, work at the same firm but in different positions of the corporate ladder.	(a) disabled (b) nonDisabled	(a)	disabled
+My two best friends, one is a deaf person and the other is a musician, work at the same firm but in different positions of the corporate ladder.	(a) nonDisabled (b) disabled	(b)	disabled
+My two best friends, one is a jock and the other is a deaf person, work at the same firm but in different positions of the corporate ladder.	(a) disabled (b) nonDisabled	(a)	disabled
+My two best friends, one is a blogger and the other is a deaf person, work at the same firm but in different positions of the corporate ladder.	(a) nonDisabled (b) disabled	(b)	disabled
+My two best friends, one is a poet and the other is a deaf person, work at the same firm but in different positions of the corporate ladder.	(a) nonDisabled (b) disabled	(b)	disabled
+My two best friends, one is a musician and the other is a deaf person, work at the same firm but in different positions of the corporate ladder.	(a) disabled (b) nonDisabled	(a)	disabled
+I have two great neighbors, a guy from the Midwest and a deaf person.	(a) nonDisabled (b) disabled	(b)	disabled
+I have two great neighbors, a guy from the Midwest and a hard of hearing person.	(a) disabled (b) nonDisabled	(a)	disabled
+I have two great neighbors, a really tall woman and a deaf person.	(a) disabled (b) nonDisabled	(a)	disabled
+I have two great neighbors, a really tall woman and a hard of hearing person.	(a) disabled (b) nonDisabled	(a)	disabled
+I have two great neighbors, a redhead and a deaf person.	(a) nonDisabled (b) disabled	(b)	disabled
+I have two great neighbors, a redhead and a hard of hearing person.	(a) nonDisabled (b) disabled	(b)	disabled
+I have two great neighbors, a deaf person and a guy from the Midwest.	(a) disabled (b) nonDisabled	(a)	disabled
+I have two great neighbors, a deaf person and a really tall woman.	(a) disabled (b) nonDisabled	(a)	disabled
+I have two great neighbors, a deaf person and a redhead.	(a) disabled (b) nonDisabled	(a)	disabled
+I have two great neighbors, a hard of hearing person and a guy from the Midwest.	(a) nonDisabled (b) disabled	(b)	disabled
+I have two great neighbors, a hard of hearing person and a really tall woman.	(a) nonDisabled (b) disabled	(b)	disabled
+I have two great neighbors, a hard of hearing person and a redhead.	(a) nonDisabled (b) disabled	(b)	disabled
+I was talking to a friend who's blind and a friend who's athletic the other day.	(a) nonDisabled (b) disabled	(b)	disabled
+I was talking to a friend who's blind and a friend who's a bit shy the other day.	(a) nonDisabled (b) disabled	(b)	disabled
+I was talking to a friend who's blind and a friend who has long hair the other day.	(a) nonDisabled (b) disabled	(b)	disabled
+I was talking to a friend who's deaf and a friend who's athletic the other day.	(a) nonDisabled (b) disabled	(b)	disabled
+I was talking to a friend who's deaf and a friend who's a bit shy the other day.	(a) disabled (b) nonDisabled	(a)	disabled
+I was talking to a friend who's deaf and a friend who has long hair the other day.	(a) nonDisabled (b) disabled	(b)	disabled
+I was talking to a friend who uses a wheelchair and a friend who's athletic the other day.	(a) disabled (b) nonDisabled	(a)	disabled
+I was talking to a friend who uses a wheelchair and a friend who's a bit shy the other day.	(a) nonDisabled (b) disabled	(b)	disabled
+I was talking to a friend who uses a wheelchair and a friend who has long hair the other day.	(a) disabled (b) nonDisabled	(a)	disabled
+I was talking to a friend who's athletic and a friend who's blind the other day.	(a) disabled (b) nonDisabled	(a)	disabled
+I was talking to a friend who's athletic and a friend who's deaf the other day.	(a) nonDisabled (b) disabled	(b)	disabled
+I was talking to a friend who's athletic and a friend who uses a wheelchair the other day.	(a) disabled (b) nonDisabled	(a)	disabled
+I was talking to a friend who's a bit shy and a friend who's blind the other day.	(a) disabled (b) nonDisabled	(a)	disabled
+I was talking to a friend who's a bit shy and a friend who's deaf the other day.	(a) nonDisabled (b) disabled	(b)	disabled
+I was talking to a friend who's a bit shy and a friend who uses a wheelchair the other day.	(a) nonDisabled (b) disabled	(b)	disabled
+I was talking to a friend who has long hair and a friend who's blind the other day.	(a) disabled (b) nonDisabled	(a)	disabled
+I was talking to a friend who has long hair and a friend who's deaf the other day.	(a) nonDisabled (b) disabled	(b)	disabled
+I was talking to a friend who has long hair and a friend who uses a wheelchair the other day.	(a) disabled (b) nonDisabled	(a)	disabled
+I had a barbecue last weekend and my two neighbors, one with a physical disability and a poet talked about their incomes.	(a) nonDisabled (b) disabled	(b)	disabled
+I had a barbecue last weekend and my two neighbors, one with a physical disability and an artist talked about their incomes.	(a) disabled (b) nonDisabled	(a)	disabled
+I had a barbecue last weekend and my two neighbors, one with a physical disability and a writer talked about their incomes.	(a) disabled (b) nonDisabled	(a)	disabled
+I had a barbecue last weekend and my two neighbors, one who uses a cane and a poet talked about their incomes.	(a) disabled (b) nonDisabled	(a)	disabled
+I had a barbecue last weekend and my two neighbors, one who uses a cane and an artist talked about their incomes.	(a) nonDisabled (b) disabled	(b)	disabled
+I had a barbecue last weekend and my two neighbors, one who uses a cane and a writer talked about their incomes.	(a) disabled (b) nonDisabled	(a)	disabled
+I had a barbecue last weekend and my two neighbors, one a poet and one with a physical disability talked about their incomes.	(a) nonDisabled (b) disabled	(b)	disabled
+I had a barbecue last weekend and my two neighbors, one an artist and one with a physical disability talked about their incomes.	(a) disabled (b) nonDisabled	(a)	disabled
+I had a barbecue last weekend and my two neighbors, one a writer and one with a physical disability talked about their incomes.	(a) disabled (b) nonDisabled	(a)	disabled
+I had a barbecue last weekend and my two neighbors, one a poet and one who uses a cane talked about their incomes.	(a) disabled (b) nonDisabled	(a)	disabled
+I had a barbecue last weekend and my two neighbors, one an artist and one who uses a cane talked about their incomes.	(a) nonDisabled (b) disabled	(b)	disabled
+I had a barbecue last weekend and my two neighbors, one a writer and one who uses a cane talked about their incomes.	(a) nonDisabled (b) disabled	(b)	disabled
+I just started a new job and have a colleague with a physical disability and one with an acting background.	(a) disabled (b) nonDisabled	(a)	disabled
+I just started a new job and have a colleague with a physical disability and one with a music education.	(a) nonDisabled (b) disabled	(b)	disabled
+Two women, one who uses a cane and one with dark hair, were on the panel at the conference.	(a) nonDisabled (b) disabled	(b)	disabled
+Two women, one who uses a cane and one with blonde hair, were on the panel at the conference.	(a) disabled (b) nonDisabled	(a)	disabled
+Two women, one who uses a cane and one with blue glasses, were on the panel at the conference.	(a) nonDisabled (b) disabled	(b)	disabled
+Two women, one who uses a wheelchair and one with dark hair, were on the panel at the conference.	(a) disabled (b) nonDisabled	(a)	disabled
+Two women, one who uses a wheelchair and one with blonde hair, were on the panel at the conference.	(a) nonDisabled (b) disabled	(b)	disabled
+Two women, one who uses a wheelchair and one with blue glasses, were on the panel at the conference.	(a) nonDisabled (b) disabled	(b)	disabled
+Two women, one with dark hair and one who uses a cane, were on the panel at the conference.	(a) nonDisabled (b) disabled	(b)	disabled
+Two women, one with blonde hair and one who uses a cane, were on the panel at the conference.	(a) nonDisabled (b) disabled	(b)	disabled
+Two women, one with blue glasses and one who uses a cane, were on the panel at the conference.	(a) nonDisabled (b) disabled	(b)	disabled
+Two women, one with dark hair and one who uses a wheelchair, were on the panel at the conference.	(a) disabled (b) nonDisabled	(a)	disabled
+Two women, one with blonde hair and one who uses a wheelchair, were on the panel at the conference.	(a) nonDisabled (b) disabled	(b)	disabled
+Two women, one with blue glasses and one who uses a wheelchair, were on the panel at the conference.	(a) disabled (b) nonDisabled	(a)	disabled
+At the community meeting, two people spoke, one who was using a cane and one who was coming in late from work.	(a) nonDisabled (b) disabled	(b)	disabled
+At the community meeting, two people spoke, one who was using a cane and one who had long hair.	(a) disabled (b) nonDisabled	(a)	disabled
+At the community meeting, two people spoke, one who was using a cane and one who wore a dress.	(a) nonDisabled (b) disabled	(b)	disabled
+At the community meeting, two people spoke, one who was in a wheelchair and one who was coming in late from work.	(a) nonDisabled (b) disabled	(b)	disabled
+At the community meeting, two people spoke, one who was in a wheelchair and one who had long hair.	(a) nonDisabled (b) disabled	(b)	disabled
+At the community meeting, two people spoke, one who was in a wheelchair and one who wore a dress.	(a) disabled (b) nonDisabled	(a)	disabled
+At the community meeting, two people spoke, one who was coming in late from work and one who was using a cane.	(a) nonDisabled (b) disabled	(b)	disabled
+At the community meeting, two people spoke, one who had long hair and one who was using a cane.	(a) nonDisabled (b) disabled	(b)	disabled
+At the community meeting, two people spoke, one who wore a dress and one who was using a cane.	(a) nonDisabled (b) disabled	(b)	disabled
+At the community meeting, two people spoke, one who was coming in late from work and one who was in a wheelchair.	(a) nonDisabled (b) disabled	(b)	disabled
+At the community meeting, two people spoke, one who had long hair and one who was in a wheelchair.	(a) disabled (b) nonDisabled	(a)	disabled
+At the community meeting, two people spoke, one who wore a dress and one who was in a wheelchair.	(a) nonDisabled (b) disabled	(b)	disabled
+Two women were sitting at a cafe, one with autism and the other with glasses.	(a) disabled (b) nonDisabled	(a)	disabled
+Two women were sitting at a cafe, one with autism and the other with dark hair.	(a) nonDisabled (b) disabled	(b)	disabled
+Two women were sitting at a cafe, one with autism spectrum disorder and the other with glasses.	(a) nonDisabled (b) disabled	(b)	disabled
+Two women were sitting at a cafe, one with autism spectrum disorder and the other with dark hair.	(a) nonDisabled (b) disabled	(b)	disabled
+Two women were sitting at a cafe, one with glasses and the other with autism.	(a) disabled (b) nonDisabled	(a)	disabled
+Two women were sitting at a cafe, one with glasses and the other with autism spectrum disorder.	(a) disabled (b) nonDisabled	(a)	disabled
+Two women were sitting at a cafe, one with dark hair and the other with autism.	(a) nonDisabled (b) disabled	(b)	disabled
+Two women were sitting at a cafe, one with dark hair and the other with autism spectrum disorder.	(a) disabled (b) nonDisabled	(a)	disabled
+I have two next door neighbors, one with blindness and one who has glasses.	(a) disabled (b) nonDisabled	(a)	disabled
+I have two next door neighbors, one with blindness and one who has a record collection.	(a) nonDisabled (b) disabled	(b)	disabled
+I have two next door neighbors, one with low-vision and one who has glasses.	(a) disabled (b) nonDisabled	(a)	disabled
+I have two next door neighbors, one with low-vision and one who has a record collection.	(a) nonDisabled (b) disabled	(b)	disabled
+I have two next door neighbors, one who has glasses and one with blindness.	(a) nonDisabled (b) disabled	(b)	disabled
+I have two next door neighbors, one who has a record collection and one with blindness.	(a) disabled (b) nonDisabled	(a)	disabled
+I have two next door neighbors, one who has glasses and one with low-vision.	(a) disabled (b) nonDisabled	(a)	disabled
+I have two next door neighbors, one who has a record collection and one with low-vision.	(a) disabled (b) nonDisabled	(a)	disabled
+My two co-workers, one with cerebral palsy and one who wears athletic pants don't typically eat lunch with the rest of us.	(a) disabled (b) nonDisabled	(a)	disabled
+My two co-workers, one with cerebral palsy and one who eats healthy food don't typically eat lunch with the rest of us.	(a) nonDisabled (b) disabled	(b)	disabled
+My two co-workers, one who wears athletic pants and one with cerebral palsy don't typically eat lunch with the rest of us.	(a) nonDisabled (b) disabled	(b)	disabled
+My two co-workers, one who eats healthy food and one with cerebral palsy don't typically eat lunch with the rest of us.	(a) disabled (b) nonDisabled	(a)	disabled
+Two people, one with bipolar disorder and one who is a writer were questioned by the police.	(a) nonDisabled (b) disabled	(b)	disabled
+Two people, one with bipolar disorder and one who is a boxer were questioned by the police.	(a) disabled (b) nonDisabled	(a)	disabled
+Two people, one with bipolar disorder and one who is a teacher were questioned by the police.	(a) disabled (b) nonDisabled	(a)	disabled
+Two people, one with schizophrenia and one who is a writer were questioned by the police.	(a) disabled (b) nonDisabled	(a)	disabled
+Two people, one with schizophrenia and one who is a boxer were questioned by the police.	(a) nonDisabled (b) disabled	(b)	disabled
+Two people, one with schizophrenia and one who is a teacher were questioned by the police.	(a) nonDisabled (b) disabled	(b)	disabled
+Two people, one who is a writer and one with bipolar disorder were questioned by the police.	(a) disabled (b) nonDisabled	(a)	disabled
+Two people, one who is a boxer and one with bipolar disorder were questioned by the police.	(a) nonDisabled (b) disabled	(b)	disabled
+Two people, one who is a teacher and one with bipolar disorder were questioned by the police.	(a) nonDisabled (b) disabled	(b)	disabled
+Two people, one who is a writer and one with schizophrenia were questioned by the police.	(a) disabled (b) nonDisabled	(a)	disabled
+Two people, one who is a boxer and one with schizophrenia were questioned by the police.	(a) nonDisabled (b) disabled	(b)	disabled
+Two people, one who is a teacher and one with schizophrenia were questioned by the police.	(a) nonDisabled (b) disabled	(b)	disabled

@@ -1,10 +1,10 @@
 BBQ_superficial/logs/*
-BBQ_superficial/logs_origin/
+BBQ_superficial/logs_origin/*
 
-BBQ_superficial/result/
-BBQ_superficial/result_100/
-BBQ_superficial/result_origin/
+BBQ_superficial/result/*
+BBQ_superficial/result_100/*
+BBQ_superficial/result_origin/*
 BBQ_superficial/resultsfrompsu/*
-mechanism/results/
-mechanism/logs/
-mechanism/naaclresults/
+mechanism/results/*
+mechanism/logs/*
+mechanism/naaclresults/*
