@@ -127,9 +127,9 @@ class CoT_feedback_chain_:
 
 
     def get_nll(self,input_text,gen_text):
-        prompt_ids = tokenizer(input_text, return_tensors="pt").input_ids.to(device)
-        input_ids = tokenizer(input_text + gen_text, return_tensors="pt").input_ids.to(device)
-        label_ids = tokenizer(input_text + gen_text, return_tensors="pt").input_ids.to(device)
+        prompt_ids = self.tokenizer(input_text, return_tensors="pt").input_ids.to(device)
+        input_ids = self.tokenizer(input_text + gen_text, return_tensors="pt").input_ids.to(device)
+        label_ids = self.tokenizer(input_text + gen_text, return_tensors="pt").input_ids.to(device)
         label_ids[:, :prompt_ids.shape[-1]] = -100
         nll = float(self.llm(input_ids, labels=label_ids, output_hidden_states=True).loss)
 
