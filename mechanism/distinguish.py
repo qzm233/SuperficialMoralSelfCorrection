@@ -165,12 +165,12 @@ class CoT_feedback_chain_:
 
     def get_nli(self,ans1,ans2):
         nli_input = ans1 + " [SEP] " + ans2
-        encoded_input = self.nli_tokenizer(nli_input, padding='max_length', max_length=args.max_length_clf*2, return_tensors='pt')[
+        encoded_input = self.nli_tokenizer(nli_input, padding='max_length', max_length=1024, return_tensors='pt')[
                             "input_ids"].to(device)
         logit1 = self.nli_model(encoded_input)['logits'].detach().cpu().numpy().flatten().tolist()[-1]
 
         reversed_nli_input = ans2 + " [SEP] " + ans1
-        encoded_input = self.nli_tokenizer(reversed_nli_input, padding='max_length', max_length=args.max_length_clf*2, return_tensors='pt')[
+        encoded_input = self.nli_tokenizer(reversed_nli_input, padding='max_length', max_length=1024, return_tensors='pt')[
                             "input_ids"].to(device)
         logit2 = self.nli_model(encoded_input)['logits'].detach().cpu().numpy().flatten().tolist()[-1]
 
