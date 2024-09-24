@@ -169,6 +169,22 @@ def init_model(args):
         model = AutoModelForCausalLM.from_pretrained("google/gemma-2-9b", cache_dir=cache_dir)
         return tokenizer, model.to(device)
 
+def init_nli_model(args):
+    cache_dir = ""
+    cache_dir_slim = "/home/zhangxit/files/llms"
+    cache_dir_psu = "/data/bochuan/DPO/cache"
+    cache_dir_zhiyu = "/home/zhiyu2/guangliang/zimo/models"
+    if args.cluster == "psu":
+        cache_dir = cache_dir_psu
+    elif args.cluster == "slim":
+        cache_dir = cache_dir_slim
+    elif args.cluster == "zhiyu":
+        cache_dir = cache_dir_zhiyu
+
+    tokenizer = AutoTokenizer.from_pretrained("microsoft/deberta-large-mnli", cache_dir=cache_dir)
+    model = AutoModelForSequenceClassification.from_pretrained("microsoft/deberta-large-mnli", cache_dir=cache_dir).to(
+        device)
+    return tokenizer, model
 
 def remove_last_sentence(text):
     sentences = text.split(". ")
@@ -194,25 +210,28 @@ def load_winogender():
 
 def load_bbq(args):
     dataset = []
-    for file in glob.glob("../data/BBQ/bbq.Sexual_orientation.txt"):
-        bias_type = file.split("/")[-1].split(".")[1].lower()
-        if not args.bias in bias_type: continue
+    file = "data/bbq.sexualorientation.txt"
+    if not os.path.exists(file):
+        raise FileNotFoundError(f"File not found: {file}")
 
-        for line in open(file):
-            split_line = line.strip().split("\t")
-            context,question,choice = split_line[:3]
-            label = split_line[3]
-            stereotyped_groups = " ".join(split_line[4:])
+    bias_type = file.split("/")[-1].split(".")[1].lower()
+    if not args.bias in bias_type: print("no",{args.bias})
 
-            dataset.append(
-                {   "context":context,
-                    "question": question,
-                    "choice":choice,
-                    "label": label,
-                    "bias": bias_type,
-                    STEREOTYPED_GROUPS: stereotyped_groups,
-                }
-            )
+    for line in open(file):
+        split_line = line.strip().split("\t")
+        context,question,choice = split_line[:3]
+        label = split_line[3]
+        stereotyped_groups = " ".join(split_line[4:])
+
+        dataset.append(
+            {   "context":context,
+                "question": question,
+                "choice":choice,
+                "label": label,
+                "bias": bias_type,
+                STEREOTYPED_GROUPS: stereotyped_groups,
+            }
+        )
     return dataset
 
 
@@ -363,11 +382,14 @@ def prompting_toxicity(args, tokenizer, llm, prompting_list):
     return return_list
 
 @torch.no_grad()
-def get_response(args, tokenizer, llm, input_query):
+def get_response(args, tokenizer, llm, input_query, cot_round2=False):
     # print("input query:", input_query)
     input_ids = tokenizer(input_query, return_tensors="pt")
+    max_new_tokens = args.max_new_tokens
+    if cot_round2:
+        max_new_tokens = 8
     model_outputs = llm.generate(input_ids.input_ids.to(device), 
-                                max_new_tokens=args.max_new_tokens,
+                                max_new_tokens=max_new_tokens,
                                 pad_token_id=tokenizer.eos_token_id)
     # print("query length:", len(input_ids[0]))
     prompt_length = input_ids["input_ids"].shape[1]
@@ -380,6 +402,24 @@ def get_response(args, tokenizer, llm, input_query):
     # print("response:", response)
     return response
 
+@torch.no_grad()
+def get_outputs(args, tokenizer, llm, input_query, max_new_tokens):
+    # print("input query:", input_query)
+    input_ids = tokenizer(input_query, return_tensors="pt")
+
+    model_outputs = llm.generate(input_ids.input_ids.to(device), 
+                                max_new_tokens=max_new_tokens,
+                                pad_token_id=tokenizer.eos_token_id)
+    # print("query length:", len(input_ids[0]))
+    prompt_length = input_ids["input_ids"].shape[1]
+    response = tokenizer.decode(
+        model_outputs[0][prompt_length:],
+        skip_special_tokens=True,
+        clean_up_tokenization_spaces=False,
+    )
+    response = " ".join(copy.deepcopy(response.strip()).split("\n"))
+    # print("response:", response)
+    return response
 
 class toxicityClf(nn.Module):
     def __init__(self, feature_dim):
