@@ -4,7 +4,7 @@ from tqdm import tqdm
 from utils import *
 import numpy as np
 import random
-from promptsLib import *
+from promptsLib import * 
 from openai import OpenAI
 import openai
 import pickle
@@ -41,12 +41,12 @@ def get_bbq_result(args, tokenizer, llm, input_question_list, prompt_list):
     os.makedirs(save_folder, exist_ok=True)
     if args.external:
         if args.wo_unbiased_instruc:
-            save_file = save_folder + "external.json"
+            save_file = save_folder + "extrinsic.json"
             if args.cot:
-                save_file = save_folder + "external_cot.json"
+                save_file = save_folder + "extrinsic_cot.json"
         else:
             if args.cot:
-                    save_file = save_folder + "external_intrinsic_cot.json"
+                    save_file = save_folder + "intrinsic_extrinsic_cot.json"
     else:
         save_file = save_folder + "intrinsic.json"
         if args.cot:
@@ -115,7 +115,7 @@ def get_bbq_result(args, tokenizer, llm, input_question_list, prompt_list):
             hs_probing_question.append(round_json)
             torch.cuda.empty_cache()
         hs_probing_list.append(hs_probing_question)
-        if count % 50 == 0:
+        if count % 1 == 0:
             with open(save_file,'w') as writer:
                 json.dump(hs_probing_list, writer)
             print("save every 50 samples!!!")
@@ -142,9 +142,9 @@ def get_toxicity_result(args, tokenizer, llm, input_question_list, prompt_list):
             save_file = save_folder + "intrinsic_cot.json"
 
     hs_probing_list = []
-    # if os.path.exists(save_file):
-    #     with open(save_file,'r') as reader:
-    #         hs_probing_list = json.load(reader)
+    if os.path.exists(save_file):
+        with open(save_file,'r') as reader:
+            hs_probing_list = json.load(reader)
     print(len(hs_probing_list))
     count = 0
     for q_idx, question_ in tqdm(enumerate(input_question_list)):
@@ -196,7 +196,7 @@ def get_toxicity_result(args, tokenizer, llm, input_question_list, prompt_list):
             hs_probing_question.append(round_json)
             torch.cuda.empty_cache()
         hs_probing_list.append(hs_probing_question)
-        if count % 1 == 0:
+        if count % 100 == 0:
             with open(save_file,'w') as writer:
                 json.dump(hs_probing_list, writer)
             print("save every 100 samples!!!")

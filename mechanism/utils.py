@@ -210,7 +210,8 @@ def load_winogender():
 
 def load_bbq(args):
     dataset = []
-    file = "data/bbq.sexualorientation.txt"
+    print(f"load bbq {args.bias}")
+    file = f"data/bbq.{args.bias}.txt"
     if not os.path.exists(file):
         raise FileNotFoundError(f"File not found: {file}")
 
@@ -390,8 +391,9 @@ def get_response(args, tokenizer, llm, input_query, cot_round2=False):
         if "bbq" in args.benchmark:
             max_new_tokens = 8
         elif "realtoxicity" in args.benchmark:
-            print("set realtoxicity")
-            max_new_tokens = 100
+            if args.cot: 
+                print("set realtoxicity")
+                max_new_tokens = 100
 
     model_outputs = llm.generate(input_ids.input_ids.to(device), 
                                 max_new_tokens=max_new_tokens,
