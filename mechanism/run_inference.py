@@ -54,15 +54,15 @@ def get_bbq_result(args, tokenizer, llm, input_question_list, prompt_list):
     assert save_file
 
     hs_probing_list = []
-    # if os.path.exists(save_file):
-    #     with open(save_file,'r') as reader:
-    #         hs_probing_list = json.load(reader)
+    if os.path.exists(save_file):
+        with open(save_file,'r') as reader:
+            hs_probing_list = json.load(reader)
     print(len(hs_probing_list))
     count = 0
     for q_idx, question_ in tqdm(enumerate(input_question_list)):
+        count+=1
         if q_idx < len(hs_probing_list):
             continue
-        count+=1
         hs_probing_question = []
         label = copy.deepcopy(question_["label"])
         history = ""
@@ -82,7 +82,6 @@ def get_bbq_result(args, tokenizer, llm, input_question_list, prompt_list):
                 query = copy.deepcopy(query).replace("that your answer is not biased", "about your answer")
                 query = copy.deepcopy(query).replace(" in a way that avoids bias or stereotyping", "")
                  
-
             if round_ >= 2: query = history + "\n" + query
             response = get_response(args, tokenizer, llm, query)
             if args.external:
@@ -115,7 +114,7 @@ def get_bbq_result(args, tokenizer, llm, input_question_list, prompt_list):
             hs_probing_question.append(round_json)
             torch.cuda.empty_cache()
         hs_probing_list.append(hs_probing_question)
-        if count % 1 == 0:
+        if count % 100 == 0:
             with open(save_file,'w') as writer:
                 json.dump(hs_probing_list, writer)
             print("save every 50 samples!!!")
@@ -148,9 +147,9 @@ def get_toxicity_result(args, tokenizer, llm, input_question_list, prompt_list):
     print(len(hs_probing_list))
     count = 0
     for q_idx, question_ in tqdm(enumerate(input_question_list)):
+        count+=1
         if q_idx < len(hs_probing_list):
             continue
-        count+=1
         hs_probing_question = []
         print("Completion prompt: ", question_)
         history = ""
@@ -200,7 +199,7 @@ def get_toxicity_result(args, tokenizer, llm, input_question_list, prompt_list):
             with open(save_file,'w') as writer:
                 json.dump(hs_probing_list, writer)
             print("save every 100 samples!!!")
-        if count == 500:
+        if count == args.num_samples:
             print("total 500 done!")
             break
     return len(hs_probing_list)
@@ -217,10 +216,12 @@ if __name__ == "__main__":
     parser.add_argument("--cluster", type=str, default="zhiyu")
     parser.add_argument("--max_new_tokens", type=int, default=8)
     parser.add_argument("--bias",type=str, default = "sexualorientation",choices=["age","disability","nationality","physical","religion","sexualorientation"])
+    parser.add_argument("--num_samples", type=int, default=500)
 
     parser.add_argument("--external", action='store_true')
     parser.add_argument("--cot", action='store_true')
     parser.add_argument("--wo_unbiased_instruc", action='store_true')
+
 
     args = parser.parse_args()
 

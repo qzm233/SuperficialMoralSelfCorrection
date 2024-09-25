@@ -50,6 +50,7 @@ def init_model(args):
     cache_dir_voodoo = "/scratch0/liuguan5/pretrained_models"
     cache_dir_grandriver = "/localscratch/haitaomao"
     cache_dir_zhiyu = "/home/zhiyu2/guangliang/zimo/models"
+    cache_dir_lei = ""
     if args.cluster == "psu":
         cache_dir = cache_dir_psu
     elif args.cluster == "slim":
@@ -60,6 +61,8 @@ def init_model(args):
         cache_dir = cache_dir_grandriver
     elif args.cluster == "zhiyu":
         cache_dir = cache_dir_zhiyu
+    elif args.cluster == "lei":
+        cache_dir = cache_dir_lei
 
     if args.llm == "mistral":  # 7B
         # save_dir = '/root/autodl-fs/zephyr-7b-sft-full'

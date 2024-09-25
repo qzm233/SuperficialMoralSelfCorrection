@@ -214,7 +214,7 @@ if __name__ == "__main__":
         choices=["winogender", "bbq", "realtoxicity", "bbq_debug"],
     )
     parser.add_argument("--llm", type=str, default="mistral")
-    parser.add_argument("--cluster", type=str, default="zhiyu")
+    parser.add_argument("--cluster", type=str, default="lei")
     parser.add_argument("--max_new_tokens", type=int, default=8)
     parser.add_argument("--bias",type=str, default = "sexualorientation",choices=["age","disability","nationality","physical","religion","sexualorientation"])
 
