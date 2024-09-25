@@ -7,4 +7,8 @@ BBQ_superficial/result_origin/*
 BBQ_superficial/resultsfrompsu/*
 mechanism/results/*
 mechanism/logs/*
+!mechanism/logs/
+!mechanism/logs/**/
+!mechanism/logs/bbq/
+!mechanism/logs/realtoxicity/
 mechanism/naaclresults/*

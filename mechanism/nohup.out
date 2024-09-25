@@ -1,0 +1,27 @@
+Using device: cuda
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.40it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:01<00:00,  1.39it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.43it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.42it/s]
+load bbq disability
+0it [00:00, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+1it [00:33, 33.78s/it]2it [01:02, 30.66s/it]3it [01:42, 34.95s/it]4it [02:13, 33.36s/it]5it [02:55, 36.66s/it]Using device: cuda
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.37it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:01<00:00,  1.35it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.39it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.38it/s]
+load bbq disability
+0it [00:00, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+1it [00:33, 33.54s/it]2it [01:04, 31.86s/it]Using device: cuda
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.32it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:01<00:00,  1.32it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.38it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.36it/s]
+load bbq disability
+0it [00:00, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+1it [00:29, 29.86s/it]2it [01:01, 31.08s/it]3it [01:39, 33.94s/it]4it [02:09, 32.49s/it]Using device: cuda
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.31it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:01<00:00,  1.32it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.39it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.37it/s]
+load bbq disability
+0it [00:00, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+1it [00:39, 39.93s/it]2it [01:07, 32.72s/it]Using device: cuda
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.35it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:01<00:00,  1.37it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.44it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.42it/s]
+logs/bbq/sexualorientation/extrinsic.log
+load bbq disability
+0it [00:00, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+1it [00:32, 32.81s/it]Using device: cuda
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.28it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:01<00:00,  1.29it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.35it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.33it/s]
+logs/bbq/sexualorientation/extrinsic.log
+load bbq disability
+0it [00:00, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+1it [00:35, 35.31s/it]2it [01:07, 33.38s/it]3it [01:47, 36.30s/it]4it [02:23, 36.35s/it]5it [03:04, 38.01s/it]6it [03:45, 38.96s/it]7it [04:23, 38.69s/it]8it [05:06, 40.02s/it]9it [05:44, 39.49s/it]10it [06:28, 40.79s/it]11it [07:12, 41.89s/it]12it [07:57, 42.89s/it]13it [08:37, 41.87s/it]14it [09:16, 40.88s/it]15it [09:53, 39.90s/it]16it [10:18, 35.24s/it]17it [11:01, 37.82s/it]18it [11:43, 38.95s/it]19it [12:21, 38.58s/it]20it [13:00, 38.84s/it]

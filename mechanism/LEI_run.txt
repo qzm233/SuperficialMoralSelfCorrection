@@ -1,10 +1,22 @@
-#LEI RUN
-CUDA_VISIBLE_DEVICES=0 nohup python LEI_run1.py --benchmark bbq --max_new_token 7 &
-CUDA_VISIBLE_DEVICES=1 nohup python LEI_run1.py --benchmark bbq --external --max_new_token 7 &
-CUDA_VISIBLE_DEVICES=1 nohup python LEI_run1.py --benchmark bbq --max_new_token 300 --cot &
-CUDA_VISIBLE_DEVICES=3 nohup python LEI_run1.py --benchmark bbq --max_new_token 300 --external --wo_unbiased_instruc --cot &
+#LEI RUN 
+CUDA_VISIBLE_DEVICES=1 nohup python LEI_run1.py --benchmark bbq --max_new_token 7 --bias disability > logs/bbq/disability/intrinsic.log 2>&1 & 
+CUDA_VISIBLE_DEVICES=1 nohup python LEI_run1.py --benchmark bbq --max_new_token 7 --external --wo_unbiased_instruc --bias disability > logs/bbq/disability/extrinsic.log 2>&1 &
+CUDA_VISIBLE_DEVICES=1 nohup python LEI_run1.py --benchmark bbq --max_new_token 300 --cot --bias disability > logs/bbq/disability/intrinsic_cot.log 2>&1 &
+CUDA_VISIBLE_DEVICES=1 nohup python LEI_run1.py --benchmark bbq --max_new_token 300 --external --wo_unbiased_instruc --cot --bias disability > logs/bbq/disability/extrinsic_cot.log 2>&1 &
+CUDA_VISIBLE_DEVICES=2 nohup python LEI_run1.py --benchmark bbq --max_new_token 300 --external --cot --bias disability > logs/bbq/disability/intrinsic_extrinsic_cot.log 2>&1 &
 
-CUDA_VISIBLE_DEVICES=2 nohup python LEI_run1.py --benchmark bbq --max_new_token 300 --external --cot &
+CUDA_VISIBLE_DEVICES=0 nohup python LEI_run1.py --benchmark bbq --max_new_token 7 --bias physical > logs/bbq/physical/intrinsic.log 2>&1 & 
+CUDA_VISIBLE_DEVICES=1 nohup python LEI_run1.py --benchmark bbq --max_new_token 7 --external --wo_unbiased_instruc --bias physical > logs/bbq/physical/extrinsic.log 2>&1 &
+CUDA_VISIBLE_DEVICES=1 nohup python LEI_run1.py --benchmark bbq --max_new_token 300 --cot --bias physical > logs/bbq/physical/intrinsic_cot.log 2>&1 &
+CUDA_VISIBLE_DEVICES=3 nohup python LEI_run1.py --benchmark bbq --max_new_token 300 --external --wo_unbiased_instruc --cot --bias physical > logs/bbq/physical/extrinsic_cot.log 2>&1 &
+CUDA_VISIBLE_DEVICES=2 nohup python LEI_run1.py --benchmark bbq --max_new_token 300 --external --cot --bias physical > logs/bbq/physical/intrinsic_extrinsic_cot.log 2>&1 &
+
+
+CUDA_VISIBLE_DEVICES=0 nohup python LEI_run1.py --benchmark bbq --max_new_token 7 --bias religion > logs/bbq/religion/intrinsic.log 2>&1 & 
+CUDA_VISIBLE_DEVICES=1 nohup python LEI_run1.py --benchmark bbq --max_new_token 7 --external --wo_unbiased_instruc --bias religion > logs/bbq/religion/extrinsic.log 2>&1 &
+CUDA_VISIBLE_DEVICES=1 nohup python LEI_run1.py --benchmark bbq --max_new_token 300 --cot --bias religion > logs/bbq/religion/intrinsic_cot.log 2>&1 &
+CUDA_VISIBLE_DEVICES=3 nohup python LEI_run1.py --benchmark bbq --max_new_token 300 --external --wo_unbiased_instruc --cot --bias religion > logs/bbq/religion/extrinsic_cot.log 2>&1 &
+CUDA_VISIBLE_DEVICES=2 nohup python LEI_run1.py --benchmark bbq --max_new_token 300 --external --cot --bias religion > logs/bbq/religion/intrinsic_extrinsic_cot.log 2>&1 &
 
 #INSTRUCTION:
 1. 在 utils.py 的第 53 行指定一下缓存模型的本地路径

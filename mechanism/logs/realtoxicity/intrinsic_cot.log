@@ -1,0 +1,750 @@
+nohup: ignoring input
+Using device: cuda
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.30it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:01<00:00,  1.33it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.38it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.37it/s]
+benchmark:  realtoxicity
+228
+0it [00:00, ?it/s]set realtoxicity
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+229it [04:16,  1.12s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+230it [07:38,  2.37s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+231it [14:02,  5.72s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+232it [18:09,  8.71s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+233it [21:46, 12.32s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+234it [26:01, 18.22s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+235it [29:19, 24.21s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+236it [32:37, 32.17s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+237it [35:59, 42.52s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+238it [40:17, 59.87s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+239it [43:55, 76.14s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+240it [48:51, 104.43s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+241it [53:01, 126.93s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+242it [56:08, 137.86s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+243it [59:50, 155.12s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+244it [1:03:24, 168.51s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+245it [1:07:07, 181.80s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+246it [1:11:01, 195.18s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+247it [1:14:16, 195.37s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+248it [1:18:20, 208.70s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+249it [1:21:24, 201.72s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+250it [1:26:07, 225.28s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+251it [1:30:47, 241.22s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+252it [1:34:20, 232.87s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+253it [1:37:25, 218.79s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+254it [1:41:45, 231.04s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+255it [1:46:16, 242.89s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+256it [1:50:11, 240.51s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+257it [1:54:11, 240.40s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+258it [1:57:02, 219.54s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+259it [2:01:18, 230.58s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+260it [2:05:06, 229.66s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+261it [2:07:57, 212.27s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+262it [2:12:23, 228.41s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+263it [2:15:32, 216.64s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+264it [2:18:48, 210.28s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+265it [2:24:52, 256.55s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+266it [2:28:12, 239.40s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+267it [2:33:36, 264.77s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+268it [2:37:21, 252.85s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+269it [2:40:35, 235.29s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+270it [2:44:29, 234.94s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+271it [2:48:58, 244.95s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+272it [2:52:11, 229.50s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+273it [2:55:31, 220.73s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+274it [2:58:35, 209.58s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+275it [3:02:17, 213.40s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+276it [3:05:55, 214.61s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+277it [3:09:40, 217.94s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+278it [3:13:49, 227.18s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+279it [3:17:14, 220.51s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+280it [3:20:44, 217.36s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+281it [3:24:01, 211.28s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+282it [3:27:41, 213.85s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+283it [3:31:08, 211.71s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+284it [3:35:30, 226.85s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+285it [3:38:22, 210.47s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+286it [3:42:39, 224.41s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+287it [3:47:01, 235.60s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+288it [3:52:47, 268.87s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+289it [3:56:26, 253.82s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+290it [4:00:24, 249.04s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+291it [4:04:14, 243.29s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+292it [4:07:49, 235.03s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+293it [4:11:25, 229.33s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+294it [4:14:55, 223.38s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+295it [4:18:08, 214.26s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+296it [4:20:18, 189.02s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+297it [4:23:51, 196.15s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+298it [4:28:28, 220.40s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+299it [4:32:06, 219.81s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+save every 100 samples!!!
+300it [4:35:53, 221.93s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+301it [4:39:39, 223.05s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+302it [4:42:57, 215.54s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+303it [4:46:04, 207.05s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+304it [4:52:38, 263.10s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+305it [4:56:16, 249.65s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+306it [4:59:51, 239.20s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+307it [5:03:16, 229.04s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+308it [5:06:54, 225.50s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+309it [5:12:08, 252.29s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+310it [5:15:49, 242.90s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+311it [5:19:52, 242.82s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+312it [5:24:16, 249.11s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+313it [5:28:20, 247.60s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+314it [5:31:45, 234.82s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+315it [5:34:47, 219.15s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+316it [5:39:39, 240.78s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+317it [5:54:03, 427.88s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+318it [5:55:42, 329.26s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+319it [6:07:19, 439.36s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+320it [6:11:05, 375.56s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity

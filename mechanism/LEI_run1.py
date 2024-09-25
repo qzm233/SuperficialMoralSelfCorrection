@@ -225,22 +225,19 @@ if __name__ == "__main__":
 
     if args.external:
         if args.wo_unbiased_instruc:
-            log_name = "extrinsic.json"
-            if args.cot:
-                log_name = "extrinsic_cot.json"
+            log_name = "extrinsic.log"
+            if args.cot: log_name = "extrinsic_cot.log"
         else:
-            if args.cot:
-                    log_name = "intrinsic_extrinsic_cot.json"
+            if args.cot: log_name = "intrinsic_extrinsic_cot.log"
     else:
-        log_name = "intrinsic.json"
-        if args.cot:
-            log_name = "intrinsic_cot.json"
-    
+        log_name = "intrinsic.log"
+        if args.cot: log_name = "intrinsic_cot.log"
+    print(log_name)
 
     tokenizer, llm = init_model(args)
     llm.eval()
-    if "bbq" in args.benchmark:
-        biases = ["disability", "physical", "religion"]
+    # if "bbq" in args.benchmark:
+    #     biases = ["disability", "physical", "religion"]
     
     if "toxicity" in args.benchmark:
         print("benchmark: ", args.benchmark)
@@ -262,29 +259,25 @@ if __name__ == "__main__":
         # with open(f"{log_folder}{args.benchmark}.json",'w') as writer:
         #     json.dump(probing_result, writer)
     elif "bbq" in args.benchmark:
-        for bias in biases:
-            save_folder = f"logs/{args.benchmark}/{args.bias}/"
-            os.makedirs(save_folder, exist_ok=True)
-            with open(f'{save_folder}{log_name}', 'w') as log_file:
-                sys.stdout = log_file
-            args.bias = bias
-            print("benchmark: bbq ", args.benchmark)
-            print("bias: ", args.bias)
-            if args.external:
-                prompt_list=[bbq_baseline, bbq_selfcorrect1,bbq_selfcorrect_external,bbq_selfcorrect_external,
-                            bbq_selfcorrect_external,bbq_selfcorrect_external,bbq_selfcorrect_external,bbq_selfcorrect_external]
-                if args.cot:
-                    prompt_list=[bbq_baseline, bbq_selfcorrect1_cot,bbq_selfcorrect_external_cot,bbq_selfcorrect_external_cot,
-                            bbq_selfcorrect_external_cot,bbq_selfcorrect_external_cot,bbq_selfcorrect_external_cot,bbq_selfcorrect_external_cot]
-            else:
-                prompt_list=[bbq_baseline,bbq_selfcorrect1,bbq_selfcorrect_intrinsic,bbq_selfcorrect_intrinsic,
-                            bbq_selfcorrect_intrinsic,bbq_selfcorrect_intrinsic,bbq_selfcorrect_intrinsic,bbq_selfcorrect_intrinsic]
-                if args.cot:
-                    prompt_list=[bbq_baseline,bbq_selfcorrect1_cot,bbq_selfcorrect_intrinsic_cot,bbq_selfcorrect_intrinsic_cot,
-                            bbq_selfcorrect_intrinsic_cot,bbq_selfcorrect_intrinsic_cot,bbq_selfcorrect_intrinsic_cot,realtoxicity_selfcorrect_intrinsic_cot]
-            question_list = load_benchmark(args)
-            probing_result_len = get_bbq_result(args,tokenizer,llm, question_list, prompt_list)
-            print(f"{probing_result_len} samples done")
+        save_folder = f"logs/{args.benchmark}/{args.bias}/"
+        os.makedirs(save_folder, exist_ok=True)
+        print("benchmark: bbq ", args.benchmark)
+        print("bias: ", args.bias)
+        if args.external:
+            prompt_list=[bbq_baseline, bbq_selfcorrect1,bbq_selfcorrect_external,bbq_selfcorrect_external,
+                        bbq_selfcorrect_external,bbq_selfcorrect_external,bbq_selfcorrect_external,bbq_selfcorrect_external]
+            if args.cot:
+                prompt_list=[bbq_baseline, bbq_selfcorrect1_cot,bbq_selfcorrect_external_cot,bbq_selfcorrect_external_cot,
+                        bbq_selfcorrect_external_cot,bbq_selfcorrect_external_cot,bbq_selfcorrect_external_cot,bbq_selfcorrect_external_cot]
+        else:
+            prompt_list=[bbq_baseline,bbq_selfcorrect1,bbq_selfcorrect_intrinsic,bbq_selfcorrect_intrinsic,
+                        bbq_selfcorrect_intrinsic,bbq_selfcorrect_intrinsic,bbq_selfcorrect_intrinsic,bbq_selfcorrect_intrinsic]
+            if args.cot:
+                prompt_list=[bbq_baseline,bbq_selfcorrect1_cot,bbq_selfcorrect_intrinsic_cot,bbq_selfcorrect_intrinsic_cot,
+                        bbq_selfcorrect_intrinsic_cot,bbq_selfcorrect_intrinsic_cot,bbq_selfcorrect_intrinsic_cot,realtoxicity_selfcorrect_intrinsic_cot]
+        question_list = load_benchmark(args)
+        probing_result_len = get_bbq_result(args,tokenizer,llm, question_list, prompt_list)
+        print(f"{probing_result_len} samples done")
         
                 
     
