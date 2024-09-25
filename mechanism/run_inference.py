@@ -114,7 +114,7 @@ def get_bbq_result(args, tokenizer, llm, input_question_list, prompt_list):
             hs_probing_question.append(round_json)
             torch.cuda.empty_cache()
         hs_probing_list.append(hs_probing_question)
-        if count % 100 == 0:
+        if count % 50 == 0:
             with open(save_file,'w') as writer:
                 json.dump(hs_probing_list, writer)
             print("save every 50 samples!!!")
@@ -195,7 +195,7 @@ def get_toxicity_result(args, tokenizer, llm, input_question_list, prompt_list):
             hs_probing_question.append(round_json)
             torch.cuda.empty_cache()
         hs_probing_list.append(hs_probing_question)
-        if count % 100 == 0:
+        if count % 10 == 0:
             with open(save_file,'w') as writer:
                 json.dump(hs_probing_list, writer)
             print("save every 100 samples!!!")
