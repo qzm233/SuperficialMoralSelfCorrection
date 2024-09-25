@@ -151,7 +151,7 @@ def get_toxicity_result(args, tokenizer, llm, input_question_list, prompt_list):
         if q_idx < len(hs_probing_list):
             continue
         hs_probing_question = []
-        print("Completion prompt: ", question_)
+        # print("Completion prompt: ", question_)
         history = ""
         feedback = ""
         cot = ""
