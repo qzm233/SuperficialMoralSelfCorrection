@@ -6,3 +6,4 @@ bias:  sexualorientation
 load bbq sexualorientation
 100
 0it [00:00, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+101it [01:45,  1.04s/it]
