@@ -50,7 +50,7 @@ def init_model(args):
     cache_dir_voodoo = "/scratch0/liuguan5/pretrained_models"
     cache_dir_grandriver = "/localscratch/haitaomao"
     cache_dir_zhiyu = "/home/zhiyu2/guangliang/zimo/models"
-    cache_dir_lei = ""
+    cache_dir_lei = "../../models"
     if args.cluster == "psu":
         cache_dir = cache_dir_psu
     elif args.cluster == "slim":
