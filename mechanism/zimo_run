@@ -1,31 +1,32 @@
-CUDA_VISIBLE_DEVICES=0 nohup python run_inference.py --benchmark bbq --max_new_token 7 > logs/bbq/sexualorientation/intrinsic.log 2>&1 &
-CUDA_VISIBLE_DEVICES=1 nohup python run_inference.py --benchmark bbq --max_new_token 7 --external --wo_unbiased_instruc > logs/bbq/sexualorientation/extrinsic.log 2>&1 &
-CUDA_VISIBLE_DEVICES=1 nohup python run_inference.py --benchmark bbq --max_new_token 300 --cot > logs/bbq/sexualorientation/intrinsic_cot.log 2>&1 &
-CUDA_VISIBLE_DEVICES=0 nohup python run_inference.py --benchmark bbq --max_new_token 300 --external --wo_unbiased_instruc --cot > logs/bbq/sexualorientation/extrinsic_cot.log 2>&1 &
+CUDA_VISIBLE_DEVICES=0 nohup python run_inference2.py --benchmark bbq --max_new_token 7 > logs/bbq/sexualorientation/intrinsic.log 2>&1 &
+CUDA_VISIBLE_DEVICES=1 nohup python run_inference2.py --benchmark bbq --max_new_token 7 --external --wo_unbiased_instruc > logs/bbq/sexualorientation/extrinsic.log 2>&1 &
+CUDA_VISIBLE_DEVICES=2 nohup python run_inference2.py --benchmark bbq --max_new_token 150 --cot > logs/bbq/sexualorientation/intrinsic_cot.log 2>&1 &
+CUDA_VISIBLE_DEVICES=3 nohup python run_inference2.py --benchmark bbq --max_new_token 150 --external --wo_unbiased_instruc --cot > logs/bbq/sexualorientation/extrinsic_cot.log 2>&1 &
 
-CUDA_VISIBLE_DEVICES=2 nohup python run_inference.py --benchmark bbq --max_new_token 300 --external --cot > logs/bbq/sexualorientation/intrinsic_extrinsic_cot.log 2>&1 &
+CUDA_VISIBLE_DEVICES=1 nohup python run_inference2.py --benchmark bbq --max_new_token 150 --external --cot > logs/bbq/sexualorientation/intrinsic_extrinsic_cot.log 2>&1 &
 
 
-CUDA_VISIBLE_DEVICES=0 nohup python run_inference.py --benchmark realtoxicity --max_new_tokens 512 > logs/realtoxicity/intrinsic.log 2>&1 &
-CUDA_VISIBLE_DEVICES=2 nohup python run_inference.py --benchmark realtoxicity --max_new_tokens 512 --external --wo_unbiased_instruc > logs/realtoxicity/extrinsic.log 2>&1 &
-CUDA_VISIBLE_DEVICES=2 nohup python run_inference.py --benchmark realtoxicity --max_new_tokens 512 --cot > logs/realtoxicity/intrinsic_cot.log 2>&1 &
-CUDA_VISIBLE_DEVICES=1 nohup python run_inference.py --benchmark realtoxicity --max_new_tokens 512 --external --cot --wo_unbiased_instruc > logs/realtoxicity/extrinsic_cot.log 2>&1 &
+CUDA_VISIBLE_DEVICES=0 nohup python run_inference2.py --benchmark realtoxicity --max_new_tokens 128 > logs/realtoxicity/intrinsic.log 2>&1 &
+CUDA_VISIBLE_DEVICES=2 nohup python run_inference2.py --benchmark realtoxicity --max_new_tokens 128 --external --wo_unbiased_instruc > logs/realtoxicity/extrinsic.log 2>&1 &
+CUDA_VISIBLE_DEVICES=0 nohup python run_inference2.py --benchmark realtoxicity --max_new_tokens 128 --cot > logs/realtoxicity/intrinsic_cot.log 2>&1 &
+CUDA_VISIBLE_DEVICES=1 nohup python run_inference2.py --benchmark realtoxicity --max_new_tokens 128 --external --cot --wo_unbiased_instruc > logs/realtoxicity/extrinsic_cot.log 2>&1 &
 
-CUDA_VISIBLE_DEVICES=x nohup python run_inference.py --benchmark realtoxicity --max_new_tokens 512 --external --cot  > logs/realtoxicity/intrinsic_extrinsic_cot.log 2>&1 &
+CUDA_VISIBLE_DEVICES=x nohup python run_inference2.py --benchmark realtoxicity --max_new_tokens 128 --external --cot  > logs/realtoxicity/intrinsic_extrinsic_cot.log 2>&1 &
 
 #RUN ROBUSTNESS REALTOXICITY
-CUDA_VISIBLE_DEVICES=0 nohup python run_inference.py --benchmark realtoxicity --max_new_tokens 512 --persona &
-CUDA_VISIBLE_DEVICES=2 nohup python run_inference.py --benchmark realtoxicity --max_new_tokens 512 --external --wo_unbiased_instruc > logs/realtoxicity/extrinsic.log 2>&1 &
-CUDA_VISIBLE_DEVICES=3 nohup python run_inference.py --benchmark realtoxicity --max_new_tokens 512 --cot > logs/realtoxicity/intrinsic_cot.log 2>&1 &
-CUDA_VISIBLE_DEVICES=1 nohup python run_inference.py --benchmark realtoxicity --max_new_tokens 512 --external --cot --wo_unbiased_instruc > logs/realtoxicity/extrinsic_cot.log 2>&1 &
+CUDA_VISIBLE_DEVICES=0 nohup python run_inference2.py --benchmark realtoxicity --max_new_tokens 512 --persona &
+CUDA_VISIBLE_DEVICES=2 nohup python run_inference2.py --benchmark realtoxicity --max_new_tokens 512 --external --wo_unbiased_instruc > logs/realtoxicity/extrinsic.log 2>&1 &
+CUDA_VISIBLE_DEVICES=3 nohup python run_inference2.py --benchmark realtoxicity --max_new_tokens 512 --cot > logs/realtoxicity/intrinsic_cot.log 2>&1 &
+CUDA_VISIBLE_DEVICES=1 nohup python run_inference2.py --benchmark realtoxicity --max_new_tokens 512 --external --cot --wo_unbiased_instruc > logs/realtoxicity/extrinsic_cot.log 2>&1 &
 
-CUDA_VISIBLE_DEVICES=x nohup python run_inference.py --benchmark realtoxicity --max_new_tokens 512 --external --cot  > logs/realtoxicity/intrinsic_extrinsic_cot.log 2>&1 &
+CUDA_VISIBLE_DEVICES=x nohup python run_inference2.py --benchmark realtoxicity --max_new_tokens 512 --external --cot  > logs/realtoxicity/intrinsic_extrinsic_cot.log 2>&1 &
 
 #LEI RUN
-CUDA_VISIBLE_DEVICES=0 nohup python run_inference.py --benchmark bbq --max_new_token 7 &
-CUDA_VISIBLE_DEVICES=1 nohup python run_inference.py --benchmark bbq --external --max_new_token 7 &
-CUDA_VISIBLE_DEVICES=1 nohup python run_inference.py --benchmark bbq --max_new_token 300 --cot &
-CUDA_VISIBLE_DEVICES=3 nohup python run_inference.py --benchmark bbq --max_new_token 300 --external --wo_unbiased_instruc --cot &
+CUDA_VISIBLE_DEVICES=0 nohup python run_inference2.py --benchmark bbq --max_new_token 7 &
+CUDA_VISIBLE_DEVICES=1 nohup python run_inference2.py --benchmark bbq --external --max_new_token 7 &
+CUDA_VISIBLE_DEVICES=1 nohup python run_inference2.py --benchmark bbq --max_new_token 300 --cot &
+CUDA_VISIBLE_DEVICES=3 nohup python run_inference2.py --benchmark bbq --max_new_token 300 --external --wo_unbiased_instruc --cot &
 
-CUDA_VISIBLE_DEVICES=2 nohup python run_inference.py --benchmark bbq --max_new_token 300 --external --cot &
-
+CUDA_VISIBLE_DEVICES=2 nohup python run_inference2.py --benchmark bbq --max_new_token 300 --external --cot &
+ 
+ 

@@ -71,21 +71,33 @@ def get_probing_result_toxicity(args, tokenizer, llm, json_file):
     return copy_corpus_json_list
 
 @torch.no_grad()
-def get_feedback(args,tokenizer,llm,json_file):
+def parsing_feedback(args,tokenizer,llm,json_file):
 
     with open(json_file,'r') as json_reader:
         corpus_json_list = json.load(json_reader)
     copy_corpus_json_list = []
-    for dialog_json_list in tqdm(corpus_json_list[:]):
-        internal_states_probing = None
+    for dialog_json_list in tqdm(corpus_json_list[:5]):
+
+        if args.benchmark.lower() == "bbq":
+
+            internal_states_probing = None
+        else:
+             internal_states_probing = torch.load("mistral.pt")['mlp.weight'][1]
 
         copy_dialog_json_list = []
-        for round_json in dialog_json_list:
+        for round_idx, round_json in enumerate(dialog_json_list):
             copy_round_json  = copy.deepcopy(round_json)
-
-            original_input = expparsing4feedback(args, round_json)
-            biased_statement = "I do believe it is " + dialog_json_list[0]["stereotyped_groups"] # + copy.deepcopy(round_json["question"]).replace("Who",round_json["stereotyped_groups"]).replace("?",".")
-
+            if args.benchmark.lower() == "bbq":
+                if round_idx < 1: 
+                    original_input = round_json["input"]
+                else:
+                    original_input = expparsing4feedback(args, round_json)
+                biased_statement = "I do believe it is " + dialog_json_list[0]["stereotyped_groups"] # + copy.deepcopy(round_json["question"]).replace("Who",round_json["stereotyped_groups"]).replace("?",".")
+            else:
+                if round_idx < 1:
+                    original_input = round_json["prompt"]
+                else:
+                    original_input=expparsing4feedback(args, round_json)
             input_ids = tokenizer(original_input, return_tensors="pt").to(device)
             _ = llm(input_ids.input_ids)
             internal_states_input = copy.deepcopy(hidden_states)
@@ -112,22 +124,23 @@ def get_feedback(args,tokenizer,llm,json_file):
 
 
 def expparsing4feedback(args,round_json):
-    """
-            if mech_flag == feedback: extrinsic
-            if mech_flag == feedback-CoT: extrinsic_cot
-            if mech_flag == intrinsic-feedback-CoT: intrinsic_extrinsic_cot
-    """
-
-    if args.feedback_flag == "original":
-            return round_json["input"]
-    elif args.feedback_flag == "feedback_only":
-            return round_json["feedback"]
-    else:
+        """
+                if mech_flag == feedback: extrinsic
+                if mech_flag == feedback-CoT: extrinsic_cot
+                if mech_flag == intrinsic-feedback-CoT: intrinsic_extrinsic_cot
+        """
+    
+        if args.feedback_flag == "original":
+            result = round_json["input"] if args.benchmark.lower() == "bbq" else round_json["prompt"]
+            return result
+        elif args.feedback_flag == "feedback_only":
+                return round_json["feedback"]
+        else:
             feedback_str = copy.deepcopy(round_json["feedback"])
-            return copy.deepcopy(round_json["input"]).replace(feedback_str,"")
-   
+            result = copy.deepcopy(round_json["input"]).replace(feedback_str,"") if args.benchmark.lower() == "bbq" else round_json["prompt"].replace(feedback_str,"") 
+            return result
 @torch.no_grad()
-def get_intrinsic_feedback_CoT(args, tokenizer, llm, json_file):
+def parsing_intrinsic_feedback_CoT(args, tokenizer, llm, json_file):
     with open(json_file,'r') as json_reader:
         corpus_json_list = json.load(json_reader)
    
@@ -137,25 +150,32 @@ def get_intrinsic_feedback_CoT(args, tokenizer, llm, json_file):
         if args.selfcorr_flag == "feedback-CoT":
             for idx, round_json in enumerate(dialogue_json):
                 if idx == 0:
-                    output_list.append(round_json["input"])
-                    output_list.append(round_json["input"]+" "+" ".join(round_json["output"].split("The best answer to the question is")[:-1]))
+                    output_list.append(round_json["input"].split(round_json["cot"])[0])#input
+                    output_list.append(round_json["input"].split(round_json["cot"])[0] + round_json["cot"])#input+CoT
                 else:
-                    output_list.append(" ".join(round_json["input"].split("</FEEDBACK>")[:-1]))
-                    output_list.append(round_json["input"]+" "+" ".join(round_json["output"].split("The best answer to the question is")[:-1]))
+                    output_list.append(" ".join(round_json["input"].split("There is a feedback:")[:-1]))#input
+                    output_list.append(" ".join(round_json["input"].split("There is a feedback:")[:-1])+" "+round_json["feedback"])#input+feedback
+                    output_list.append(round_json["input"].split("Let's breifly think about how to answer the question")[0]+" "+round_json["cot"])#input+feedback+CoT
         # intrinsic-feedback-cot   
         else: 
              for idx, round_json in enumerate(dialogue_json):
                 if idx == 0:
-                    output_list.append(round_json["input"].split("Please ensure that your answer is unbiased and does not rely on stereotypes.")[0] + "Please ensure that your answer is unbiased and does not rely on stereotypes.")
-                    output_list.append(round_json["input"]) #special case for intrinsic-feedback-cot
-                    output_list.append(round_json["input"]+" "+" ".join(round_json["output"].split("The best answer to the question is")[:-1]))
+                    #input
+                    output_list.append(round_json["input"].split("Please ensure that your answer is unbiased and does not rely on stereotypes.")[0])
+                    #input + intrinsic
+                    output_list.append(round_json["input"].split("Please ensure that your answer is unbiased and does not rely on stereotypes.")[0] + "\n\nPlease ensure that your answer is unbiased and does not rely on stereotypes.")
+                    #input+intrinsic+CoT
+                    output_list.append(round_json["input"].split("Based on the above, what is the single, most likely answer choice?")[0])
+                    #output_list.append(round_json["input"]) #special case for intrinsic-feedback-cot
+                    #output_list.append(round_json["input"]+" "+" ".join(round_json["output"].split("The best answer to the question is")[:-1]))
                 else:
-                    output_list.append(" ".join(round_json["input"].split("</FEEDBACK>")[:-1]))
-                    output_list.append(round_json["input"]+" "+" ".join(round_json["output"].split("The best answer to the question is")[:-1]))
+                    output_list.append(" ".join(round_json["input"].split("There is a feedback:")[:-1]))#input
+                    output_list.append(" ".join(round_json["input"].split("There is a feedback:")[:-1])+" "+round_json["feedback"])#input+feedback
+                    output_list.append(round_json["input"].split("Let's breifly think about how to answer the question")[0]+" "+round_json["cot"])#input+feedback+CoT
         return output_list
              
     feedback_cot_mech_results = []
-    for dialog_json_list in corpus_json_list[:5]:
+    for dialog_json_list in tqdm(corpus_json_list[:5]):
         internal_states_probing = None
 
         dialog2mecha = {}
@@ -176,6 +196,8 @@ def get_intrinsic_feedback_CoT(args, tokenizer, llm, json_file):
 
             dialog2mecha[f"att_sim_{idx}"] = att_sim
             dialog2mecha[f"mlp_sim_{idx}"] = mlp_sim
+
+            torch.cuda.empty_cache()
 
         feedback_cot_mech_results.append(dialog2mecha)
 
@@ -234,8 +256,11 @@ if __name__ == "__main__":
             hook.remove()
     else:
         #print("not implemented yet!")
-        file_path = "./naaclresults/Sexual_orientation/intrinsic_extrinsic_cot.json"
-        results = get_intrinsic_feedback_CoT(args, tokenizer, llm, file_path)
+        file_path = "./naaclresults/Sexual_orientation/extrinsic_cot.json"
+        if args.selfcorr_flag =="feedback":
+            results = parsing_feedback(args, tokenizer, llm, file_path)
+        else:
+             results = parsing_intrinsic_feedback_CoT(args, tokenizer, llm, file_path)
         #print(results)
         for hook in hooks:
             hook.remove()
