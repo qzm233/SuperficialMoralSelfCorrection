@@ -1,18 +1,18 @@
 #LEI RUN 
-CUDA_VISIBLE_DEVICES=1 nohup python LEI_run1.py --benchmark bbq --max_new_token 7 --bias disability > logs/bbq/disability/intrinsic.log 2>&1 & 
+CUDA_VISIBLE_DEVICES=0 nohup python LEI_run1.py --benchmark bbq --max_new_token 7 --bias disability > logs/bbq/disability/intrinsic.log 2>&1 & 
 CUDA_VISIBLE_DEVICES=1 nohup python LEI_run1.py --benchmark bbq --max_new_token 7 --external --wo_unbiased_instruc --bias disability > logs/bbq/disability/extrinsic.log 2>&1 &
 CUDA_VISIBLE_DEVICES=1 nohup python LEI_run1.py --benchmark bbq --max_new_token 300 --cot --bias disability > logs/bbq/disability/intrinsic_cot.log 2>&1 &
 CUDA_VISIBLE_DEVICES=1 nohup python LEI_run1.py --benchmark bbq --max_new_token 300 --external --wo_unbiased_instruc --cot --bias disability > logs/bbq/disability/extrinsic_cot.log 2>&1 &
 CUDA_VISIBLE_DEVICES=2 nohup python LEI_run1.py --benchmark bbq --max_new_token 300 --external --cot --bias disability > logs/bbq/disability/intrinsic_extrinsic_cot.log 2>&1 &
 
-CUDA_VISIBLE_DEVICES=0 nohup python LEI_run1.py --benchmark bbq --max_new_token 7 --bias physical > logs/bbq/physical/intrinsic.log 2>&1 & 
+CUDA_VISIBLE_DEVICES=1 nohup python LEI_run1.py --benchmark bbq --max_new_token 7 --bias physical > logs/bbq/physical/intrinsic.log 2>&1 & 
 CUDA_VISIBLE_DEVICES=1 nohup python LEI_run1.py --benchmark bbq --max_new_token 7 --external --wo_unbiased_instruc --bias physical > logs/bbq/physical/extrinsic.log 2>&1 &
 CUDA_VISIBLE_DEVICES=1 nohup python LEI_run1.py --benchmark bbq --max_new_token 300 --cot --bias physical > logs/bbq/physical/intrinsic_cot.log 2>&1 &
 CUDA_VISIBLE_DEVICES=3 nohup python LEI_run1.py --benchmark bbq --max_new_token 300 --external --wo_unbiased_instruc --cot --bias physical > logs/bbq/physical/extrinsic_cot.log 2>&1 &
 CUDA_VISIBLE_DEVICES=2 nohup python LEI_run1.py --benchmark bbq --max_new_token 300 --external --cot --bias physical > logs/bbq/physical/intrinsic_extrinsic_cot.log 2>&1 &
 
 
-CUDA_VISIBLE_DEVICES=0 nohup python LEI_run1.py --benchmark bbq --max_new_token 7 --bias religion > logs/bbq/religion/intrinsic.log 2>&1 & 
+CUDA_VISIBLE_DEVICES=2 nohup python LEI_run1.py --benchmark bbq --max_new_token 7 --bias religion > logs/bbq/religion/intrinsic.log 2>&1 & 
 CUDA_VISIBLE_DEVICES=1 nohup python LEI_run1.py --benchmark bbq --max_new_token 7 --external --wo_unbiased_instruc --bias religion > logs/bbq/religion/extrinsic.log 2>&1 &
 CUDA_VISIBLE_DEVICES=1 nohup python LEI_run1.py --benchmark bbq --max_new_token 300 --cot --bias religion > logs/bbq/religion/intrinsic_cot.log 2>&1 &
 CUDA_VISIBLE_DEVICES=3 nohup python LEI_run1.py --benchmark bbq --max_new_token 300 --external --wo_unbiased_instruc --cot --bias religion > logs/bbq/religion/extrinsic_cot.log 2>&1 &
@@ -21,3 +21,42 @@ CUDA_VISIBLE_DEVICES=2 nohup python LEI_run1.py --benchmark bbq --max_new_token 
 #INSTRUCTION:
 1. 在 utils.py 的第 53 行指定一下缓存模型的本地路径
 2. 运行上面的指令, 指定 cuda 设备
+
+
+查看：
+tail logs/bbq/disability/intrinsic.log
+tail logs/bbq/physical/intrinsic.log
+tail logs/bbq/religion/intrinsic.log
+
+tail logs/bbq/religion/extrinsic_cot.log
+tail logs/bbq/religion/intrinsic_extrinsic_cot.log
+
+srun -A bcyy-delta-gpu --time=4:00:00 --nodes=1 --ntasks-per-node=16 --partition=gpuA100x8 --gpus=3 --mem=64g --pty /bin/bash
+srun -A bcyy-delta-gpu --time=4:00:00 --nodes=1 --ntasks-per-node=16 --partition=gpuA100x8 --gpus=1 --mem=64g /bin/bash -c "conda activate myenv && CUDA_VISIBLE_DEVICES=0 nohup python LEI_run1.py --benchmark bbq --max_new_token 7 --bias disability > logs/bbq/disability/intrinsic.log 2>&1 &"
+
+tmux detach 
+tmux list-sessions
+tmux attach -t session_name
+
+
+sbatch job.sh
+sacct 查看进程
+
+
+squeue -A bcyy-delt+
+sinfo
+
+quota -s 查看磁盘配额
+
+scp -r lj1ang@dt-login01.delta.ncsa.illinois.edu:/scratch/bcyy/lj1ang/zimo/SuperficialMoralSelfCorrection/mechanism/logs /Users/xiaomangguo/Desktop/
+
+srun -A bcyy-delta-gpu --time=00:5:00 --nodes=1 --ntasks-per-node=16 --partition=gpuA100x8 --gpus=1 --mem=16g --pty /bin/bash
+
+srun -A bcyy-delta-gpu --time=4:00:00 --nodes=1 --ntasks-per-node=16 --partition=gpuA100x8 --gpus=3 --mem=64g --pty /bin/bash
+
+srun --account=bcyy-delta-cpu --partition=cpu-interactive \
+--nodes=1 --tasks=1 --tasks-per-node=1 \
+--cpus-per-task=4 --mem=64g \
+--pty bash
+
+4935512 jobid
