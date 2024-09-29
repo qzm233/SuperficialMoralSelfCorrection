@@ -4,4 +4,256 @@ Using device: cuda
 benchmark:  realtoxicity
 0
 0it [00:00, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
-1it [00:47, 47.47s/it]2it [01:47, 55.12s/it]3it [02:04, 37.34s/it]4it [03:03, 46.21s/it]5it [03:38, 41.83s/it]6it [04:19, 41.70s/it]7it [05:06, 43.52s/it]8it [05:56, 45.61s/it]9it [06:23, 39.75s/it]10it [07:13, 42.73s/it]11it [08:08, 46.55s/it]12it [09:06, 50.07s/it]13it [09:58, 50.65s/it]14it [11:06, 55.79s/it]15it [11:55, 53.86s/it]16it [12:57, 56.46s/it]17it [13:52, 56.02s/it]18it [14:31, 50.92s/it]19it [15:33, 54.25s/it]20it [16:46, 59.61s/it]21it [17:35, 56.44s/it]22it [18:20, 53.22s/it]23it [19:17, 54.11s/it]24it [20:13, 54.74s/it]25it [21:24, 59.80s/it]26it [21:59, 52.25s/it]27it [22:40, 48.86s/it]28it [22:59, 39.82s/it]29it [24:33, 56.03s/it]30it [25:22, 54.16s/it]31it [26:05, 50.82s/it]32it [26:48, 48.28s/it]33it [27:40, 49.37s/it]34it [28:16, 45.57s/it]
+1it [00:47, 47.47s/it]2it [01:47, 55.12s/it]3it [02:04, 37.34s/it]4it [03:03, 46.21s/it]5it [03:38, 41.83s/it]6it [04:19, 41.70s/it]7it [05:06, 43.52s/it]8it [05:56, 45.61s/it]9it [06:23, 39.75s/it]10it [07:13, 42.73s/it]11it [08:08, 46.55s/it]12it [09:06, 50.07s/it]13it [09:58, 50.65s/it]14it [11:06, 55.79s/it]15it [11:55, 53.86s/it]16it [12:57, 56.46s/it]17it [13:52, 56.02s/it]18it [14:31, 50.92s/it]19it [15:33, 54.25s/it]20it [16:46, 59.61s/it]21it [17:35, 56.44s/it]22it [18:20, 53.22s/it]23it [19:17, 54.11s/it]24it [20:13, 54.74s/it]25it [21:24, 59.80s/it]26it [21:59, 52.25s/it]27it [22:40, 48.86s/it]28it [22:59, 39.82s/it]29it [24:33, 56.03s/it]30it [25:22, 54.16s/it]31it [26:05, 50.82s/it]32it [26:48, 48.28s/it]33it [27:40, 49.37s/it]34it [28:16, 45.57s/it]35it [29:04, 46.27s/it]36it [29:49, 45.80s/it]37it [30:47, 49.51s/it]38it [31:24, 45.76s/it]39it [32:30, 51.94s/it]40it [33:01, 45.50s/it]41it [34:08, 52.08s/it]42it [35:01, 52.36s/it]43it [35:40, 48.26s/it]44it [36:34, 49.91s/it]45it [37:40, 54.81s/it]46it [38:31, 53.74s/it]47it [39:10, 49.36s/it]48it [40:16, 54.11s/it]49it [40:55, 49.67s/it]50it [41:45, 49.71s/it]51it [43:39, 69.05s/it]52it [44:15, 59.14s/it]53it [44:57, 54.10s/it]54it [45:44, 52.03s/it]55it [46:43, 53.85s/it]56it [47:36, 53.60s/it]57it [49:06, 64.70s/it]58it [49:51, 58.78s/it]59it [50:32, 53.50s/it]60it [51:22, 52.38s/it]61it [52:04, 49.24s/it]62it [52:48, 47.60s/it]63it [53:19, 42.54s/it]64it [54:13, 46.24s/it]65it [55:15, 50.78s/it]66it [56:13, 52.87s/it]67it [57:18, 56.52s/it]68it [58:26, 59.96s/it]69it [59:27, 60.47s/it]70it [1:00:18, 57.45s/it]71it [1:00:56, 51.83s/it]72it [1:01:49, 52.03s/it]73it [1:02:26, 47.63s/it]74it [1:03:12, 47.03s/it]75it [1:03:54, 45.58s/it]76it [1:05:08, 54.09s/it]77it [1:05:53, 51.48s/it]78it [1:06:38, 49.49s/it]79it [1:07:48, 55.50s/it]80it [1:08:46, 56.30s/it]81it [1:09:30, 52.52s/it]82it [1:09:58, 45.27s/it]83it [1:10:40, 44.26s/it]84it [1:11:25, 44.62s/it]85it [1:12:20, 47.60s/it]86it [1:12:57, 44.40s/it]87it [1:14:01, 50.30s/it]88it [1:14:42, 47.55s/it]89it [1:15:16, 43.43s/it]90it [1:16:11, 46.96s/it]91it [1:16:52, 45.08s/it]92it [1:17:34, 44.17s/it]93it [1:18:03, 39.75s/it]94it [1:18:59, 44.68s/it]95it [1:19:43, 44.35s/it]96it [1:20:37, 47.29s/it]97it [1:21:11, 43.40s/it]98it [1:22:29, 53.77s/it]99it [1:23:16, 51.65s/it]100it [1:23:47, 45.51s/it]101it [1:24:25, 43.18s/it]102it [1:25:44, 53.79s/it]103it [1:26:46, 56.36s/it]104it [1:28:00, 61.67s/it]105it [1:28:42, 55.63s/it]106it [1:29:19, 50.19s/it]107it [1:30:11, 50.83s/it]108it [1:30:51, 47.38s/it]109it [1:32:03, 55.00s/it]110it [1:32:41, 49.63s/it]111it [1:33:24, 47.65s/it]112it [1:34:06, 45.96s/it]113it [1:34:56, 47.30s/it]114it [1:35:27, 42.47s/it]115it [1:36:20, 45.50s/it]116it [1:37:30, 52.77s/it]117it [1:38:40, 58.10s/it]118it [1:39:24, 53.78s/it]119it [1:40:10, 51.49s/it]120it [1:41:00, 51.04s/it]121it [1:41:48, 50.18s/it]122it [1:42:31, 48.13s/it]123it [1:43:06, 44.20s/it]124it [1:44:14, 51.20s/it]125it [1:44:54, 47.98s/it]126it [1:45:58, 52.69s/it]127it [1:46:36, 48.13s/it]128it [1:47:18, 46.27s/it]129it [1:48:23, 52.01s/it]130it [1:49:17, 52.66s/it]131it [1:50:13, 53.54s/it]132it [1:50:42, 46.11s/it]133it [1:51:47, 51.82s/it]134it [1:52:47, 54.43s/it]135it [1:53:30, 50.85s/it]136it [1:54:11, 48.12s/it]137it [1:54:48, 44.57s/it]138it [1:55:45, 48.36s/it]139it [1:56:24, 45.63s/it]140it [1:57:09, 45.43s/it]141it [1:57:51, 44.39s/it]142it [1:58:22, 40.21s/it]143it [1:59:14, 44.00s/it]144it [2:00:05, 45.97s/it]145it [2:01:16, 53.53s/it]146it [2:02:22, 57.14s/it]147it [2:03:31, 60.78s/it]148it [2:04:06, 53.00s/it]149it [2:04:45, 48.81s/it]150it [2:05:25, 46.25s/it]151it [2:06:08, 45.22s/it]152it [2:06:45, 42.68s/it]153it [2:07:22, 40.95s/it]154it [2:08:19, 45.80s/it]155it [2:09:22, 50.96s/it]156it [2:09:45, 42.65s/it]157it [2:10:45, 47.80s/it]158it [2:11:17, 43.03s/it]159it [2:11:56, 41.87s/it]160it [2:12:46, 44.46s/it]161it [2:13:35, 45.74s/it]162it [2:14:59, 57.24s/it]163it [2:15:48, 54.76s/it]164it [2:16:18, 47.16s/it]165it [2:18:48, 78.09s/it]166it [2:19:29, 67.07s/it]167it [2:20:07, 58.21s/it]168it [2:20:44, 51.94s/it]169it [2:21:30, 50.25s/it]170it [2:22:12, 47.75s/it]171it [2:22:56, 46.59s/it]172it [2:23:45, 47.36s/it]173it [2:24:36, 48.32s/it]174it [2:25:29, 49.84s/it]175it [2:26:05, 45.48s/it]176it [2:26:58, 47.73s/it]177it [2:27:41, 46.36s/it]178it [2:28:33, 48.20s/it]179it [2:29:13, 45.68s/it]180it [2:30:24, 53.37s/it]181it [2:31:20, 53.92s/it]182it [2:32:12, 53.59s/it]183it [2:33:11, 55.15s/it]184it [2:34:11, 56.42s/it]185it [2:34:42, 48.93s/it]186it [2:35:49, 54.30s/it]187it [2:36:21, 47.78s/it]188it [2:36:59, 44.84s/it]189it [2:37:50, 46.52s/it]190it [2:38:16, 40.50s/it]191it [2:39:10, 44.51s/it]192it [2:39:59, 45.75s/it]193it [2:40:34, 42.72s/it]194it [2:41:12, 41.25s/it]195it [2:41:52, 40.82s/it]196it [2:42:44, 44.03s/it]197it [2:43:32, 45.50s/it]198it [2:44:24, 47.43s/it]199it [2:45:01, 44.16s/it]200it [2:45:40, 42.68s/it]201it [2:47:05, 55.38s/it]202it [2:47:40, 49.20s/it]203it [2:48:58, 57.71s/it]204it [2:49:55, 57.74s/it]205it [2:50:48, 56.07s/it]206it [2:52:36, 71.69s/it]207it [2:53:35, 67.88s/it]208it [2:54:09, 57.86s/it]209it [2:54:56, 54.68s/it]210it [2:56:16, 62.11s/it]211it [2:57:13, 60.57s/it]212it [2:58:47, 70.77s/it]213it [2:59:21, 59.60s/it]214it [3:00:24, 60.58s/it]215it [3:00:53, 51.25s/it]216it [3:01:42, 50.61s/it]217it [3:02:30, 49.68s/it]218it [3:03:46, 57.71s/it]219it [3:04:54, 60.85s/it]220it [3:05:43, 57.02s/it]221it [3:06:18, 50.41s/it]222it [3:06:59, 47.73s/it]223it [3:07:56, 50.54s/it]224it [3:08:59, 54.10s/it]225it [3:09:45, 51.76s/it]226it [3:11:05, 60.25s/it]227it [3:11:55, 57.19s/it]228it [3:12:45, 55.12s/it]229it [3:13:50, 58.12s/it]230it [3:14:43, 56.33s/it]231it [3:15:32, 54.22s/it]232it [3:16:11, 49.67s/it]233it [3:16:37, 42.52s/it]234it [3:17:45, 50.23s/it]235it [3:18:27, 47.85s/it]236it [3:19:08, 45.64s/it]237it [3:19:57, 46.75s/it]238it [3:20:25, 41.25s/it]239it [3:21:29, 47.93s/it]240it [3:22:17, 47.83s/it]241it [3:23:00, 46.39s/it]242it [3:23:43, 45.45s/it]243it [3:24:28, 45.30s/it]244it [3:25:24, 48.56s/it]245it [3:26:06, 46.73s/it]246it [3:26:58, 48.04s/it]247it [3:27:31, 43.70s/it]248it [3:28:29, 47.82s/it]249it [3:29:16, 47.82s/it]250it [3:30:24, 53.69s/it]251it [3:31:25, 55.90s/it]252it [3:32:07, 51.79s/it]253it [3:32:47, 48.18s/it]254it [3:33:38, 49.02s/it]255it [3:34:32, 50.65s/it]256it [3:35:18, 49.30s/it]257it [3:36:01, 47.35s/it]258it [3:36:48, 47.12s/it]259it [3:37:40, 48.54s/it]260it [3:38:34, 50.24s/it]261it [3:39:10, 46.13s/it]262it [3:39:44, 42.39s/it]263it [3:40:19, 40.10s/it]264it [3:41:00, 40.49s/it]265it [3:41:49, 43.03s/it]266it [3:42:47, 47.44s/it]267it [3:43:50, 52.26s/it]268it [3:44:44, 52.74s/it]269it [3:45:45, 55.15s/it]270it [3:46:45, 56.50s/it]271it [3:48:10, 65.02s/it]272it [3:49:05, 62.11s/it]273it [3:49:44, 55.29s/it]274it [3:50:35, 54.01s/it]275it [3:51:34, 55.34s/it]276it [3:52:28, 55.03s/it]277it [3:53:32, 57.74s/it]278it [3:54:16, 53.64s/it]279it [3:55:32, 60.18s/it]280it [3:56:31, 59.90s/it]281it [3:57:34, 61.02s/it]282it [3:58:37, 61.34s/it]283it [3:59:31, 59.15s/it]284it [4:00:39, 61.78s/it]285it [4:01:25, 57.15s/it]286it [4:02:28, 59.04s/it]287it [4:03:54, 67.09s/it]288it [4:05:46, 80.55s/it]289it [4:06:23, 67.52s/it]290it [4:07:00, 58.25s/it]291it [4:09:29, 85.57s/it]292it [4:10:42, 81.64s/it]293it [4:11:40, 74.64s/it]294it [4:12:30, 67.21s/it]295it [4:13:04, 57.16s/it]296it [4:13:34, 49.13s/it]297it [4:15:18, 65.49s/it]298it [4:16:04, 59.74s/it]299it [4:17:02, 59.33s/it]300it [4:17:40, 52.76s/it]301it [4:18:43, 55.86s/it]302it [4:19:33, 54.28s/it]303it [4:20:19, 51.71s/it]304it [4:21:18, 53.75s/it]305it [4:22:11, 53.75s/it]306it [4:23:42, 64.80s/it]307it [4:24:24, 57.83s/it]308it [4:26:00, 69.45s/it]309it [4:26:46, 62.40s/it]310it [4:27:51, 63.31s/it]311it [4:28:53, 62.80s/it]312it [4:30:32, 73.59s/it]313it [4:31:36, 70.88s/it]314it [4:32:30, 65.63s/it]315it [4:33:14, 59.19s/it]316it [4:33:40, 49.34s/it]317it [4:34:37, 51.44s/it]318it [4:35:11, 46.45s/it]319it [4:35:46, 42.90s/it]320it [4:37:10, 55.33s/it]321it [4:37:45, 49.07s/it]322it [4:38:29, 47.63s/it]323it [4:39:28, 50.90s/it]324it [4:40:19, 51.02s/it]325it [4:41:10, 50.96s/it]326it [4:42:10, 53.67s/it]327it [4:42:43, 47.43s/it]328it [4:43:19, 44.08s/it]329it [4:44:03, 44.13s/it]330it [4:45:29, 56.54s/it]331it [4:46:18, 54.28s/it]332it [4:47:08, 53.19s/it]333it [4:48:05, 54.30s/it]334it [4:48:55, 52.99s/it]335it [4:49:43, 51.35s/it]336it [4:50:22, 47.88s/it]337it [4:50:56, 43.44s/it]338it [4:52:21, 56.16s/it]339it [4:53:18, 56.34s/it]340it [4:54:27, 60.10s/it]341it [4:55:07, 54.03s/it]342it [4:55:42, 48.49s/it]343it [4:56:23, 46.11s/it]344it [4:57:20, 49.48s/it]345it [4:57:51, 43.95s/it]346it [4:58:33, 43.22s/it]347it [4:59:23, 45.29s/it]348it [5:00:03, 43.58s/it]349it [5:00:31, 39.11s/it]350it [5:01:20, 42.10s/it]351it [5:02:10, 44.23s/it]352it [5:03:19, 51.70s/it]353it [5:04:30, 57.48s/it]354it [5:05:12, 52.85s/it]355it [5:06:06, 53.34s/it]356it [5:06:52, 51.01s/it]357it [5:08:24, 63.33s/it]358it [5:09:19, 60.79s/it]359it [5:10:21, 61.23s/it]360it [5:11:26, 62.23s/it]361it [5:12:26, 61.68s/it]362it [5:13:01, 53.65s/it]363it [5:13:37, 48.32s/it]364it [5:14:48, 55.16s/it]365it [5:15:43, 55.14s/it]366it [5:16:14, 47.82s/it]367it [5:16:50, 44.33s/it]368it [5:17:25, 41.68s/it]369it [5:18:14, 43.76s/it]370it [5:19:00, 44.42s/it]371it [5:19:40, 43.18s/it]372it [5:20:28, 44.60s/it]373it [5:21:24, 48.08s/it]374it [5:22:15, 48.88s/it]375it [5:22:50, 44.63s/it]376it [5:23:35, 44.96s/it]377it [5:25:15, 61.45s/it]378it [5:25:58, 55.74s/it]379it [5:26:56, 56.34s/it]380it [5:27:31, 50.17s/it]381it [5:28:00, 43.73s/it]382it [5:28:56, 47.40s/it]383it [5:30:04, 53.46s/it]384it [5:30:47, 50.36s/it]385it [5:31:41, 51.48s/it]386it [5:33:00, 59.81s/it]387it [5:33:44, 55.05s/it]388it [5:34:20, 49.26s/it]389it [5:35:13, 50.35s/it]390it [5:36:04, 50.53s/it]391it [5:36:34, 44.43s/it]392it [5:37:23, 45.90s/it]393it [5:38:00, 43.10s/it]394it [5:39:25, 55.88s/it]395it [5:40:30, 58.40s/it]396it [5:41:40, 61.93s/it]397it [5:42:27, 57.60s/it]398it [5:43:31, 59.32s/it]399it [5:44:28, 58.58s/it]400it [5:45:15, 55.14s/it]401it [5:45:57, 51.22s/it]402it [5:47:01, 55.16s/it]403it [5:47:46, 52.12s/it]404it [5:48:28, 48.91s/it]405it [5:49:38, 55.36s/it]406it [5:50:14, 49.72s/it]407it [5:51:02, 49.07s/it]408it [5:52:01, 51.98s/it]409it [5:52:57, 53.23s/it]410it [5:53:32, 47.64s/it]411it [5:54:30, 50.95s/it]412it [5:55:24, 51.77s/it]413it [5:56:37, 58.05s/it]414it [5:57:38, 58.94s/it]415it [5:58:39, 59.67s/it]416it [5:59:14, 52.35s/it]417it [6:00:21, 56.74s/it]418it [6:01:16, 56.05s/it]419it [6:02:02, 52.97s/it]420it [6:02:56, 53.43s/it]421it [6:03:29, 47.18s/it]422it [6:03:58, 41.82s/it]423it [6:04:54, 46.01s/it]424it [6:05:30, 42.98s/it]425it [6:06:22, 45.86s/it]426it [6:07:12, 46.99s/it]427it [6:09:39, 77.07s/it]428it [6:10:40, 72.28s/it]429it [6:11:36, 67.34s/it]430it [6:12:32, 64.04s/it]431it [6:14:12, 74.79s/it]432it [6:15:21, 73.14s/it]433it [6:16:22, 69.40s/it]434it [6:17:20, 65.81s/it]435it [6:18:09, 60.96s/it]436it [6:19:24, 65.24s/it]437it [6:20:19, 61.97s/it]438it [6:21:12, 59.39s/it]439it [6:22:09, 58.49s/it]440it [6:22:48, 52.68s/it]441it [6:23:27, 48.60s/it]442it [6:24:13, 47.75s/it]443it [6:24:46, 43.46s/it]444it [6:25:28, 42.96s/it]445it [6:26:18, 45.11s/it]446it [6:27:03, 45.05s/it]447it [6:27:38, 42.08s/it]448it [6:28:15, 40.64s/it]449it [6:29:11, 45.16s/it]450it [6:29:57, 45.35s/it]451it [6:31:07, 52.89s/it]452it [6:31:48, 49.22s/it]453it [6:32:41, 50.33s/it]454it [6:33:26, 48.87s/it]455it [6:34:19, 50.03s/it]456it [6:35:31, 56.72s/it]457it [6:36:44, 61.49s/it]458it [6:37:52, 63.53s/it]459it [6:38:45, 60.26s/it]460it [6:39:45, 60.08s/it]461it [6:40:55, 63.32s/it]462it [6:41:30, 54.75s/it]463it [6:42:11, 50.64s/it]464it [6:44:53, 83.90s/it]465it [6:45:36, 71.62s/it]466it [6:46:15, 61.80s/it]467it [6:48:04, 75.98s/it]468it [6:49:00, 70.24s/it]469it [6:49:43, 61.77s/it]470it [6:50:59, 66.10s/it]471it [6:51:51, 62.04s/it]472it [6:52:57, 63.29s/it]473it [6:53:53, 60.91s/it]474it [6:54:37, 55.94s/it]475it [6:55:34, 56.19s/it]476it [6:56:36, 57.87s/it]477it [6:57:25, 55.14s/it]478it [6:58:05, 50.65s/it]479it [6:59:02, 52.56s/it]480it [7:00:37, 65.24s/it]481it [7:00:59, 52.56s/it]482it [7:01:49, 51.69s/it]483it [7:02:24, 46.67s/it]484it [7:03:03, 44.23s/it]485it [7:03:52, 45.90s/it]486it [7:04:47, 48.54s/it]487it [7:05:39, 49.42s/it]488it [7:06:25, 48.47s/it]489it [7:07:10, 47.49s/it]490it [7:08:11, 51.67s/it]491it [7:09:23, 57.77s/it]492it [7:10:19, 56.96s/it]493it [7:11:57, 69.47s/it]494it [7:12:50, 64.39s/it]495it [7:13:57, 65.22s/it]496it [7:14:27, 54.58s/it]497it [7:15:11, 51.54s/it]498it [7:15:40, 44.65s/it]499it [7:16:42, 49.81s/it]499it [7:17:38, 52.62s/it]
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+save every 100 samples!!!
+total 500 done!
+500 samples done

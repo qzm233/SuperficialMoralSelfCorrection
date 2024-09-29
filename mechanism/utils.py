@@ -214,7 +214,7 @@ def load_winogender():
 def load_bbq(args):
     dataset = []
     print(f"load bbq {args.bias}")
-    file = f"data/bbq.{args.bias}.txt"
+    file = f"../data/bbq/bbq.{args.bias}.txt"
     if not os.path.exists(file):
         raise FileNotFoundError(f"File not found: {file}")
 

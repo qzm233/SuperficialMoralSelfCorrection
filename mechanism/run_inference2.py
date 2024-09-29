@@ -214,10 +214,10 @@ def get_toxicity_result(args, tokenizer, llm, input_question_list, prompt_list):
             round_+=1
             torch.cuda.empty_cache()
         hs_probing_list.append(hs_probing_question)
-        if count % 2 == 0:
+        if count % 50 == 0:
             with open(save_file,'w') as writer:
                 json.dump(hs_probing_list, writer)
-            print("save every 100 samples!!!")
+            print("save every 50 samples!!!")
         if count == args.num_samples:
             print("total 500 done!")
             break
