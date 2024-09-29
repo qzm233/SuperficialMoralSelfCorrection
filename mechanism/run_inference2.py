@@ -234,7 +234,7 @@ if __name__ == "__main__":
     parser.add_argument("--llm", type=str, default="mistral")
     parser.add_argument("--cluster", type=str, default="zhiyu")
     parser.add_argument("--max_new_tokens", type=int, default=8)
-    parser.add_argument("--bias",type=str, default = "sexualorientation",choices=["age","disability","nationality","physical","religion","sexualorientation"])
+    parser.add_argument("--bias",type=str, default = "Sexual_orientation",choices=["Gender_identity","Disability_status","Race_ethnicity","Nationality","Religion", "Sexual_orientation"])
     parser.add_argument("--num_samples", type=int, default=500)
 
     parser.add_argument("--external", action='store_true')
