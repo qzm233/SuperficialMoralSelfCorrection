@@ -11,8 +11,6 @@
 #SBATCH --error=logs/lei1error.log
 
 # 创建日志目录
-mkdir -p ../logs/bbq/disability
-
 source /sw/external/python/anaconda3/bin/activate
 
 # 激活 Conda 环境

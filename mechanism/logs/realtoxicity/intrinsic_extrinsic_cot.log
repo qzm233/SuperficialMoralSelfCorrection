@@ -3371,4 +3371,649 @@ set realtoxicity
 set realtoxicity
 set realtoxicity
 set realtoxicity
-420it [23:05:02, 195.42s/it]421it [23:07:48, 186.39s/it]422it [23:11:07, 190.18s/it]423it [23:15:32, 212.63s/it]424it [23:18:57, 210.56s/it]425it [23:22:57, 219.28s/it]426it [23:27:23, 233.24s/it]427it [23:30:20, 216.28s/it]428it [23:34:22, 224.07s/it]429it [23:38:47, 236.36s/it]430it [23:42:05, 224.81s/it]431it [23:45:35, 220.57s/it]432it [23:48:39, 209.35s/it]433it [23:52:08, 209.45s/it]434it [23:55:37, 209.17s/it]435it [23:58:50, 204.34s/it]436it [24:03:31, 227.24s/it]437it [24:06:55, 220.39s/it]438it [24:10:19, 215.62s/it]439it [24:13:54, 215.20s/it]440it [24:16:36, 199.39s/it]441it [24:19:49, 197.42s/it]442it [24:22:38, 188.87s/it]443it [24:26:26, 200.76s/it]444it [24:30:43, 217.43s/it]445it [24:34:49, 226.06s/it]446it [24:39:06, 235.28s/it]447it [24:43:17, 239.93s/it]448it [24:46:07, 219.15s/it]449it [24:49:28, 213.55s/it]450it [24:52:32, 204.90s/it]451it [24:56:07, 207.83s/it]452it [24:59:11, 200.61s/it]453it [25:02:01, 191.56s/it]454it [25:05:18, 193.18s/it]455it [25:08:25, 191.29s/it]456it [25:12:40, 210.34s/it]457it [25:15:41, 201.60s/it]458it [25:18:58, 200.19s/it]459it [25:21:54, 192.94s/it]460it [25:25:10, 193.72s/it]461it [25:29:01, 204.90s/it]462it [25:32:57, 214.43s/it]463it [25:35:39, 198.70s/it]464it [25:38:47, 195.45s/it]465it [25:41:31, 185.97s/it]
+420it [23:05:02, 195.42s/it]421it [23:07:48, 186.39s/it]422it [23:11:07, 190.18s/it]423it [23:15:32, 212.63s/it]424it [23:18:57, 210.56s/it]425it [23:22:57, 219.28s/it]426it [23:27:23, 233.24s/it]427it [23:30:20, 216.28s/it]428it [23:34:22, 224.07s/it]429it [23:38:47, 236.36s/it]430it [23:42:05, 224.81s/it]431it [23:45:35, 220.57s/it]432it [23:48:39, 209.35s/it]433it [23:52:08, 209.45s/it]434it [23:55:37, 209.17s/it]435it [23:58:50, 204.34s/it]436it [24:03:31, 227.24s/it]437it [24:06:55, 220.39s/it]438it [24:10:19, 215.62s/it]439it [24:13:54, 215.20s/it]440it [24:16:36, 199.39s/it]441it [24:19:49, 197.42s/it]442it [24:22:38, 188.87s/it]443it [24:26:26, 200.76s/it]444it [24:30:43, 217.43s/it]445it [24:34:49, 226.06s/it]446it [24:39:06, 235.28s/it]447it [24:43:17, 239.93s/it]448it [24:46:07, 219.15s/it]449it [24:49:28, 213.55s/it]450it [24:52:32, 204.90s/it]451it [24:56:07, 207.83s/it]452it [24:59:11, 200.61s/it]453it [25:02:01, 191.56s/it]454it [25:05:18, 193.18s/it]455it [25:08:25, 191.29s/it]456it [25:12:40, 210.34s/it]457it [25:15:41, 201.60s/it]458it [25:18:58, 200.19s/it]459it [25:21:54, 192.94s/it]460it [25:25:10, 193.72s/it]461it [25:29:01, 204.90s/it]462it [25:32:57, 214.43s/it]463it [25:35:39, 198.70s/it]464it [25:38:47, 195.45s/it]465it [25:41:31, 185.97s/it]466it [25:44:47, 189.05s/it]467it [25:48:11, 193.55s/it]468it [25:51:45, 199.54s/it]469it [25:54:51, 195.55s/it]470it [25:58:58, 210.96s/it]471it [26:02:00, 202.20s/it]472it [26:04:48, 192.11s/it]473it [26:08:37, 203.07s/it]474it [26:11:34, 195.36s/it]475it [26:14:35, 191.01s/it]476it [26:17:13, 181.02s/it]477it [26:20:38, 188.38s/it]478it [26:23:38, 185.74s/it]479it [26:26:43, 185.41s/it]set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+save every 50 samples!!!
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+480it [26:29:34, 181.20s/it]481it [26:32:43, 183.49s/it]482it [26:35:56, 186.49s/it]483it [26:38:51, 182.84s/it]484it [26:42:00, 184.87s/it]485it [26:45:15, 187.78s/it]486it [26:48:18, 186.51s/it]487it [26:51:21, 185.23s/it]488it [26:54:26, 185.32s/it]489it [26:56:59, 175.70s/it]490it [27:00:02, 177.87s/it]491it [27:03:21, 184.08s/it]492it [27:06:53, 192.38s/it]493it [27:11:10, 211.87s/it]494it [27:13:53, 197.22s/it]495it [27:16:33, 186.17s/it]496it [27:19:36, 185.15s/it]497it [27:22:47, 186.85s/it]498it [27:25:44, 183.84s/it]499it [27:29:11, 190.99s/it]499it [27:32:14, 198.67s/it]
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+set realtoxicity
+save every 50 samples!!!
+total 500 done!
+500 samples done

@@ -65,10 +65,6 @@ def init_model(args):
         cache_dir = cache_dir_lei
 
     if args.llm == "mistral":  # 7B
-        # save_dir = '/root/autodl-fs/zephyr-7b-sft-full'
-        # tokenizer = AutoTokenizer.from_pretrained(
-        #      save_dir
-        # )
         tokenizer = AutoTokenizer.from_pretrained(
             "mistralai/Mistral-7B-Instruct-v0.2", cache_dir=cache_dir
         )
@@ -78,13 +74,21 @@ def init_model(args):
         if tokenizer.pad_token is None:
             tokenizer.pad_token = tokenizer.eos_token
             tokenizer.pad_token_id = tokenizer.eos_token_id
-        # model = AutoModelForCausalLM.from_pretrained(
-        #      save_dir, torch_dtype=torch.bfloat16
-        # )
         model = AutoModelForCausalLM.from_pretrained(
             "mistralai/Mistral-7B-Instruct-v0.2", cache_dir=cache_dir
         )
         return tokenizer, model.to(device)
+
+    elif args.llm == "gemma2-9b":
+        tokenizer = AutoTokenizer.from_pretrained(
+            "google/gemma-2-9b-it", cache_dir=cache_dir
+        )
+        tokenizer.pad_token = tokenizer.eos_token
+        tokenizer.padding_side = "left"
+        model = AutoModelForCausalLM.from_pretrained(
+            "google/gemma-2-9b-it", cache_dir=cache_dir, device_map="auto"
+        )
+        return tokenizer, model
 
     elif args.llm == "llama3-8B":
         tokenizer = AutoTokenizer.from_pretrained(
@@ -214,7 +218,7 @@ def load_winogender():
 def load_bbq(args):
     dataset = []
     print(f"load bbq {args.bias}")
-    file = f"../data/bbq/bbq.{args.bias}.txt"
+    file = f"data/bbq.{args.bias}.txt"
     if not os.path.exists(file):
         raise FileNotFoundError(f"File not found: {file}")
 

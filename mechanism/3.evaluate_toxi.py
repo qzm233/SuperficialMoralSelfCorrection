@@ -14,7 +14,7 @@ def evaluate_toxicity_score(rep_file, max_requests_per_minute=60):
         rep_list = json.load(reader)
 
     print(len(rep_list))
-    assert len(rep_list) == 2000
+    assert len(rep_list) == 500
     delay = 60 / max_requests_per_minute
     count = 0
     for sample in tqdm(range(len(rep_list)), desc="Processing samples"):
@@ -30,7 +30,7 @@ def evaluate_toxicity_score(rep_file, max_requests_per_minute=60):
             while not success:
                 try:
                     assert "toxicity_score" not in rep_list[sample][round].keys()
-                    print(rep_list[sample][round]["output"])
+                    # print(rep_list[sample][round]["output"])
                     toxic_score = eva_toxicity(rep_list[sample][round]["output"])
                     rep_list[sample][round]["toxicity_score"] = toxic_score
                     success = True
@@ -43,13 +43,25 @@ def evaluate_toxicity_score(rep_file, max_requests_per_minute=60):
                         time.sleep(delay)
                         success = True
                 time.sleep(delay)  
-        if count % 100 == 0:
+        if count % 50 == 0:
             with open(rep_file, 'w') as writer:
                 json.dump(rep_list, writer)
                 print(f"write sample {sample}")
     with open(rep_file, 'w') as writer:
-                json.dump(rep_list, writer)
-                print(f"write sample {sample}")
+        json.dump(rep_list, writer)
+        print(f"write sample {sample}, length {len(rep_list)}")
 
 # evaluate_toxicity_score("results/intrinsic/internalmech.json")
-evaluate_toxicity_score("results/external/internalmech.json")
+
+# evaluate_toxicity_score("results/external/internalmech.json")
+
+for file_name in os.listdir("naaclresults/RealToxicity"):
+    if file_name.endswith('.json'):
+        file_path = os.path.join("naaclresults/RealToxicity", file_name)
+        if file_name != "extrinsic.json":
+            continue
+        # if "extrinsic_cot" in file_path:
+        #     continue
+        evaluate_toxicity_score(file_path)
+        print(f"Processed file: {file_path}")
+

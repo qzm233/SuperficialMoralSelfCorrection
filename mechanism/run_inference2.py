@@ -72,7 +72,11 @@ def get_bbq_result(args, tokenizer, llm, input_question_list, prompt_list):
         for idx, prompt in enumerate(prompt_list):
             # round_ = idx
             # print(f"###########{round_}###########")
+            if args.llm == "gemma2-9b":
+                prompt = copy.deepcopy(prompt).replace("[INST]", "<start_of_turn>user")
+                prompt = copy.deepcopy(prompt).replace("[/INST]\n\n", "<end_of_turn>\n<start_of_turn>model\n")
             query = copy.deepcopy(prompt).replace("#QUESTION", question_["context"]+" "+question_["question"]+" "+question_["choice"]+".")
+            
             if args.external:
                 query = copy.deepcopy(query).replace("#FEEDBACK", feedback)
             prompt = query
@@ -83,7 +87,7 @@ def get_bbq_result(args, tokenizer, llm, input_question_list, prompt_list):
                     query = copy.deepcopy(query).replace("Please ensure that your answer is unbiased and does not rely on stereotypes. ", "")
                 query = copy.deepcopy(query).replace("that your answer is not biased", "about your answer")
                 query = copy.deepcopy(query).replace(" in a way that avoids bias or stereotyping", "")
-                 
+
             if round_ >= 2: query = history + "\n" + query
             response = get_response(args, tokenizer, llm, query)
             if args.external:
@@ -105,14 +109,24 @@ def get_bbq_result(args, tokenizer, llm, input_question_list, prompt_list):
             
 
             if round_ >= 1: 
-                history = query + response + "</s>" 
+                if args.llm == "gemma2-9b":
+                    history = query + response + "<end_of_turn>"
+                else:
+                    history = query + response + "</s>" 
                 if args.cot:
                     round_+=1
                     cot = response
                     prompt = copy.deepcopy(bbq_cot_round2)
+                    if args.llm == "gemma2-9b":
+                        prompt = copy.deepcopy(prompt).replace("[INST]", "<start_of_turn>user")
+                        prompt = copy.deepcopy(prompt).replace("[/INST]\n\n", "<end_of_turn>\n<start_of_turn>model\n")
+
                     query = history + "\n" + prompt
                     response = get_response(args, tokenizer, llm, query, cot_round2=True)
-                    history = query + response + "</s>"
+                    if args.llm == "gemma2-9b":
+                        history = query + response + "<end_of_turn>"
+                    else:
+                        history = query + response + "</s>" 
                     round_json = {
                         "question": question_["question"], "input": query, "output":response, "round": round_, "label": label, "feedback": "", "prompt":prompt,
                         "cot":cot, "context": question_["context"], "bias_type": question_['bias'], "stereotyped_groups": question_[STEREOTYPED_GROUPS]
@@ -121,7 +135,7 @@ def get_bbq_result(args, tokenizer, llm, input_question_list, prompt_list):
             round_+=1
             torch.cuda.empty_cache()
         hs_probing_list.append(hs_probing_question)
-        if count % 20 == 0:
+        if count % 50 == 0:
             with open(save_file,'w') as writer:
                 json.dump(hs_probing_list, writer)
             print("save every 100 samples!!!")
@@ -149,9 +163,9 @@ def get_toxicity_result(args, tokenizer, llm, input_question_list, prompt_list):
             save_file = save_folder + "intrinsic_cot.json"
 
     hs_probing_list = []
-    # if os.path.exists(save_file):
-    #     with open(save_file,'r') as reader:
-    #         hs_probing_list = json.load(reader)
+    if os.path.exists(save_file):
+        with open(save_file,'r') as reader:
+            hs_probing_list = json.load(reader)
     print(len(hs_probing_list))
     count = 0
     for q_idx, question_ in tqdm(enumerate(input_question_list)):
@@ -167,7 +181,11 @@ def get_toxicity_result(args, tokenizer, llm, input_question_list, prompt_list):
         for idx, prompt in enumerate(prompt_list):
             # round_ = idx
             # print(f"###########{round_}###########")
+            if args.llm == "gemma2-9b":
+                prompt = copy.deepcopy(prompt).replace("[INST]", "<start_of_turn>user")
+                prompt = copy.deepcopy(prompt).replace("[/INST]\n\n", "<end_of_turn>\n<start_of_turn>model\n")
             query = copy.deepcopy(prompt).replace("#QUESTION", question_)
+            
             if args.external:
                 query = copy.deepcopy(query).replace("#FEEDBACK", feedback)
             prompt = query
@@ -198,14 +216,24 @@ def get_toxicity_result(args, tokenizer, llm, input_question_list, prompt_list):
             hs_probing_question.append(round_json)
 
             if round_ >= 1: 
-                history = query + response + "</s>"
+                if args.llm == "gemma2-9b":
+                    history = query + response + "<end_of_turn>"
+                else:
+                    history = query + response + "</s>" 
                 if args.cot:
                     round_+=1
                     cot = response
                     prompt = copy.deepcopy(realtoxicity_cot_round2)
+                    if args.llm == "gemma2-9b":
+                        prompt = copy.deepcopy(prompt).replace("[INST]", "<start_of_turn>user")
+                        prompt = copy.deepcopy(prompt).replace("[/INST]\n\n", "<end_of_turn>\n<start_of_turn>model\n")
+
                     query = history + "\n" + prompt
                     response = get_response(args, tokenizer, llm, query)
-                    history = query + response + "</s>"
+                    if args.llm == "gemma2-9b":
+                        history = query + response + "<end_of_turn>"
+                    else:
+                        history = query + response + "</s>" 
                     round_json = {
                         "puestion": question_, "input": query, "output":response, "round": round_, "feedback": "", "prompt":prompt,
                         "cot": cot
@@ -214,7 +242,7 @@ def get_toxicity_result(args, tokenizer, llm, input_question_list, prompt_list):
             round_+=1
             torch.cuda.empty_cache()
         hs_probing_list.append(hs_probing_question)
-        if count % 50 == 0:
+        if count % 25 == 0:
             with open(save_file,'w') as writer:
                 json.dump(hs_probing_list, writer)
             print("save every 50 samples!!!")
@@ -231,10 +259,11 @@ if __name__ == "__main__":
         default="bbq_debug",
         choices=["winogender", "bbq", "realtoxicity", "bbq_debug"],
     )
+
     parser.add_argument("--llm", type=str, default="mistral")
     parser.add_argument("--cluster", type=str, default="zhiyu")
     parser.add_argument("--max_new_tokens", type=int, default=8)
-    parser.add_argument("--bias",type=str, default = "Sexual_orientation",choices=["Gender_identity","Disability_status","Race_ethnicity","Nationality","Religion", "Sexual_orientation"])
+    parser.add_argument("--bias",type=str, default = "sexualorientation",choices=["disability","religion", "sexualorientation","physical"])
     parser.add_argument("--num_samples", type=int, default=500)
 
     parser.add_argument("--external", action='store_true')

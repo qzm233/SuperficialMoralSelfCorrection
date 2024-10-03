@@ -119,7 +119,6 @@ if __name__ == "__main__":
     parser.add_argument("--wo_unbiased_instruc", action='store_true')
     parser.add_argument("--max_new_tokens", type=int, default=8)
     
-
     args = parser.parse_args()
 
     tokenizer, llm = init_model(args)

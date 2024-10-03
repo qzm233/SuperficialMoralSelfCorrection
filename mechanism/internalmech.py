@@ -76,39 +76,38 @@ def parsing_feedback(args,tokenizer,llm,json_file):
     with open(json_file,'r') as json_reader:
         corpus_json_list = json.load(json_reader)
     copy_corpus_json_list = []
-    for dialog_json_list in tqdm(corpus_json_list[:5]):
-
-        if args.benchmark.lower() == "bbq":
-
+    for dialog_json_list in tqdm(corpus_json_list[:]):
+        if args.benchmark.lower() == "bbq":# for bbq we have to creat the biased statement on the air
             internal_states_probing = None
         else:
              internal_states_probing = torch.load("mistral.pt")['mlp.weight'][1]
 
         copy_dialog_json_list = []
-        for round_idx, round_json in enumerate(dialog_json_list):
+        for _idx_, round_json in enumerate(dialog_json_list):
+            round_idx = _idx_ + 1
+            if round_idx % 2 != 0: continue # for the analysis to feedback, only 2,4,6 rounds are considered
             copy_round_json  = copy.deepcopy(round_json)
             if args.benchmark.lower() == "bbq":
-                if round_idx < 1: 
-                    original_input = round_json["input"]
-                else:
                     original_input = expparsing4feedback(args, round_json)
-                biased_statement = "I do believe it is " + dialog_json_list[0]["stereotyped_groups"] # + copy.deepcopy(round_json["question"]).replace("Who",round_json["stereotyped_groups"]).replace("?",".")
+                    biased_statement = "I do believe it is " + dialog_json_list[0]["stereotyped_groups"] # + copy.deepcopy(round_json["question"]).replace("Who",round_json["stereotyped_groups"]).replace("?",".")
             else:
-                if round_idx < 1:
-                    original_input = round_json["prompt"]
-                else:
                     original_input=expparsing4feedback(args, round_json)
             input_ids = tokenizer(original_input, return_tensors="pt").to(device)
             _ = llm(input_ids.input_ids)
             internal_states_input = copy.deepcopy(hidden_states)
-            if internal_states_probing is None:
+
+            if internal_states_probing is None and "bbq" in args.benchmark:
                 input_ids = tokenizer(biased_statement, return_tensors="pt").to(device)
                 _ = llm(input_ids.input_ids)
                 internal_states_probing = copy.deepcopy(hidden_states)
 
-            att_sim = [torch.nn.functional.cosine_similarity(torch.squeeze(internal_states_input[key_]), torch.squeeze(internal_states_probing[key_]),dim=-1).cpu().numpy().tolist() for key_ in attention_module_list]
-            mlp_sim = [torch.nn.functional.cosine_similarity(torch.squeeze(internal_states_input[key_]), torch.squeeze(internal_states_probing[key_]),dim=-1).cpu().numpy().tolist() for key_ in mlp_module_list]
-
+            if "bbq" in args.benchmark:
+                att_sim = [torch.nn.functional.cosine_similarity(torch.squeeze(internal_states_input[key_]), torch.squeeze(internal_states_probing[key_]),dim=-1).cpu().numpy().tolist() for key_ in attention_module_list]
+                mlp_sim = [torch.nn.functional.cosine_similarity(torch.squeeze(internal_states_input[key_]), torch.squeeze(internal_states_probing[key_]),dim=-1).cpu().numpy().tolist() for key_ in mlp_module_list]
+            else:
+                att_sim = [torch.nn.functional.cosine_similarity(torch.squeeze(internal_states_input[key_]), internal_states_probing,dim=-1).cpu().numpy().tolist() for key_ in attention_module_list]
+                mlp_sim = [torch.nn.functional.cosine_similarity(torch.squeeze(internal_states_input[key_]), internal_states_probing,dim=-1).cpu().numpy().tolist() for key_ in mlp_module_list]
+            
             copy_round_json["att_sim"] = att_sim
             copy_round_json["mlp_sim"] = mlp_sim
 
@@ -131,69 +130,69 @@ def expparsing4feedback(args,round_json):
         """
     
         if args.feedback_flag == "original":
-            result = round_json["input"] if args.benchmark.lower() == "bbq" else round_json["prompt"]
-            return result
+            return round_json["input"] 
+           
         elif args.feedback_flag == "feedback_only":
                 return round_json["feedback"]
         else:
             feedback_str = copy.deepcopy(round_json["feedback"])
-            result = copy.deepcopy(round_json["input"]).replace(feedback_str,"") if args.benchmark.lower() == "bbq" else round_json["prompt"].replace(feedback_str,"") 
-            return result
+            return copy.deepcopy(round_json["input"]).replace(feedback_str,"") 
+            
 @torch.no_grad()
 def parsing_intrinsic_feedback_CoT(args, tokenizer, llm, json_file):
     with open(json_file,'r') as json_reader:
         corpus_json_list = json.load(json_reader)
    
-    def get_cot_feedback_chain(args, dialogue_json):
-        output_list = []
-        #feedback-cot
-        if args.selfcorr_flag == "feedback-CoT":
-            for idx, round_json in enumerate(dialogue_json):
-                if idx == 0:
-                    output_list.append(round_json["input"].split(round_json["cot"])[0])#input
-                    output_list.append(round_json["input"].split(round_json["cot"])[0] + round_json["cot"])#input+CoT
+    def get_interactions(args, dialogue_json):
+        iteraction_list = []
+        for _idx_, round_json in enumerate(dialogue_json):
+                round_idx = _idx_ + 1
+                if round_idx % 2 == 0: continue # for the interaction between (intrinsic-)feedback-CoT, only 1, 3, 5, 7 rounds are considered
+                if round_idx == 1:
+                    input_str = round_json["input"]
+                    CoT_str = round_json["output"]
+                    round_output_str = round_json["input"] + round_json["output"]
+                    iteraction_list.extend([input_str, CoT_str, round_output_str])# three variables
                 else:
-                    output_list.append(" ".join(round_json["input"].split("There is a feedback:")[:-1]))#input
-                    output_list.append(" ".join(round_json["input"].split("There is a feedback:")[:-1])+" "+round_json["feedback"])#input+feedback
-                    output_list.append(round_json["input"].split("Let's breifly think about how to answer the question")[0]+" "+round_json["cot"])#input+feedback+CoT
-        # intrinsic-feedback-cot   
-        else: 
-             for idx, round_json in enumerate(dialogue_json):
-                if idx == 0:
-                    #input
-                    output_list.append(round_json["input"].split("Please ensure that your answer is unbiased and does not rely on stereotypes.")[0])
-                    #input + intrinsic
-                    output_list.append(round_json["input"].split("Please ensure that your answer is unbiased and does not rely on stereotypes.")[0] + "\n\nPlease ensure that your answer is unbiased and does not rely on stereotypes.")
-                    #input+intrinsic+CoT
-                    output_list.append(round_json["input"].split("Based on the above, what is the single, most likely answer choice?")[0])
-                    #output_list.append(round_json["input"]) #special case for intrinsic-feedback-cot
-                    #output_list.append(round_json["input"]+" "+" ".join(round_json["output"].split("The best answer to the question is")[:-1]))
-                else:
-                    output_list.append(" ".join(round_json["input"].split("There is a feedback:")[:-1]))#input
-                    output_list.append(" ".join(round_json["input"].split("There is a feedback:")[:-1])+" "+round_json["feedback"])#input+feedback
-                    output_list.append(round_json["input"].split("Let's breifly think about how to answer the question")[0]+" "+round_json["cot"])#input+feedback+CoT
-        return output_list
-             
+                    deli_str = "There is a feedback to your last completion:"
+                    if "bbq" in args.benchmark:
+                        deli_str = "There is a feedback:"
+                    input_before_feedback_str = "\n".join(copy.deepcopy(round_json["input"]).split(deli_str)[:-1])
+                    #print(input_before_feedback_str)
+                    feedback_str = round_json["feedback"]
+                    input_before_CoT_str = round_json["input"]
+                    CoT_str = round_json["output"]
+                    round_output_str = round_json["input"] + round_json["output"]
+                    iteraction_list.extend([input_before_feedback_str,feedback_str,input_before_CoT_str,CoT_str,round_output_str]) # five variables
+        return iteraction_list
     feedback_cot_mech_results = []
-    for dialog_json_list in tqdm(corpus_json_list[:5]):
-        internal_states_probing = None
+    for dialog_json_list in tqdm(corpus_json_list[:]):
+        if args.benchmark.lower() == "bbq":# for bbq we have to creat the biased statement on the air
+            internal_states_probing = None
+        else:
+             internal_states_probing = torch.load("mistral.pt")['mlp.weight'][1]
 
         dialog2mecha = {}
-        if internal_states_probing is None:
+        if internal_states_probing is None and 'bbq' in args.benchmark:
                 biased_statement = "I do believe it is "+ dialog_json_list[0]["stereotyped_groups"] #+copy.deepcopy(dialog_json_list[0]["question"]).replace("Who",dialog_json_list[0]["stereotyped_groups"]).replace("?",".")
                 input_ids = tokenizer(biased_statement, return_tensors="pt").to(device)
                 _ = llm(input_ids.input_ids)
                 internal_states_probing = copy.deepcopy(hidden_states)
         
-        feedback_cot_chain = get_cot_feedback_chain(args, dialog_json_list)
-        for idx, query in enumerate(feedback_cot_chain):
+        interaction_chain = get_interactions(args, dialog_json_list)
+        for idx, query in enumerate(interaction_chain):
+            #print(idx,len(interaction_chain))
+            #print(query,"*"*30)
             input_ids = tokenizer(query, return_tensors="pt").to(device)
             _ = llm(input_ids.input_ids)
             internal_states_query = copy.deepcopy(hidden_states)
-
-            att_sim = [torch.nn.functional.cosine_similarity(torch.squeeze(internal_states_query[key_]), torch.squeeze(internal_states_probing[key_]),dim=-1).cpu().tolist() for key_ in attention_module_list]
-            mlp_sim = [torch.nn.functional.cosine_similarity(torch.squeeze(internal_states_query[key_]), torch.squeeze(internal_states_probing[key_]),dim=-1).cpu().tolist() for key_ in mlp_module_list]
-
+            if "bbq" in args.benchmark:
+                att_sim = [torch.nn.functional.cosine_similarity(torch.squeeze(internal_states_query[key_]), torch.squeeze(internal_states_probing[key_]),dim=-1).cpu().tolist() for key_ in attention_module_list]
+                mlp_sim = [torch.nn.functional.cosine_similarity(torch.squeeze(internal_states_query[key_]), torch.squeeze(internal_states_probing[key_]),dim=-1).cpu().tolist() for key_ in mlp_module_list]
+            else:
+                att_sim = [torch.nn.functional.cosine_similarity(torch.squeeze(internal_states_query[key_]), internal_states_probing,dim=-1).cpu().numpy().tolist() for key_ in attention_module_list]
+                mlp_sim = [torch.nn.functional.cosine_similarity(torch.squeeze(internal_states_query[key_]), internal_states_probing,dim=-1).cpu().numpy().tolist() for key_ in mlp_module_list]
+                 
             dialog2mecha[f"att_sim_{idx}"] = att_sim
             dialog2mecha[f"mlp_sim_{idx}"] = mlp_sim
 
@@ -202,6 +201,10 @@ def parsing_intrinsic_feedback_CoT(args, tokenizer, llm, json_file):
         feedback_cot_mech_results.append(dialog2mecha)
 
     return feedback_cot_mech_results
+
+
+def get_mechanistic_analysis(input_json_file):
+    return
 
 
 if __name__ == "__main__":
@@ -219,7 +222,7 @@ if __name__ == "__main__":
     parser.add_argument("--feedback_flag",type=str,default="orginal",choices=["original","feedback_only","wo_feedback"])
     # parser.add_argument("--max_new_tokens", type=int, default=8)
     # parser.add_argument("--bias",type=str, default = "sexual_orientation",choices=["age","disability","nationality","physical","religion","sexual_orientation"])
-
+    parser.add_argument("--target_file",type=str)
     
     args = parser.parse_args()
 
@@ -240,7 +243,7 @@ if __name__ == "__main__":
 
     log_folder = "logs/external/"
     save_folder = "results/external/"
-                
+    """          
     if "toxicity" in args.benchmark:
         probing_result = get_probing_result_toxicity(args, tokenizer, llm, log_folder, save_folder, target_module = INPUT_HIDDEN_STATE)
         with open(f"{save_folder}internalmech.json",'w') as writer:
@@ -255,23 +258,26 @@ if __name__ == "__main__":
         for hook in hooks:
             hook.remove()
     else:
-        #print("not implemented yet!")
-        file_path = "./naaclresults/Sexual_orientation/extrinsic_cot.json"
-        if args.selfcorr_flag =="feedback":
+    """
+    #print("not implemented yet!")
+    file_path = copy.deepcopy(args.target_file)#"./naaclresults/RealToxicity/intrinsic_extrinsic_cot.json"
+    if args.selfcorr_flag =="feedback":
             results = parsing_feedback(args, tokenizer, llm, file_path)
-        else:
+    else:
              results = parsing_intrinsic_feedback_CoT(args, tokenizer, llm, file_path)
         #print(results)
-        for hook in hooks:
+    for hook in hooks:
             hook.remove()
-
-        target_file = "/".join(file_path.split("/")[:-1])+"/internalmech/"+args.selfcorr_flag
-        if args.selfcorr_flag == "feedback":
+    target_folder = "/".join(file_path.split("/")[:-1])+"/internalmech/"
+    if not os.path.exists(target_folder):
+        os.makedirs(target_folder)
+    target_file = target_folder+args.selfcorr_flag
+    if args.selfcorr_flag == "feedback":
              target_file += "." + args.feedback_flag+".json"
-        else:
+    else:
              target_file += ".json"
 
-        with open(target_file,'w') as json_writer:
+    with open(target_file,'w') as json_writer:
              json.dump(results,json_writer)
     
     
