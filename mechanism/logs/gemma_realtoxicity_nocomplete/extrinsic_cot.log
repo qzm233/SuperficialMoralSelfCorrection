@@ -1,76 +1,0 @@
-nohup: ignoring input
-Using device: cuda
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.31s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:04<00:04,  2.34s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.38s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  2.16s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  2.23s/it]
-benchmark:  realtoxicity
-500
-0it [00:00, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
-501it [06:42,  1.25it/s]502it [13:37,  1.98s/it]503it [21:53,  3.98s/it]504it [25:44,  5.29s/it]504it [29:59,  3.57s/it]
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-Traceback (most recent call last):
-  File "/home/zhiyu2/guangliang/SuperficialMoralSelfCorrection/mechanism/run_inference2.py", line 297, in <module>
-    probing_result_len = get_toxicity_result(args,tokenizer,llm, question_list, prompt_list)
-                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/zhiyu2/miniconda3/envs/zimo/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/zhiyu2/guangliang/SuperficialMoralSelfCorrection/mechanism/run_inference2.py", line 232, in get_toxicity_result
-    response = get_response(args, tokenizer, llm, query)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/zhiyu2/miniconda3/envs/zimo/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/zhiyu2/guangliang/SuperficialMoralSelfCorrection/mechanism/utils.py", line 405, in get_response
-    model_outputs = llm.generate(input_ids.input_ids.to(device), 
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/zhiyu2/miniconda3/envs/zimo/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/zhiyu2/miniconda3/envs/zimo/lib/python3.11/site-packages/transformers/generation/utils.py", line 2024, in generate
-    result = self._sample(
-             ^^^^^^^^^^^^^
-  File "/home/zhiyu2/miniconda3/envs/zimo/lib/python3.11/site-packages/transformers/generation/utils.py", line 2971, in _sample
-    while self._has_unfinished_sequences(
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/zhiyu2/miniconda3/envs/zimo/lib/python3.11/site-packages/transformers/generation/utils.py", line 2208, in _has_unfinished_sequences
-    elif this_peer_finished:
-RuntimeError: CUDA error: unspecified launch failure
-CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
-For debugging consider passing CUDA_LAUNCH_BLOCKING=1
-Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
-

@@ -1,4019 +1,0 @@
-nohup: ignoring input
-Using device: cuda
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.33it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:01<00:00,  1.35it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.42it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.40it/s]
-benchmark:  realtoxicity
-0
-0it [00:00, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
-1it [02:57, 177.52s/it]2it [06:21, 193.06s/it]3it [09:15, 184.25s/it]4it [12:34, 190.35s/it]5it [15:27, 183.80s/it]6it [19:43, 208.40s/it]7it [22:54, 202.82s/it]8it [26:12, 201.40s/it]9it [29:30, 200.07s/it]10it [32:34, 195.18s/it]11it [35:42, 193.11s/it]12it [39:35, 205.11s/it]13it [42:31, 196.20s/it]14it [45:37, 193.30s/it]15it [48:33, 188.19s/it]16it [51:34, 185.99s/it]17it [55:15, 196.44s/it]18it [58:17, 192.05s/it]19it [1:02:41, 213.71s/it]20it [1:05:50, 206.17s/it]21it [1:08:25, 190.86s/it]22it [1:12:14, 202.23s/it]23it [1:16:43, 222.38s/it]24it [1:19:37, 207.84s/it]25it [1:22:36, 199.21s/it]26it [1:25:23, 189.66s/it]27it [1:29:35, 208.40s/it]28it [1:32:26, 196.92s/it]29it [1:34:58, 183.61s/it]30it [1:38:24, 190.22s/it]31it [1:41:11, 183.31s/it]32it [1:43:40, 173.04s/it]33it [1:47:01, 181.35s/it]34it [1:50:04, 182.03s/it]35it [1:53:11, 183.27s/it]36it [1:56:28, 187.48s/it]37it [2:00:02, 195.59s/it]38it [2:04:31, 217.42s/it]39it [2:07:48, 211.39s/it]40it [2:10:39, 199.22s/it]41it [2:14:25, 207.15s/it]42it [2:18:17, 214.62s/it]43it [2:22:03, 218.00s/it]44it [2:25:03, 206.87s/it]45it [2:28:02, 198.48s/it]46it [2:32:40, 222.29s/it]47it [2:36:02, 216.06s/it]48it [2:39:24, 211.81s/it]49it [2:43:16, 218.04s/it]50it [2:46:52, 217.45s/it]51it [2:50:19, 214.30s/it]52it [2:52:59, 198.06s/it]53it [2:55:42, 187.57s/it]54it [2:58:33, 182.39s/it]55it [3:01:27, 179.91s/it]56it [3:04:35, 182.53s/it]57it [3:09:14, 211.32s/it]58it [3:12:12, 201.25s/it]59it [3:14:44, 186.64s/it]60it [3:17:40, 183.46s/it]set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-save every 50 samples!!!
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-61it [3:20:50, 185.44s/it]62it [3:23:57, 185.89s/it]63it [3:26:39, 178.76s/it]64it [3:29:35, 177.69s/it]65it [3:32:56, 184.90s/it]66it [3:35:50, 181.63s/it]67it [3:39:51, 199.41s/it]68it [3:43:05, 197.79s/it]69it [3:45:59, 190.68s/it]70it [3:48:57, 186.71s/it]71it [3:52:40, 197.74s/it]72it [3:55:36, 191.10s/it]73it [3:59:01, 195.26s/it]74it [4:01:35, 182.91s/it]75it [4:04:46, 185.41s/it]76it [4:08:39, 199.48s/it]77it [4:11:55, 198.62s/it]78it [4:15:01, 194.75s/it]79it [4:18:15, 194.51s/it]80it [4:21:04, 187.02s/it]81it [4:24:29, 192.34s/it]82it [4:28:11, 201.33s/it]83it [4:31:33, 201.31s/it]84it [4:34:54, 201.35s/it]85it [4:38:08, 199.17s/it]86it [4:41:38, 202.38s/it]87it [4:44:39, 195.79s/it]88it [4:47:39, 191.08s/it]89it [4:50:34, 186.44s/it]90it [4:55:28, 218.68s/it]91it [4:59:07, 218.82s/it]92it [5:02:37, 216.04s/it]93it [5:06:59, 229.92s/it]94it [5:10:05, 216.69s/it]95it [5:13:01, 204.46s/it]96it [5:16:06, 198.73s/it]97it [5:18:51, 188.65s/it]98it [5:22:22, 195.17s/it]99it [5:26:42, 214.79s/it]100it [5:29:57, 208.64s/it]101it [5:33:39, 212.79s/it]102it [5:37:23, 216.18s/it]103it [5:40:25, 205.85s/it]104it [5:44:05, 210.23s/it]105it [5:47:07, 201.54s/it]106it [5:50:15, 197.52s/it]107it [5:53:07, 189.93s/it]108it [5:55:46, 180.64s/it]109it [5:58:59, 184.26s/it]110it [6:02:23, 190.42s/it]111it [6:05:21, 186.52s/it]112it [6:09:27, 204.28s/it]113it [6:12:32, 198.51s/it]114it [6:15:10, 186.44s/it]115it [6:18:23, 188.33s/it]116it [6:21:42, 191.54s/it]117it [6:24:51, 190.95s/it]118it [6:27:42, 184.83s/it]119it [6:30:56, 187.75s/it]120it [6:34:04, 187.68s/it]set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-save every 50 samples!!!
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-121it [6:38:40, 214.10s/it]122it [6:41:42, 204.64s/it]123it [6:44:01, 184.76s/it]124it [6:46:52, 180.67s/it]125it [6:49:54, 181.15s/it]126it [6:53:34, 192.70s/it]127it [6:56:16, 183.48s/it]128it [6:59:07, 179.75s/it]129it [7:02:53, 193.82s/it]130it [7:06:06, 193.44s/it]131it [7:09:11, 190.93s/it]132it [7:13:14, 206.45s/it]133it [7:16:29, 203.02s/it]134it [7:20:15, 210.03s/it]135it [7:23:23, 203.46s/it]136it [7:27:24, 214.80s/it]137it [7:30:10, 200.12s/it]138it [7:33:23, 197.88s/it]139it [7:36:11, 188.90s/it]140it [7:38:08, 167.35s/it]141it [7:41:01, 169.02s/it]142it [7:44:06, 173.83s/it]143it [7:47:30, 182.90s/it]144it [7:50:19, 178.80s/it]145it [7:53:25, 180.99s/it]146it [7:57:23, 198.06s/it]147it [8:01:15, 208.15s/it]148it [8:05:37, 224.39s/it]149it [8:08:45, 213.53s/it]150it [8:11:41, 202.27s/it]151it [8:14:28, 191.51s/it]152it [8:17:01, 179.97s/it]153it [8:19:48, 176.09s/it]154it [8:23:29, 189.70s/it]155it [8:26:31, 187.19s/it]156it [8:30:13, 197.69s/it]157it [8:33:15, 193.10s/it]158it [8:36:05, 186.16s/it]159it [8:40:33, 210.66s/it]160it [8:43:24, 198.89s/it]161it [8:46:02, 186.50s/it]162it [8:49:43, 196.74s/it]163it [8:53:34, 207.09s/it]164it [8:56:15, 193.17s/it]165it [8:59:09, 187.72s/it]166it [9:03:36, 211.43s/it]167it [9:06:44, 204.24s/it]168it [9:09:45, 197.31s/it]169it [9:13:02, 197.34s/it]170it [9:16:01, 191.65s/it]171it [9:18:53, 185.81s/it]172it [9:21:48, 182.52s/it]173it [9:24:36, 178.18s/it]174it [9:28:05, 187.60s/it]175it [9:31:52, 199.37s/it]176it [9:36:15, 218.35s/it]177it [9:39:51, 217.67s/it]178it [9:43:20, 215.11s/it]179it [9:46:23, 205.58s/it]180it [9:49:26, 198.78s/it]set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-save every 50 samples!!!
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-181it [9:52:12, 188.86s/it]182it [9:55:05, 184.07s/it]183it [9:57:53, 179.38s/it]184it [10:01:15, 186.17s/it]185it [10:04:00, 179.81s/it]186it [10:07:10, 182.66s/it]187it [10:11:18, 202.48s/it]188it [10:14:43, 203.11s/it]189it [10:17:30, 192.39s/it]190it [10:20:01, 179.81s/it]191it [10:22:44, 174.97s/it]192it [10:26:09, 183.98s/it]193it [10:30:20, 204.09s/it]194it [10:34:50, 223.80s/it]195it [10:38:16, 218.32s/it]196it [10:42:44, 233.38s/it]197it [10:46:06, 223.79s/it]198it [10:49:06, 210.74s/it]199it [10:52:26, 207.64s/it]200it [10:55:13, 195.26s/it]201it [10:58:49, 201.50s/it]202it [11:01:52, 196.11s/it]203it [11:04:49, 190.24s/it]204it [11:07:57, 189.52s/it]205it [11:11:01, 188.08s/it]206it [11:15:13, 207.26s/it]207it [11:18:08, 197.57s/it]208it [11:21:18, 195.06s/it]209it [11:24:53, 201.02s/it]210it [11:27:57, 195.98s/it]211it [11:30:56, 190.95s/it]212it [11:34:07, 191.12s/it]213it [11:36:42, 180.07s/it]214it [11:41:15, 208.11s/it]215it [11:45:02, 213.53s/it]216it [11:49:23, 227.82s/it]217it [11:53:37, 235.71s/it]218it [11:56:46, 221.87s/it]219it [11:59:47, 209.44s/it]220it [12:02:45, 200.19s/it]221it [12:05:53, 196.42s/it]222it [12:08:51, 191.01s/it]223it [12:11:28, 180.61s/it]224it [12:14:46, 186.02s/it]225it [12:17:51, 185.52s/it]226it [12:21:02, 187.12s/it]227it [12:24:05, 186.08s/it]228it [12:27:56, 199.40s/it]229it [12:31:21, 201.07s/it]230it [12:34:13, 192.56s/it]231it [12:37:36, 195.52s/it]232it [12:40:24, 187.44s/it]233it [12:43:34, 188.02s/it]234it [12:47:24, 200.56s/it]235it [12:50:32, 196.95s/it]236it [12:53:27, 190.21s/it]237it [12:56:25, 186.81s/it]238it [12:59:39, 188.86s/it]239it [13:02:37, 185.65s/it]240it [13:06:07, 192.89s/it]set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-save every 50 samples!!!
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-241it [13:10:14, 209.22s/it]242it [13:13:26, 203.91s/it]243it [13:16:27, 197.02s/it]244it [13:20:27, 209.88s/it]245it [13:23:42, 205.45s/it]246it [13:26:32, 194.96s/it]247it [13:29:14, 185.10s/it]248it [13:34:00, 215.31s/it]249it [13:36:47, 200.63s/it]250it [13:40:26, 206.17s/it]251it [13:43:57, 207.72s/it]252it [13:47:52, 216.00s/it]253it [13:51:56, 224.31s/it]254it [13:55:28, 220.68s/it]255it [13:58:47, 214.07s/it]256it [14:02:11, 210.93s/it]257it [14:06:56, 233.17s/it]258it [14:10:04, 219.75s/it]259it [14:13:58, 224.10s/it]260it [14:17:01, 211.57s/it]261it [14:19:55, 200.44s/it]262it [14:24:32, 223.50s/it]263it [14:28:44, 231.96s/it]264it [14:31:45, 216.61s/it]265it [14:35:02, 210.74s/it]266it [14:39:19, 224.55s/it]267it [14:43:14, 227.81s/it]268it [14:46:45, 222.61s/it]269it [14:49:36, 207.21s/it]270it [14:53:10, 209.28s/it]271it [14:56:22, 204.06s/it]272it [14:59:36, 201.02s/it]273it [15:02:56, 200.83s/it]274it [15:06:05, 197.28s/it]275it [15:09:36, 201.33s/it]276it [15:13:39, 213.97s/it]277it [15:17:16, 214.87s/it]278it [15:20:41, 211.76s/it]279it [15:23:39, 201.74s/it]280it [15:26:52, 199.18s/it]281it [15:29:53, 193.48s/it]282it [15:32:57, 190.64s/it]283it [15:36:15, 192.91s/it]284it [15:39:59, 202.17s/it]285it [15:43:53, 211.73s/it]286it [15:46:48, 200.82s/it]287it [15:49:44, 193.48s/it]288it [15:53:56, 210.94s/it]289it [15:56:51, 200.05s/it]290it [16:00:05, 198.36s/it]291it [16:03:36, 202.08s/it]292it [16:08:20, 226.79s/it]293it [16:11:44, 219.78s/it]294it [16:15:03, 213.71s/it]295it [16:17:50, 199.51s/it]296it [16:20:14, 182.88s/it]297it [16:23:12, 181.35s/it]298it [16:25:54, 175.64s/it]299it [16:29:40, 190.84s/it]set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-save every 50 samples!!!
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-300it [16:32:44, 188.82s/it]301it [16:35:47, 187.02s/it]302it [16:38:41, 183.12s/it]303it [16:41:27, 177.99s/it]304it [16:44:58, 187.71s/it]305it [16:48:08, 188.47s/it]306it [16:51:19, 189.39s/it]307it [16:55:44, 211.89s/it]308it [16:59:04, 208.33s/it]309it [17:01:50, 195.66s/it]310it [17:05:07, 196.01s/it]311it [17:08:26, 197.14s/it]312it [17:12:28, 210.62s/it]313it [17:15:35, 203.24s/it]314it [17:18:18, 191.39s/it]315it [17:20:58, 181.91s/it]316it [17:25:25, 207.51s/it]317it [17:27:53, 189.48s/it]318it [17:30:40, 182.82s/it]319it [17:33:17, 175.15s/it]320it [17:36:07, 173.64s/it]321it [17:39:04, 174.43s/it]322it [17:42:30, 184.09s/it]323it [17:46:21, 198.06s/it]324it [17:49:30, 195.35s/it]325it [17:52:43, 194.54s/it]326it [17:56:08, 197.81s/it]327it [17:58:49, 186.88s/it]328it [18:02:01, 188.40s/it]329it [18:05:04, 186.67s/it]330it [18:08:59, 201.18s/it]331it [18:11:44, 190.29s/it]332it [18:14:43, 186.82s/it]333it [18:18:59, 207.76s/it]334it [18:22:35, 210.20s/it]335it [18:26:10, 211.64s/it]336it [18:29:10, 202.01s/it]337it [18:32:15, 196.95s/it]338it [18:35:49, 202.19s/it]339it [18:38:56, 197.60s/it]340it [18:42:59, 211.26s/it]341it [18:45:57, 201.10s/it]342it [18:49:34, 206.04s/it]343it [18:52:52, 203.61s/it]344it [18:56:09, 201.60s/it]345it [18:59:38, 203.86s/it]346it [19:02:52, 200.82s/it]347it [19:06:12, 200.68s/it]348it [19:09:09, 193.55s/it]349it [19:12:26, 194.57s/it]350it [19:15:32, 191.85s/it]351it [19:19:28, 205.16s/it]352it [19:22:44, 202.42s/it]353it [19:25:54, 198.62s/it]354it [19:29:12, 198.70s/it]355it [19:32:52, 204.88s/it]356it [19:35:47, 196.10s/it]357it [19:38:47, 191.06s/it]358it [19:42:01, 192.10s/it]359it [19:45:17, 193.32s/it]save every 50 samples!!!
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-save every 50 samples!!!
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity360it [19:48:20, 190.01s/it]361it [19:51:48, 195.57s/it]362it [19:55:21, 200.69s/it]363it [19:58:12, 191.79s/it]364it [20:01:36, 195.36s/it]365it [20:05:08, 200.35s/it]366it [20:08:26, 199.89s/it]367it [20:12:19, 209.58s/it]368it [20:15:21, 201.30s/it]369it [20:18:17, 193.76s/it]370it [20:21:06, 186.27s/it]371it [20:23:45, 178.19s/it]372it [20:27:22, 189.81s/it]373it [20:31:49, 213.18s/it]374it [20:34:51, 203.75s/it]375it [20:37:39, 193.09s/it]376it [20:40:40, 189.25s/it]377it [20:43:22, 181.26s/it]378it [20:46:17, 179.33s/it]379it [20:49:44, 187.55s/it]380it [20:53:00, 189.98s/it]381it [20:55:56, 186.00s/it]382it [21:00:10, 206.31s/it]383it [21:03:26, 203.33s/it]384it [21:06:28, 196.92s/it]385it [21:09:51, 198.53s/it]386it [21:13:27, 203.88s/it]387it [21:17:17, 211.84s/it]388it [21:21:03, 215.89s/it]389it [21:24:10, 207.40s/it]390it [21:28:00, 214.01s/it]391it [21:30:47, 200.00s/it]392it [21:33:37, 191.11s/it]393it [21:37:31, 203.81s/it]394it [21:40:46, 201.28s/it]395it [21:44:18, 204.30s/it]396it [21:46:35, 184.31s/it]397it [21:49:15, 176.81s/it]398it [21:52:48, 187.75s/it]399it [21:55:39, 182.67s/it]400it [21:59:17, 193.39s/it]401it [22:02:35, 194.67s/it]402it [22:05:45, 193.23s/it]403it [22:08:57, 193.04s/it]404it [22:11:37, 183.10s/it]405it [22:14:48, 185.50s/it]406it [22:18:11, 190.76s/it]407it [22:22:13, 205.95s/it]408it [22:25:50, 209.41s/it]409it [22:28:52, 201.07s/it]410it [22:31:40, 191.28s/it]411it [22:35:40, 205.98s/it]412it [22:38:45, 199.49s/it]413it [22:41:54, 196.35s/it]414it [22:45:25, 200.78s/it]415it [22:48:35, 197.70s/it]416it [22:51:38, 193.10s/it]417it [22:55:37, 207.07s/it]418it [22:58:49, 202.47s/it]419it [23:01:44, 194.25s/it]
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-save every 50 samples!!!
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-420it [23:05:02, 195.42s/it]421it [23:07:48, 186.39s/it]422it [23:11:07, 190.18s/it]423it [23:15:32, 212.63s/it]424it [23:18:57, 210.56s/it]425it [23:22:57, 219.28s/it]426it [23:27:23, 233.24s/it]427it [23:30:20, 216.28s/it]428it [23:34:22, 224.07s/it]429it [23:38:47, 236.36s/it]430it [23:42:05, 224.81s/it]431it [23:45:35, 220.57s/it]432it [23:48:39, 209.35s/it]433it [23:52:08, 209.45s/it]434it [23:55:37, 209.17s/it]435it [23:58:50, 204.34s/it]436it [24:03:31, 227.24s/it]437it [24:06:55, 220.39s/it]438it [24:10:19, 215.62s/it]439it [24:13:54, 215.20s/it]440it [24:16:36, 199.39s/it]441it [24:19:49, 197.42s/it]442it [24:22:38, 188.87s/it]443it [24:26:26, 200.76s/it]444it [24:30:43, 217.43s/it]445it [24:34:49, 226.06s/it]446it [24:39:06, 235.28s/it]447it [24:43:17, 239.93s/it]448it [24:46:07, 219.15s/it]449it [24:49:28, 213.55s/it]450it [24:52:32, 204.90s/it]451it [24:56:07, 207.83s/it]452it [24:59:11, 200.61s/it]453it [25:02:01, 191.56s/it]454it [25:05:18, 193.18s/it]455it [25:08:25, 191.29s/it]456it [25:12:40, 210.34s/it]457it [25:15:41, 201.60s/it]458it [25:18:58, 200.19s/it]459it [25:21:54, 192.94s/it]460it [25:25:10, 193.72s/it]461it [25:29:01, 204.90s/it]462it [25:32:57, 214.43s/it]463it [25:35:39, 198.70s/it]464it [25:38:47, 195.45s/it]465it [25:41:31, 185.97s/it]466it [25:44:47, 189.05s/it]467it [25:48:11, 193.55s/it]468it [25:51:45, 199.54s/it]469it [25:54:51, 195.55s/it]470it [25:58:58, 210.96s/it]471it [26:02:00, 202.20s/it]472it [26:04:48, 192.11s/it]473it [26:08:37, 203.07s/it]474it [26:11:34, 195.36s/it]475it [26:14:35, 191.01s/it]476it [26:17:13, 181.02s/it]477it [26:20:38, 188.38s/it]478it [26:23:38, 185.74s/it]479it [26:26:43, 185.41s/it]set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-save every 50 samples!!!
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-480it [26:29:34, 181.20s/it]481it [26:32:43, 183.49s/it]482it [26:35:56, 186.49s/it]483it [26:38:51, 182.84s/it]484it [26:42:00, 184.87s/it]485it [26:45:15, 187.78s/it]486it [26:48:18, 186.51s/it]487it [26:51:21, 185.23s/it]488it [26:54:26, 185.32s/it]489it [26:56:59, 175.70s/it]490it [27:00:02, 177.87s/it]491it [27:03:21, 184.08s/it]492it [27:06:53, 192.38s/it]493it [27:11:10, 211.87s/it]494it [27:13:53, 197.22s/it]495it [27:16:33, 186.17s/it]496it [27:19:36, 185.15s/it]497it [27:22:47, 186.85s/it]498it [27:25:44, 183.84s/it]499it [27:29:11, 190.99s/it]499it [27:32:14, 198.67s/it]
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-set realtoxicity
-save every 50 samples!!!
-total 500 done!
-500 samples done
