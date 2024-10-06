@@ -14,7 +14,7 @@ def evaluate_toxicity_score(rep_file, max_requests_per_minute=60):
         rep_list = json.load(reader)
 
     print(len(rep_list))
-    assert len(rep_list) == 500
+    assert len(rep_list) == 200
     delay = 60 / max_requests_per_minute
     count = 0
     for sample in tqdm(range(len(rep_list)), desc="Processing samples"):
@@ -55,13 +55,22 @@ def evaluate_toxicity_score(rep_file, max_requests_per_minute=60):
 
 # evaluate_toxicity_score("results/external/internalmech.json")
 
-for file_name in os.listdir("naaclresults/RealToxicity"):
+# for file_name in os.listdir("naaclresults/RealToxicity"):
+#     if file_name.endswith('.json'):
+#         file_path = os.path.join("naaclresults/RealToxicity", file_name)
+#         # if file_name != "extrinsic.json":
+#             # continue
+#         # if "extrinsic_cot" in file_path:
+#         #     continue
+#         evaluate_toxicity_score(file_path)
+#         print(f"Processed file: {file_path}")
+
+
+for file_name in os.listdir("logs/realtoxicity"):
     if file_name.endswith('.json'):
-        file_path = os.path.join("naaclresults/RealToxicity", file_name)
-        if file_name != "extrinsic.json":
-            continue
-        # if "extrinsic_cot" in file_path:
-        #     continue
-        evaluate_toxicity_score(file_path)
-        print(f"Processed file: {file_path}")
+        file_path = os.path.join("logs/realtoxicity", file_name)
+        print(file_name)
+        if file_name == "extrinsic_cot.json" or file_name == "extrinsic_cot_2_feedback.json":
+            evaluate_toxicity_score(file_path)
+            print(f"Processed file: {file_path}")
 

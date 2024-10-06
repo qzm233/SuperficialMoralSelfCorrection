@@ -1,3 +1,4 @@
+from __future__ import division
 import os
 import sys
 from tqdm import tqdm
@@ -7,6 +8,7 @@ import random
 from promptsLib import *
 from openai import OpenAI
 import pickle
+import statistics
 '''
 mechanism result of self-correction with external feedback
 previous result required 
@@ -85,7 +87,7 @@ def parsing_feedback(args,tokenizer,llm,json_file):
         copy_dialog_json_list = []
         for _idx_, round_json in enumerate(dialog_json_list):
             round_idx = _idx_ + 1
-            if round_idx % 2 != 0: continue # for the analysis to feedback, only 2,4,6 rounds are considered
+            if round_idx < 2: continue # for the analysis to feedback, only 2,4,6 rounds are considered
             copy_round_json  = copy.deepcopy(round_json)
             if args.benchmark.lower() == "bbq":
                     original_input = expparsing4feedback(args, round_json)
@@ -180,6 +182,7 @@ def parsing_intrinsic_feedback_CoT(args, tokenizer, llm, json_file):
                 internal_states_probing = copy.deepcopy(hidden_states)
         
         interaction_chain = get_interactions(args, dialog_json_list)
+        feedback_cot_mech_result = []
         for idx, query in enumerate(interaction_chain):
             #print(idx,len(interaction_chain))
             #print(query,"*"*30)
@@ -193,18 +196,49 @@ def parsing_intrinsic_feedback_CoT(args, tokenizer, llm, json_file):
                 att_sim = [torch.nn.functional.cosine_similarity(torch.squeeze(internal_states_query[key_]), internal_states_probing,dim=-1).cpu().numpy().tolist() for key_ in attention_module_list]
                 mlp_sim = [torch.nn.functional.cosine_similarity(torch.squeeze(internal_states_query[key_]), internal_states_probing,dim=-1).cpu().numpy().tolist() for key_ in mlp_module_list]
                  
-            dialog2mecha[f"att_sim_{idx}"] = att_sim
-            dialog2mecha[f"mlp_sim_{idx}"] = mlp_sim
+            dialog2mecha[f"att_sim"] = att_sim
+            dialog2mecha[f"mlp_sim"] = mlp_sim
 
             torch.cuda.empty_cache()
 
-        feedback_cot_mech_results.append(dialog2mecha)
+            feedback_cot_mech_result.append(dialog2mecha)
+        feedback_cot_mech_results.append(feedback_cot_mech_result)
 
     return feedback_cot_mech_results
 
 
-def get_mechanistic_analysis(input_json_file):
-    return
+def get_feedback_analysis(input_json_file,start_round_idx=15, end_round_idx=28):
+
+    with open(input_json_file,'r') as reader:
+        json_list = json.load(reader)
+
+    sim2probing_stats = [0 for i in range(len(json_list[0]))]
+
+    for dialog_json in json_list:
+        for round_idx, round_json in enumerate(dialog_json):
+            sim2probing = statistics.mean(round_json["mlp_sim"][start_round_idx:end_round_idx+1])
+            #print(sim2probing)
+            sim2probing_stats[round_idx] += sim2probing
+    sim2probing_stats = [i/len(json_list) for i in sim2probing_stats]
+    print(sim2probing_stats)
+
+def get_feedback_cot_analysis(input_json_file,start_round_idx=15, end_round_idx=28):
+    with open(input_json_file,'r') as reader:
+        json_list = json.load(reader)
+
+    sim2probing_stats = [0 for i in range(len(json_list[0]))]
+
+    for dialog_json in json_list:
+        for round_idx, round_json in enumerate(dialog_json):
+            print(type(round_json))
+            target_key = [i for i in round_json.keys() if "mlp" in i]
+
+            sim2probing = statistics.mean(round_json[target_key][start_round_idx:end_round_idx+1])
+            #print(sim2probing)
+            sim2probing_stats[round_idx] += sim2probing
+    sim2probing_stats = [i/len(json_list) for i in sim2probing_stats]
+    print(sim2probing_stats)
+
 
 
 if __name__ == "__main__":
@@ -225,7 +259,7 @@ if __name__ == "__main__":
     parser.add_argument("--target_file",type=str)
     
     args = parser.parse_args()
-
+    
     tokenizer, llm = init_model(args)
     llm.eval()
 
@@ -243,22 +277,7 @@ if __name__ == "__main__":
 
     log_folder = "logs/external/"
     save_folder = "results/external/"
-    """          
-    if "toxicity" in args.benchmark:
-        probing_result = get_probing_result_toxicity(args, tokenizer, llm, log_folder, save_folder, target_module = INPUT_HIDDEN_STATE)
-        with open(f"{save_folder}internalmech.json",'w') as writer:
-            json.dump(probing_result, writer)
-        # probing_result = get_probing_result_toxicity(args, tokenizer, llm, log_folder, save_folder, target_module = ATTEN_ATTRI_STR)
-        # with open(f"{save_folder}internalmech.json",'w') as writer:
-        #     json.dump(probing_result, writer)
-        # probing_result = get_probing_result_toxicity(args, tokenizer, llm, log_folder, save_folder, target_module = HIDDEN_STATE_ATTRI_STR)
-        # with open(f"{save_folder}internalmech.json",'w') as writer:
-        #     json.dump(probing_result, writer)
 
-        for hook in hooks:
-            hook.remove()
-    else:
-    """
     #print("not implemented yet!")
     file_path = copy.deepcopy(args.target_file)#"./naaclresults/RealToxicity/intrinsic_extrinsic_cot.json"
     if args.selfcorr_flag =="feedback":
@@ -280,5 +299,8 @@ if __name__ == "__main__":
     with open(target_file,'w') as json_writer:
              json.dump(results,json_writer)
     
-    
-    
+    """
+    for file in glob.glob(r"./naaclresults/Sexual_orientation/internalmech/feedback-CoT.json"):
+        print(file)
+        get_feedback_cot_analysis(file)
+    """

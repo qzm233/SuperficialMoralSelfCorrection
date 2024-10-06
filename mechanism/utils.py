@@ -75,9 +75,9 @@ def init_model(args):
             tokenizer.pad_token = tokenizer.eos_token
             tokenizer.pad_token_id = tokenizer.eos_token_id
         model = AutoModelForCausalLM.from_pretrained(
-            "mistralai/Mistral-7B-Instruct-v0.2", cache_dir=cache_dir
+            "mistralai/Mistral-7B-Instruct-v0.2", cache_dir=cache_dir, device_map="auto"
         )
-        return tokenizer, model.to(device)
+        return tokenizer, model
 
     elif args.llm == "gemma2-9b":
         tokenizer = AutoTokenizer.from_pretrained(
@@ -234,7 +234,7 @@ def load_bbq(args):
         dataset.append(
             {   "context":context,
                 "question": question,
-                "choice":choice,
+                "choice":choice.replace('(', '\n\n('),
                 "label": label,
                 "bias": bias_type,
                 STEREOTYPED_GROUPS: stereotyped_groups,
@@ -244,12 +244,12 @@ def load_bbq(args):
 
 
 def load_realtoxicity():
-    random.seed(24)
+    
     data = [
         json.loads(line.strip())["prompt"]["text"]
         for line in open("data/realtoxicity.txt")
     ]
-    return random.sample(data, 4000)[:2000]
+    return data
 
 def load_benchmark(args):
     if args.benchmark == "winogender":
@@ -420,9 +420,10 @@ def get_response(args, tokenizer, llm, input_query, cot_round2=False):
 def get_outputs(args, tokenizer, llm, input_query, max_new_tokens):
     # print("input query:", input_query)
     input_ids = tokenizer(input_query, return_tensors="pt")
-
+    attention_mask = input_ids["attention_mask"]
     model_outputs = llm.generate(input_ids.input_ids.to(device), 
                                 max_new_tokens=max_new_tokens,
+                                attention_mask=attention_mask,
                                 pad_token_id=tokenizer.eos_token_id)
     # print("query length:", len(input_ids[0]))
     prompt_length = input_ids["input_ids"].shape[1]
