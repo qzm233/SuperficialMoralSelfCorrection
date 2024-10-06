@@ -4,7 +4,7 @@ from tqdm import tqdm
 from utils import *
 import numpy as np
 import random
-from promptsLib import * 
+from promptCluster import * 
 from openai import OpenAI
 import openai
 import pickle
@@ -303,8 +303,8 @@ if __name__ == "__main__":
 
     parser.add_argument("--extrinsic", action='store_true')
     parser.add_argument("--intrinsic", action='store_true')
-
     parser.add_argument("--cot", action='store_true')
+
     parser.add_argument("--wo_unbiased_instruc", action='store_true')
     parser.add_argument("--request_feedback",type=int,default=1,choices=[0,1])
 
@@ -325,14 +325,19 @@ if __name__ == "__main__":
         if args.intrinsic:
             if args.cot:
                 prompt_list = [bbq_selfcorrect1_cot, bbq_cot_round2, 
-                            bbq_selfcorrect_extrinsic_cot, bbq_cot_round2, bbq_selfcorrect_extrinsic_cot, bbq_cot_round2]
+                            bbq_selfcorrect_extrinsic_cot, bbq_cot_round2, 
+                            bbq_selfcorrect_extrinsic_cot, bbq_cot_round2,
+                            bbq_selfcorrect_extrinsic_cot, bbq_cot_round2, 
+                            bbq_selfcorrect_extrinsic_cot, bbq_cot_round2,]
                 save_file = f"./logs/bbq/{args.bias}/intrinsic_extrinsic_cot_{args.bias}.json"
                 with open(save_file,'w') as writer: 
                         result_list = get_bbq_result(args,tokenizer,llm, question_list, prompt_list, save_file)
                         json.dump(result_list,writer)
                         print(f"save to {save_file}")
             else:
-                prompt_list = [bbq_selfcorrect1, bbq_selfcorrect_extrinsic, bbq_selfcorrect_extrinsic]
+                prompt_list = [bbq_selfcorrect1, bbq_selfcorrect_extrinsic, 
+                               bbq_selfcorrect_extrinsic,bbq_selfcorrect_extrinsic,
+                               bbq_selfcorrect_extrinsic,bbq_selfcorrect_extrinsic,]
                 save_file = f"./logs/bbq/{args.bias}/intrinsic_extrinsic_{args.bias}.json"
                 with open(save_file,'w') as writer: 
                         result_list = get_bbq_result(args,tokenizer,llm, question_list, prompt_list, save_file)
@@ -341,14 +346,19 @@ if __name__ == "__main__":
         else:
             if args.cot:
                 prompt_list = [bbq_selfcorrect_cot_baseline, bbq_cot_round2, 
-                            bbq_selfcorrect_extrinsic_cot, bbq_cot_round2, bbq_selfcorrect_extrinsic_cot, bbq_cot_round2]
+                            bbq_selfcorrect_extrinsic_cot, bbq_cot_round2, 
+                            bbq_selfcorrect_extrinsic_cot, bbq_cot_round2,
+                            bbq_selfcorrect_extrinsic_cot, bbq_cot_round2, 
+                            bbq_selfcorrect_extrinsic_cot, bbq_cot_round2]
                 save_file = f"./logs/bbq/{args.bias}/extrinsic_cot_{args.bias}.json"
                 with open(save_file,'w') as writer:    
                     result_list = get_bbq_result(args,tokenizer,llm, question_list, prompt_list, save_file)
                     json.dump(result_list,writer)
                     print(f"save to {save_file}")
             else:
-                prompt_list=[bbq_baseline, bbq_selfcorrect_extrinsic, bbq_selfcorrect_extrinsic]#[bbq_baseline,bbq_selfcorrect_extrinsic,bbq_selfcorrect_extrinsic]
+                prompt_list=[bbq_baseline, bbq_selfcorrect_extrinsic, 
+                            bbq_selfcorrect_extrinsic, bbq_selfcorrect_extrinsic, 
+                            bbq_selfcorrect_extrinsic, bbq_selfcorrect_extrinsic]#[bbq_baseline,bbq_selfcorrect_extrinsic,bbq_selfcorrect_extrinsic]
                 save_file = f"./logs/bbq/{args.bias}/extrinsic_{args.bias}.json"
                 with open(save_file,'w') as writer:    
                     result_list = get_bbq_result(args,tokenizer,llm, question_list, prompt_list, save_file)
@@ -358,14 +368,17 @@ if __name__ == "__main__":
         assert args.intrinsic
         if args.cot:
             prompt_list = [bbq_selfcorrect1_cot, bbq_cot_round2, 
-                bbq_selfcorrect_intrinsic_cot, bbq_cot_round2, bbq_selfcorrect_intrinsic_cot, bbq_cot_round2]
+                bbq_selfcorrect_intrinsic_cot, bbq_cot_round2, 
+                bbq_selfcorrect_intrinsic_cot, bbq_cot_round2]
             save_file = f"./logs/bbq/{args.bias}/intrinsic_cot_{args.bias}.json"
             with open(save_file,'w') as writer: 
                 result_list = get_bbq_result(args,tokenizer,llm, question_list, prompt_list, save_file)
                 json.dump(result_list,writer)
                 print(f"save to {save_file}")
         else:
-            prompt_list=[bbq_selfcorrect1,bbq_selfcorrect_intrinsic,bbq_selfcorrect_intrinsic]#[bbq_selfcorrect1,bbq_selfcorrect_intrinsic,bbq_selfcorrect_intrinsic,bbq_selfcorrect_intrinsic,bbq_selfcorrect_intrinsic,bbq_selfcorrect_intrinsic,bbq_selfcorrect_intrinsic]
+            prompt_list=[bbq_selfcorrect1,bbq_selfcorrect_intrinsic,
+                    bbq_selfcorrect_intrinsic, bbq_selfcorrect_intrinsic,
+                    bbq_selfcorrect_intrinsic, bbq_selfcorrect_intrinsic]#[bbq_selfcorrect1,bbq_selfcorrect_intrinsic,bbq_selfcorrect_intrinsic,bbq_selfcorrect_intrinsic,bbq_selfcorrect_intrinsic,bbq_selfcorrect_intrinsic,bbq_selfcorrect_intrinsic]
             save_file = f"./logs/bbq/{args.bias}/intrinsic_{args.bias}.json"
             with open(save_file,'w') as writer:   
                 result_list = get_bbq_result(args,tokenizer,llm, question_list, prompt_list, save_file)
