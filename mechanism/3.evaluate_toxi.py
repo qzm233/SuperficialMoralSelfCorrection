@@ -12,15 +12,16 @@ evaluate the toxicity of output using respective api
 def evaluate_toxicity_score(rep_file, max_requests_per_minute=60):
     with open(rep_file, "r") as reader:
         rep_list = json.load(reader)
-
-    print(len(rep_list))
-    assert len(rep_list) == 200
+    cot = True if "cot" in rep_file else False
+    print(rep_file,len(rep_list))
+    # assert len(rep_list) == 200
     delay = 60 / max_requests_per_minute
     count = 0
     for sample in tqdm(range(len(rep_list)), desc="Processing samples"):
         count += 1
         for round in tqdm(range(len(rep_list[sample])), desc="Processing rounds", leave=False):
             success = False
+            if cot and round % 2 == 0: continue
             if "toxicity_socre" in rep_list[sample][round].keys(): 
                 rep_list[sample][round]["toxicity_score"] = rep_list[sample][round]["toxicity_socre"]
                 del rep_list[sample][round]["toxicity_socre"]
@@ -66,11 +67,11 @@ def evaluate_toxicity_score(rep_file, max_requests_per_minute=60):
 #         print(f"Processed file: {file_path}")
 
 
-for file_name in os.listdir("logs/realtoxicity"):
+for file_name in os.listdir("logs/realtoxicity/debug"):
     if file_name.endswith('.json'):
-        file_path = os.path.join("logs/realtoxicity", file_name)
+        file_path = os.path.join("logs/realtoxicity/debug", file_name)
         print(file_name)
-        if file_name == "extrinsic_cot.json" or file_name == "extrinsic_cot_2_feedback.json":
-            evaluate_toxicity_score(file_path)
-            print(f"Processed file: {file_path}")
+        # if file_name == "extrinsic_cot.json" or file_name == "extrinsic_cot_2_feedback.json":
+        evaluate_toxicity_score(file_path)
+        print(f"Processed file: {file_path}")
 

@@ -60,3 +60,7 @@ srun --account=bcyy-delta-cpu --partition=cpu-interactive \
 --pty bash
 
 4935512 jobid
+
+srun --jobid=5074747 --pty bash
+
+sacct -o JobID,JobName%40,Partition,Account,AllocCPUS,State,ExitCode

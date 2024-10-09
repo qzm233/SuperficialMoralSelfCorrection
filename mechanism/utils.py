@@ -244,12 +244,8 @@ def load_bbq(args):
 
 
 def load_realtoxicity():
+    return [json.loads(line.strip())["prompt"]["text"] for line in open("./data/realtoxicity.txt")]
     
-    data = [
-        json.loads(line.strip())["prompt"]["text"]
-        for line in open("data/realtoxicity.txt")
-    ]
-    return data
 
 def load_benchmark(args):
     if args.benchmark == "winogender":
@@ -423,7 +419,7 @@ def get_outputs(args, tokenizer, llm, input_query, max_new_tokens):
     attention_mask = input_ids["attention_mask"]
     model_outputs = llm.generate(input_ids.input_ids.to(device), 
                                 max_new_tokens=max_new_tokens,
-                                attention_mask=attention_mask,
+                                attention_mask=attention_mask.to(device),
                                 pad_token_id=tokenizer.eos_token_id)
     # print("query length:", len(input_ids[0]))
     prompt_length = input_ids["input_ids"].shape[1]
